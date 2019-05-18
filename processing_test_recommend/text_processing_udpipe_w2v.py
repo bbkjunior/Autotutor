@@ -393,7 +393,7 @@ def get_text_map(text):
     json_text_map = text_features_cal(sentence_map_feat, sentences_list, lemm_sentences)
     return json_text_map
 
-"""    
+    
 json_text_map = get_text_map("./text_8.txt")
 print( json_text_map['sent_properties'])
 
@@ -405,7 +405,7 @@ for sent in json_text_map['sentences_map']:
         print(word['word'],word['vocabulary_prop'], word['grammar_prop'])
         print("\n")
     print ("====================")
-"""    
+    
 
 
     
