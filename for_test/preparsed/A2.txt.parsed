@@ -1,0 +1,172 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Алеша мечтал получить письмо.
+1	Алеша	Алеш	VERB	_	Aspect=Imp|Tense=Pres|VerbForm=Conv|Voice=Act	0	root	_	_
+2	мечтал	мечтать	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	1	obj	_	_
+3	получить	получать	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	2	dep	_	_
+4	письмо	письмо	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 2
+# text = Ему было уже 12 лет, а он еще никогда не получал писем.
+1	Ему	он	PRON	_	Case=Dat|Gender=Masc|Number=Sing|Person=3	5	nmod	_	_
+2	было	быть	VERB	_	Aspect=Imp|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	уже	уже	ADV	_	Degree=Pos	4	advmod	_	_
+4	12	12	NUM	_	_	5	nummod	_	_
+5	лет	год	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	_	_
+7	а	а	CCONJ	_	_	12	cc	_	_
+8	он	он	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3	12	nsubj	_	_
+9	еще	еще	ADV	_	Degree=Pos	10	advmod	_	_
+10	никогда	никогда	ADV	_	Degree=Pos	12	advmod	_	_
+11	не	не	PART	_	_	12	advmod	_	_
+12	получал	получать	VERB	_	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
+13	писем	письмо	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	12	obl	_	SpaceAfter=No
+14	.	.	PUNCT	_	_	13	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Однажды, когда Алеша возвращался домой из школы, он встретил почтальона, который спросил его: - Кажется, твоя фамилия Синицын?
+1	Однажды	однажды	ADV	_	Degree=Pos	11	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	_	_
+3	когда	когда	SCONJ	_	_	11	mark	_	_
+4	Алеша	алеша	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	_
+5	возвращался	возвращаться	VERB	_	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Mid	11	advcl	_	_
+6	домой	домой	ADV	_	Degree=Pos	5	advmod	_	_
+7	из	из	ADP	_	_	8	case	_	_
+8	школы	школа	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	5	obl	_	SpaceAfter=No
+9	,	,	PUNCT	_	_	8	punct	_	_
+10	он	он	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3	11	nsubj	_	_
+11	встретил	встречать	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+12	почтальона	почтальон	PROPN	_	Animacy=Anim|Case=Acc|Gender=Masc|Number=Sing	11	obj	_	SpaceAfter=No
+13	,	,	PUNCT	_	_	12	punct	_	_
+14	который	который	PRON	_	Case=Nom	15	nsubj	_	_
+15	спросил	спрашивать	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	12	acl:relcl	_	_
+16	его	он	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3	15	obj	_	SpaceAfter=No
+17	:	:	PUNCT	_	_	16	punct	_	SpacesAfter=\n\s\s\s\s\s\s\s\s\s
+18	-	-	PUNCT	_	_	16	punct	_	_
+19	Кажется	казаться	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	23	parataxis	_	SpaceAfter=No
+20	,	,	PUNCT	_	_	19	punct	_	_
+21	твоя	твой	DET	_	Case=Nom|Gender=Fem|Number=Sing	22	amod	_	_
+22	фамилия	фамилия	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	23	nsubj	_	_
+23	Синицын	Синицын	PROPN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	15	obl	_	SpaceAfter=No
+24	?	?	PUNCT	_	_	23	punct	_	SpacesAfter=\n\s\s\s\s\s\s\s\s\s
+
+# sent_id = 4
+# text = - Да.
+1	-	-	PUNCT	_	_	2	punct	_	_
+2	Да	да	PART	_	_	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\n\s\s\s\s\s\s\s\s\s
+
+# sent_id = 5
+# text = - А. Синицын?
+1	-	-	PUNCT	_	_	2	punct	_	_
+2	А.	а.	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+3	Синицын	Синицын	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	2	flat:name	_	SpaceAfter=No
+4	?	?	PUNCT	_	_	3	punct	_	SpacesAfter=\n\s\s\s\s\s\s\s\s\s
+
+# sent_id = 6
+# text = - Да, А. – Алексей.
+1	-	-	PUNCT	_	_	2	punct	_	_
+2	Да	да	PART	_	_	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	_	_
+4	А.	а.	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	2	conj	_	_
+5	–	–	PUNCT	_	_	4	punct	_	_
+6	Алексей	алексей	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	4	flat:name	_	SpaceAfter=No
+7	.	.	PUNCT	_	_	6	punct	_	SpacesAfter=\n\s\s\s\s\s\s\s\s\s
+
+# sent_id = 7
+# text = - Вот тебе письмо.
+1	-	-	PUNCT	_	_	2	punct	_	_
+2	Вот	вот	PART	_	_	3	advmod	_	_
+3	тебе	ты	PRON	_	Case=Dat|Number=Sing|Person=2	0	root	_	_
+4	письмо	письмо	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	SpacesAfter=\n\s\s\s\s\s\s\s\s\s
+
+# sent_id = 8
+# text = - Неужели мне письмо?
+1	-	-	PUNCT	_	_	2	punct	_	_
+2	Неужели	неужели	PART	_	_	3	advmod	_	_
+3	мне	я	PRON	_	Case=Dat|Number=Sing|Person=1	0	root	_	_
+4	письмо	письмо	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	3	parataxis	_	SpaceAfter=No
+5	?	?	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 9
+# text = От кого?
+1	От	от	ADP	_	_	2	case	_	_
+2	кого	кто	PRON	_	Case=Gen	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	_	_	2	punct	_	SpacesAfter=\n\s\s\s\s\s\s\s\s\s
+
+# sent_id = 10
+# text = - Не знаю.
+1	-	-	PUNCT	_	_	2	punct	_	_
+2	Не	не	PART	_	_	3	advmod	_	_
+3	знаю	знать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 11
+# text = Вот твое письмо.
+1	Вот	вот	PART	_	_	2	advmod	_	_
+2	твое	твой	DET	_	Case=Nom|Gender=Neut|Number=Sing	3	amod	_	_
+3	письмо	письмо	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 12
+# text = Только почему-то невнимательно написали адрес.
+1	Только	только	PART	_	_	2	advmod	_	_
+2	почему-то	почему-то	ADV	_	Degree=Pos	4	advmod	_	_
+3	невнимательно	невнимательно	ADV	_	Degree=Pos	4	advmod	_	_
+4	написали	писать	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	адрес	адрес	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	_	SpacesAfter=\n\s\s\s\s\s\s\s\s\s
+
+# sent_id = 13
+# text = - Да?
+1	-	-	PUNCT	_	_	2	punct	_	_
+2	Да	да	PART	_	_	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 14
+# text = А в чем дело?
+1	А	а	CCONJ	_	_	3	cc	_	_
+2	в	в	ADP	_	_	3	case	_	_
+3	чем	что	PRON	_	Case=Loc	0	root	_	_
+4	дело	дело	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	SpaceAfter=No
+5	?	?	PUNCT	_	_	4	punct	_	SpacesAfter=\n\s\s\s\s\s\s\s\s\s
+
+# sent_id = 15
+# text = - Номер дома написали, а номер квартиры забыли написать.
+1	-	-	PUNCT	_	_	2	punct	_	_
+2	Номер	номер	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	_
+3	дома	дом	ADV	_	Degree=Pos	4	advmod	_	_
+4	написали	писать	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	_	_
+6	а	а	CCONJ	_	_	9	cc	_	_
+7	номер	номер	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	10	obj	_	_
+8	квартиры	квартира	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	7	nmod	_	_
+9	забыли	забывать	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+10	написать	писать	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	9	xcomp	_	SpaceAfter=No
+11	.	.	PUNCT	_	_	10	punct	_	_
+
+# sent_id = 16
+# text = Ну, читай.
+1	Ну	ну	PART	_	_	3	parataxis	_	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	_	_
+3	читай	читать	VERB	_	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 17
+# text = До свидания.
+1	До	до	ADP	_	_	2	case	_	_
+2	свидания	свидание	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	_	SpacesAfter=\n\s\s\s\s\s\s\s\s\s
+
+# sent_id = 18
+# text = - Спасибо, до свидания.
+1	-	-	PUNCT	_	_	2	punct	_	_
+2	Спасибо	спасибо	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	_	_
+4	до	до	ADP	_	_	5	case	_	_
+5	свидания	свидание	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	2	nmod	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	_	SpacesAfter=\n
+

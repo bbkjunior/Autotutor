@@ -1,0 +1,95 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Концепция развития рынка ценных бумаг А.
+1	Концепция	концепция	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	6	nsubj	_	_
+2	развития	развитие	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	1	nmod	_	_
+3	рынка	рынок	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	2	nmod	_	_
+4	ценных	ценный	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	5	amod	_	_
+5	бумаг	бумага	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	3	nmod	_	SpacesAfter=\n
+6	А.	а.	PROPN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	0	root	_	_
+
+# sent_id = 2
+# text = Одной из ключевых задач государства в сфере развития рынка ценных бумаг является повышение информационной прозрачности рынка.
+1	Одной	один	NUM	_	Case=Ins|Gender=Fem	12	nummod	_	_
+2	из	из	ADP	_	_	4	case	_	_
+3	ключевых	ключевой	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	4	amod	_	_
+4	задач	задача	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	1	nmod	_	_
+5	государства	государство	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	4	nmod	_	_
+6	в	в	ADP	_	_	7	case	_	_
+7	сфере	сфера	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	4	nmod	_	_
+8	развития	развитие	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	7	nmod	_	_
+9	рынка	рынок	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	8	nmod	_	_
+10	ценных	ценный	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	11	amod	_	_
+11	бумаг	бумага	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	9	nmod	_	_
+12	является	являться	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	0	root	_	_
+13	повышение	повышение	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	12	nsubj	_	_
+14	информационной	информационный	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	15	amod	_	_
+15	прозрачности	прозрачность	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	13	nmod	_	_
+16	рынка	рынок	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No
+17	.	.	PUNCT	_	_	16	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Б.
+1	Б	ба	PART	_	Mood=Cnd	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	_	_	1	punct	_	_
+
+# sent_id = 4
+# text = Реализация принципа информационной прозрачности может быть достигнута за счет информирования всех заинтересованных лиц о деятельности профессиональных участников рынка ценных бумаг и ее результатах.
+1	Реализация	реализация	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	5	nsubj	_	_
+2	принципа	принцип	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	_
+3	информационной	информационный	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	4	amod	_	_
+4	прозрачности	прозрачность	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	2	nmod	_	_
+5	может	мочь	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	быть	быть	AUX	_	Aspect=Imp|VerbForm=Inf|Voice=Act	7	aux:pass	_	_
+7	достигнута	достигать	VERB	_	Aspect=Perf|Gender=Fem|Number=Sing|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	5	xcomp	_	_
+8	за	за	ADP	_	_	10	case	_	_
+9	счет	счет	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	8	fixed	_	_
+10	информирования	информирование	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	7	obl	_	_
+11	всех	весь	DET	_	Case=Gen|Number=Plur	13	amod	_	_
+12	заинтересованных	заинтересованный	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	13	amod	_	_
+13	лиц	лицо	NOUN	_	Animacy=Anim|Case=Gen|Gender=Neut|Number=Plur	10	nmod	_	_
+14	о	о	ADP	_	_	15	case	_	_
+15	деятельности	деятельность	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	13	nmod	_	_
+16	профессиональных	профессиональный	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	17	amod	_	_
+17	участников	участник	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	15	nmod	_	_
+18	рынка	рынок	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	17	nmod	_	_
+19	ценных	ценный	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	20	amod	_	_
+20	бумаг	бумага	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	18	nmod	_	_
+21	и	и	CCONJ	_	_	23	cc	_	_
+22	ее	она	PRON	_	Case=Gen|Gender=Fem|Number=Sing|Person=3	23	nmod	_	_
+23	результатах	результат	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Plur	20	conj	_	SpaceAfter=No
+24	.	.	PUNCT	_	_	23	punct	_	SpacesAfter=\n
+
+# sent_id = 5
+# text = В.
+1	В	в	ADP	_	_	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	_	_	1	punct	_	_
+
+# sent_id = 6
+# text = Общедоступной информацией на рынке ценных бумаг признается не требующая привилегий для доступа к ней или подлежащая раскрытию в соответствии с настоящим Федеральным законом.
+1	Общедоступной	общедоступный	ADJ	_	Case=Ins|Degree=Pos|Gender=Fem|Number=Sing	2	amod	_	_
+2	информацией	информация	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	7	obl	_	_
+3	на	на	ADP	_	_	4	case	_	_
+4	рынке	рынок	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	2	nmod	_	_
+5	ценных	ценный	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	6	amod	_	_
+6	бумаг	бумага	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	4	nmod	_	_
+7	признается	признавать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+8	не	не	PART	_	_	9	advmod	_	_
+9	требующая	требовать	VERB	_	Aspect=Imp|Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act	7	nsubj:pass	_	_
+10	привилегий	привилегия	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	9	obl	_	_
+11	для	для	ADP	_	_	12	case	_	_
+12	доступа	доступ	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	10	nmod	_	_
+13	к	к	ADP	_	_	14	case	_	_
+14	ней	она	PRON	_	Case=Dat|Gender=Fem|Number=Sing|Person=3	12	nmod	_	_
+15	или	или	CCONJ	_	_	16	cc	_	_
+16	подлежащая	подлежащать	VERB	_	Aspect=Imp|Case=Nom|Gender=Fem|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Act	9	conj	_	_
+17	раскрытию	раскрытие	NOUN	_	Animacy=Inan|Case=Dat|Gender=Neut|Number=Sing	16	obl	_	_
+18	в	в	ADP	_	_	23	case	_	_
+19	соответствии	соответствие	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	18	fixed	_	_
+20	с	с	ADP	_	_	19	fixed	_	_
+21	настоящим	настоящее	ADJ	_	Case=Ins|Degree=Pos|Gender=Masc|Number=Sing	23	amod	_	_
+22	Федеральным	федеральный	ADJ	_	Case=Ins|Degree=Pos|Gender=Masc|Number=Sing	23	amod	_	_
+23	законом	закон	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	16	obl	_	SpaceAfter=No
+24	.	.	PUNCT	_	_	23	punct	_	SpacesAfter=\n
+

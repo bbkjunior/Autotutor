@@ -1,0 +1,246 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Олимпийские игры – это большие спортивные соревнования.
+1	Олимпийские	олимпийский	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
+2	игры	игра	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	7	nsubj	_	_
+3	–	–	PUNCT	_	_	2	punct	_	_
+4	это	это	PRON	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	7	nsubj	_	_
+5	большие	большой	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	7	amod	_	_
+6	спортивные	спортивный	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	7	amod	_	_
+7	соревнования	соревнование	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = В разных странах спортсмены мечтают участвовать в Олимпийских играх, потому что это не просто соревнования, а большие праздники, на которые приезжает молодежь из Европы, Азии, Африки, Америки и Австралии.
+1	В	в	ADP	_	_	3	case	_	_
+2	разных	разный	ADJ	_	Case=Loc|Degree=Pos|Number=Plur	3	amod	_	_
+3	странах	страна	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Plur	5	obl	_	_
+4	спортсмены	спортсмен	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	5	nsubj	_	_
+5	мечтают	мечтать	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	участвовать	участвовать	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	5	xcomp	_	_
+7	в	в	ADP	_	_	9	case	_	_
+8	Олимпийских	олимпийский	ADJ	_	Case=Loc|Degree=Pos|Number=Plur	9	amod	_	SpacesAfter=\n
+9	играх	игра	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Plur	6	obl	_	SpaceAfter=No
+10	,	,	PUNCT	_	_	9	punct	_	_
+11	потому	потому	ADV	_	Degree=Pos	5	mark	_	_
+12	что	что	SCONJ	_	_	11	fixed	_	_
+13	это	это	PRON	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	16	nsubj	_	_
+14	не	не	PART	_	_	15	advmod	_	_
+15	просто	просто	PART	_	_	16	advmod	_	_
+16	соревнования	соревнование	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	5	advcl	_	SpaceAfter=No
+17	,	,	PUNCT	_	_	16	punct	_	_
+18	а	а	CCONJ	_	_	20	cc	_	_
+19	большие	большой	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Number=Plur	20	amod	_	_
+20	праздники	праздник	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	5	conj	_	SpaceAfter=No
+21	,	,	PUNCT	_	_	20	punct	_	SpacesAfter=\n
+22	на	на	ADP	_	_	23	case	_	_
+23	которые	который	PRON	_	Case=Acc	24	obl	_	_
+24	приезжает	приезжать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	acl:relcl	_	_
+25	молодежь	молодежь	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	24	obj	_	_
+26	из	из	ADP	_	_	27	case	_	_
+27	Европы	европа	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	25	nmod	_	SpaceAfter=No
+28	,	,	PUNCT	_	_	27	punct	_	_
+29	Азии	азия	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	27	conj	_	SpaceAfter=No
+30	,	,	PUNCT	_	_	29	punct	_	_
+31	Африки	африка	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	27	conj	_	SpaceAfter=No
+32	,	,	PUNCT	_	_	31	punct	_	_
+33	Америки	америка	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	27	conj	_	SpacesAfter=\n
+34	и	и	CCONJ	_	_	35	cc	_	_
+35	Австралии	австралия	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	27	conj	_	SpaceAfter=No
+36	.	.	PUNCT	_	_	35	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Олимпийские игры происходят через каждые четыре года.
+1	Олимпийские	олимпийский	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
+2	игры	игра	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	3	nsubj	_	_
+3	происходят	происходить	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	через	через	ADP	_	_	7	case	_	_
+5	каждые	каждый	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Number=Plur	6	amod	_	_
+6	четыре	четыре	NUM	_	Animacy=Inan|Case=Acc	7	nummod:gov	_	_
+7	года	год	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	3	obl	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = Тысячи людей приезжают в город, где проходят игры.
+1	Тысячи	тысяча	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	3	nsubj	_	_
+2	людей	человек	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	1	nmod	_	_
+3	приезжают	приезжать	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	в	в	ADP	_	_	5	case	_	_
+5	город	город	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	3	obl	_	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	_	_
+7	где	где	ADV	_	Degree=Pos	8	advmod	_	_
+8	проходят	проходить	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
+9	игры	игра	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	8	nsubj	_	SpaceAfter=No
+10	.	.	PUNCT	_	_	9	punct	_	_
+
+# sent_id = 5
+# text = Все ждут праздника.
+1	Все	все	PRON	_	Animacy=Anim|Case=Nom|Number=Plur	2	nsubj	_	_
+2	ждут	ждать	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpacesAfter=\n
+3	праздника	праздник	NOUN	_	Animacy=Anim|Case=Acc|Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 6
+# text = И вот наступает первый день.
+1	И	и	CCONJ	_	_	3	cc	_	_
+2	вот	вот	PART	_	_	3	advmod	_	_
+3	наступает	наступать	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	первый	первый	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	_
+5	день	день	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	_	_
+
+# sent_id = 7
+# text = Люди собираются на самом большом стадионе.
+1	Люди	человек	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	2	nsubj	_	_
+2	собираются	собираться	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	0	root	_	_
+3	на	на	ADP	_	_	6	case	_	_
+4	самом	самый	ADJ	_	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	5	amod	_	SpacesAfter=\n
+5	большом	большой	ADJ	_	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	6	amod	_	_
+6	стадионе	стадион	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	2	obl	_	SpaceAfter=No
+7	.	.	PUNCT	_	_	6	punct	_	_
+
+# sent_id = 8
+# text = Они стоят на трибунах и смотрят туда, откуда должны выйти спортсмены.
+1	Они	они	PRON	_	Case=Nom|Number=Plur|Person=3	2	nsubj	_	_
+2	стоят	стоять	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	на	на	ADP	_	_	4	case	_	_
+4	трибунах	трибуна	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Plur	2	obl	_	_
+5	и	и	CCONJ	_	_	6	cc	_	_
+6	смотрят	смотреть	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	туда	туда	ADV	_	Degree=Pos	6	advmod	_	SpaceAfter=No
+8	,	,	PUNCT	_	_	7	punct	_	_
+9	откуда	откуда	ADV	_	Degree=Pos	11	advmod	_	SpacesAfter=\n
+10	должны	должен	ADJ	_	Degree=Pos|Number=Plur|Variant=Short	7	acl:relcl	_	_
+11	выйти	выходить	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	10	dep	_	_
+12	спортсмены	спортсмен	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	10	nsubj	_	SpaceAfter=No
+13	.	.	PUNCT	_	_	12	punct	_	_
+
+# sent_id = 9
+# text = Играет музыка.
+1	Играет	играть	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	музыка	музыка	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	1	nsubj	_	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 10
+# text = На стадион выходят спортсмены из разных стран.
+1	На	на	ADP	_	_	2	case	_	_
+2	стадион	стадион	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	3	obl	_	_
+3	выходят	выходить	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpacesAfter=\n
+4	спортсмены	спортсмен	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	3	nsubj	_	_
+5	из	из	ADP	_	_	7	case	_	_
+6	разных	разный	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	7	amod	_	_
+7	стран	страна	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	4	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	_	_
+
+# sent_id = 11
+# text = И всегда впереди идут спортсмены из Греции.
+1	И	и	CCONJ	_	_	4	cc	_	_
+2	всегда	всегда	ADV	_	Degree=Pos	4	advmod	_	_
+3	впереди	впереди	ADV	_	Degree=Pos	4	advmod	_	_
+4	идут	идти	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	спортсмены	спортсмен	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	4	nsubj	_	_
+6	из	из	ADP	_	_	7	case	_	SpacesAfter=\n
+7	Греции	греция	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	_	_
+
+# sent_id = 12
+# text = А потом на стадионе появляется один из спортсменов.
+1	А	а	CCONJ	_	_	5	cc	_	_
+2	потом	потом	ADV	_	Degree=Pos	5	advmod	_	_
+3	на	на	ADP	_	_	4	case	_	_
+4	стадионе	стадион	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	5	obl	_	_
+5	появляется	появляться	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	0	root	_	_
+6	один	один	NUM	_	Case=Nom|Gender=Masc	5	nsubj	_	_
+7	из	из	ADP	_	_	8	case	_	_
+8	спортсменов	спортсмен	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	6	nmod	_	SpaceAfter=No
+9	.	.	PUNCT	_	_	8	punct	_	_
+
+# sent_id = 13
+# text = У него в руках Олимпийский огонь.
+1	У	у	ADP	_	_	2	case	_	_
+2	него	он	PRON	_	Case=Gen|Gender=Masc|Number=Sing|Person=3	4	nmod	_	SpacesAfter=\n
+3	в	в	ADP	_	_	4	case	_	_
+4	руках	рука	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Plur	0	root	_	_
+5	Олимпийский	олимпийский	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	6	amod	_	_
+6	огонь	огонь	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	SpaceAfter=No
+7	.	.	PUNCT	_	_	6	punct	_	_
+
+# sent_id = 14
+# text = Многие люди в разных странах несли этот огонь из Греции.
+1	Многие	многие	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
+2	люди	человек	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	6	nsubj	_	_
+3	в	в	ADP	_	_	5	case	_	_
+4	разных	разный	ADJ	_	Case=Loc|Degree=Pos|Number=Plur	5	amod	_	_
+5	странах	страна	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Plur	2	nmod	_	_
+6	несли	нести	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpacesAfter=\n
+7	этот	этот	DET	_	Case=Acc|Gender=Masc|Number=Sing	8	amod	_	_
+8	огонь	огонь	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	6	obj	_	_
+9	из	из	ADP	_	_	10	case	_	_
+10	Греции	греция	PROPN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	6	obl	_	SpaceAfter=No
+11	.	.	PUNCT	_	_	10	punct	_	_
+
+# sent_id = 15
+# text = А сейчас лучший спортсмен из страны, в которой происходят Олимпийские игры, принес его на стадион.
+1	А	а	CCONJ	_	_	14	cc	_	_
+2	сейчас	сейчас	ADV	_	Degree=Pos	14	advmod	_	_
+3	лучший	лучший	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	_
+4	спортсмен	спортсмен	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	14	nsubj	_	_
+5	из	из	ADP	_	_	6	case	_	_
+6	страны	страна	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	_	_
+8	в	в	ADP	_	_	9	case	_	_
+9	которой	который	PRON	_	Case=Loc	10	obl	_	_
+10	происходят	происходить	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	acl:relcl	_	_
+11	Олимпийские	олимпийский	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	12	amod	_	_
+12	игры	игра	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	10	nsubj	_	SpaceAfter=No
+13	,	,	PUNCT	_	_	12	punct	_	_
+14	принес	приносить	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+15	его	он	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3	14	obj	_	_
+16	на	на	ADP	_	_	17	case	_	_
+17	стадион	стадион	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	14	obl	_	SpaceAfter=No
+18	.	.	PUNCT	_	_	17	punct	_	SpacesAfter=\n
+
+# sent_id = 16
+# text = Горит Олимпийский огонь.
+1	Горит	гореть	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	Олимпийский	олимпийский	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	3	amod	_	_
+3	огонь	огонь	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	nsubj	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 17
+# text = Поднимается белый Олимпийский флаг, на котором пять колец – голубое, черное, желтое, красное и зеленое.
+1	Поднимается	подниматься	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	0	root	_	_
+2	белый	белый	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	_
+3	Олимпийский	олимпийский	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	SpacesAfter=\n
+4	флаг	флаг	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	1	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	_	_
+6	на	на	ADP	_	_	7	case	_	_
+7	котором	который	PRON	_	Case=Loc	9	nmod	_	_
+8	пять	пять	NUM	_	Case=Acc	9	nummod:gov	_	_
+9	колец	кольцо	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Plur	4	acl:relcl	_	_
+10	–	–	PUNCT	_	_	9	punct	_	_
+11	голубое	голубой	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	9	amod	_	SpaceAfter=No
+12	,	,	PUNCT	_	_	11	punct	_	_
+13	черное	черный	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	11	conj	_	SpaceAfter=No
+14	,	,	PUNCT	_	_	13	punct	_	_
+15	желтое	желтый	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	11	conj	_	SpaceAfter=No
+16	,	,	PUNCT	_	_	15	punct	_	_
+17	красное	красный	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	11	conj	_	_
+18	и	и	CCONJ	_	_	19	cc	_	SpacesAfter=\n
+19	зеленое	зеленый	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	11	conj	_	SpaceAfter=No
+20	.	.	PUNCT	_	_	19	punct	_	_
+
+# sent_id = 18
+# text = В каждом национальном флаге есть один из этих цветов.
+1	В	в	ADP	_	_	4	case	_	_
+2	каждом	каждый	ADJ	_	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	_
+3	национальном	национальный	ADJ	_	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	4	amod	_	_
+4	флаге	флаг	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	0	root	_	_
+5	есть	быть	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+6	один	один	NUM	_	Case=Nom|Gender=Masc	4	nsubj	_	_
+7	из	из	ADP	_	_	9	case	_	_
+8	этих	этот	DET	_	Case=Gen|Number=Plur	9	amod	_	_
+9	цветов	цветы	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	6	nmod	_	SpaceAfter=No
+10	.	.	PUNCT	_	_	9	punct	_	SpacesAfter=\n
+

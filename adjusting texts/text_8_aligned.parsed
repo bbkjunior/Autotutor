@@ -1,0 +1,241 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = В классе был урок русского языка.
+1	В	В	ADP	IN	_	2	case	_	_
+2	классе	КЛАСС	NOUN	NN	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	3	obl	_	_
+3	был	БЫТЬ	VERB	VBC	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+4	урок	урок	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	_
+5	русского	РУССКИЙ	ADJ	JJL	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	6	amod	_	_
+6	языка	ЯЗЫК	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 2
+# text = Преподаватель читал новый текст.
+1	Преподаватель	ПРЕПОДАВАТЕЛЬ	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
+2	читал	ЧИТАТЬ	VERB	VBC	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+3	новый	НОВЫЙ	ADJ	JJL	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	amod	_	_
+4	текст	ТЕКСТ	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	.	_	2	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Студенты внимательно слушали. – Извините, можно войти?
+1	Студенты	СТУДЕНТ	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	3	nsubj	_	_
+2	внимательно	внимательно	ADV	RB	_	3	advmod	_	_
+3	слушали	слушали	VERB	VBC	Aspect=Imp|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n
+5	–	–	PUNCT	,	_	6	punct	_	_
+6	Извините	Извините	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	8	punct	_	_
+8	можно	МОЖНО	VERB	PRED	Degree=Pos	3	conj	_	_
+9	войти	войти	VERB	VB	Aspect=Perf|VerbForm=Inf	8	xcomp	_	SpaceAfter=No
+10	?	?	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 4
+# text = Я опоздал, – сказал Джон. – Что случилось, Джон?
+1	Я	Я	PRON	PRP	Case=Nom|Number=Sing|Person=1	2	nsubj	_	_
+2	опоздал	опоздал	VERB	VBC	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	,	_	2	punct	_	_
+4	–	–	PUNCT	,	_	5	punct	_	_
+5	сказал	СКАЗАТЬ	VERB	VBC	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	9	parataxis	_	_
+6	Джон.	Джон.	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	9	nsubj	_	SpacesAfter=\n\s
+7	–	–	PUNCT	,	_	9	punct	_	_
+8	Что	ЧТО	PRON	WP	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	9	nsubj	_	_
+9	случилось	СЛУЧИТЬСЯ	VERB	VBC	Aspect=Perf|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Mid	2	parataxis	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	11	punct	_	_
+11	Джон	ДЖОН	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	9	conj	_	SpaceAfter=No
+12	?	?	PUNCT	.	_	9	punct	_	_
+
+# sent_id = 5
+# text = Вчера вы опоздали, сегодня вы опоздали.
+1	Вчера	ВЧЕРА	ADV	RB	_	3	advmod	_	_
+2	вы	ВЫ	PRON	PRP	Case=Nom|Number=Plur|Person=2	3	nsubj	_	_
+3	опоздали	опоздали	VERB	VBC	Aspect=Imp|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	7	punct	_	_
+5	сегодня	СЕГОДНЯ	ADV	RB	_	7	advmod	_	_
+6	вы	ВЫ	PRON	PRP	Case=Nom|Number=Plur|Person=2	7	nsubj	_	_
+7	опоздали	опоздали	VERB	VBC	Aspect=Imp|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	3	acl:relcl	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 6
+# text = Нельзя опаздывать на урок.
+1	Нельзя	Нельзя	VERB	VBG	Aspect=Imp|VerbForm=Conv	0	root	_	_
+2	опаздывать	опаздывать	VERB	VB	Aspect=Imp|VerbForm=Inf	1	xcomp	_	_
+3	на	НА	ADP	IN	_	4	case	_	_
+4	урок	урок	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	.	_	1	punct	_	SpacesAfter=\n\s
+
+# sent_id = 7
+# text = Вечером Джон пришел домой.
+1	Вечером	Вечером	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	_
+2	Джон	ДЖОН	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	1	flat	_	_
+3	пришел	ПРИЙТИ	VERB	VBC	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+4	домой	ДОМОЙ	ADV	RB	_	3	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 8
+# text = Дома он долго думал: «Вчера я опоздал, сегодня я тоже опоздал.
+1	Дома	ДОМ	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Masc|Number=Plur	4	nsubj	_	_
+2	он	ОН	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	4	nsubj	_	_
+3	долго	ДОЛГО	ADV	RB	_	4	advmod	_	_
+4	думал	дуМАЛ	VERB	VBC	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	:	:	PUNCT	:	_	4	punct	_	_
+6	«Вчера	«вчера	ADV	RB	_	8	advmod	_	_
+7	я	Й	PRON	PRP	Case=Nom|Number=Sing|Person=1	8	nsubj	_	_
+8	опоздал	опоздал	VERB	VBC	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	4	parataxis	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	13	punct	_	_
+10	сегодня	СЕГОДНЯ	ADV	RB	_	13	advmod	_	_
+11	я	Я	PRON	PRP	Case=Nom|Number=Sing|Person=1	13	nsubj	_	_
+12	тоже	ТОЖЕ	CCONJ	CC	_	13	cc	_	_
+13	опоздал	опоздал	VERB	VBC	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	8	conj	_	SpaceAfter=No
+14	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = 9
+# text = Это очень плохо.
+1	Это	ЭТО	PRON	DT	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	_
+2	очень	ОЧЕНЬ	ADV	RB	_	3	advmod	_	_
+3	плохо	ПЛОХО	ADV	RB	_	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 10
+# text = Не буду больше опаздывать на урок.
+1	Не	НЕ	PART	NEG	Polarity=Neg	4	advmod	_	_
+2	буду	буду	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	4	obj	_	_
+3	больше	МНОГО	ADV	RBR	Degree=Cmp	4	advmod	_	_
+4	опаздывать	опаздывать	VERB	VB	Aspect=Imp|VerbForm=Inf	0	root	_	_
+5	на	НА	ADP	IN	_	6	case	_	_
+6	урок	урок	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	4	obl	_	SpaceAfter=No
+7	.	.	PUNCT	.	_	4	punct	_	_
+
+# sent_id = 11
+# text = Завтра я встану рано, в 8 часов, быстро сделаю зарядку, приготовлю завтрак, позавтракаю, повторю домашнее задание.
+1	Завтра	ЗАВТРА	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	_
+2	я	Й	ADJ	ORD	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	3	amod	_	_
+3	встану	встану	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	0	root	_	_
+4	рано	РАНО	ADV	RB	_	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	8	punct	_	_
+6	в	В	ADP	IN	_	8	case	_	_
+7	8	8	NUM	CD	Case=Acc|NumType=Card	8	nummod:gov	_	_
+8	часов	ЧАС	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	3	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	3	punct	_	_
+10	быстро	БЫСТРО	ADV	RB	_	11	advmod	_	_
+11	сделаю	сделаю	VERB	VBC	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	parataxis	_	_
+12	зарядку	зарядку	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	11	obj	_	SpaceAfter=No
+13	,	,	PUNCT	,	_	14	punct	_	_
+14	приготовлю	приготовлю	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	12	appos	_	_
+15	завтрак	завтРАК	ADV	RB	_	17	advmod	_	SpaceAfter=No
+16	,	,	PUNCT	,	_	15	punct	_	_
+17	позавтракаю	позавтракаю	NOUN	NN	Animacy=Inan|Case=Dat|Gender=Masc|Number=Sing	14	appos	_	SpaceAfter=No
+18	,	,	PUNCT	,	_	19	punct	_	_
+19	повторю	повтоРЮ	VERB	VBC	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	11	conj	_	_
+20	домашнее	ДОМАШНИЙ	ADJ	JJL	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	21	amod	_	_
+21	задание	задание	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	19	obj	_	SpaceAfter=No
+22	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 12
+# text = Завтра я не опоздаю!» Утром Джон встал в 8 часов.
+1	Завтра	ЗАВТРА	NOUN	NN	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	4	nsubj	_	_
+2	я	Я	PRON	PRP	Case=Nom|Number=Sing|Person=1	4	nsubj	_	_
+3	не	НЕ	PART	NEG	Polarity=Neg	4	advmod	_	_
+4	опоздаю!»	опоздаю!»	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	SpacesAfter=\n\s
+5	Утром	УТРО	PROPN	NNP	Animacy=Anim|Case=Ins|Gender=Masc|Number=Sing	4	flat	_	_
+6	Джон	ДЖОН	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	5	flat	_	_
+7	встал	ВСТАТЬ	VERB	VBC	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+8	в	В	ADP	IN	_	10	case	_	_
+9	8	8	NUM	CD	Case=Acc|NumType=Card	10	nummod:gov	_	_
+10	часов	ЧАС	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	7	obl	_	SpaceAfter=No
+11	.	.	PUNCT	.	_	7	punct	_	_
+
+# sent_id = 13
+# text = Он сделал зарядку, приготовил завтрак, позавтракал, повторил домашнее задание и пошел в институт.
+1	Он	ОН	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3	2	nsubj	_	_
+2	сделал	СДЕЛАТЬ	VERB	VBC	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+3	зарядку	зарядку	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	5	punct	_	_
+5	приготовил	приготовил	VERB	VBC	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	2	conj	_	_
+6	завтрак	завтРАК	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
+7	,	,	PUNCT	,	_	8	punct	_	_
+8	позавтракал	позавтракал	VERB	VBC	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	5	conj	_	SpaceAfter=No
+9	,	,	PUNCT	,	_	10	punct	_	_
+10	повторил	ПОВТОРИТЬ	VERB	VBC	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	8	conj	_	_
+11	домашнее	ДОМАШНИЙ	ADJ	JJL	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	12	amod	_	_
+12	задание	задание	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	10	obj	_	_
+13	и	И	CCONJ	CC	_	14	cc	_	_
+14	пошел	ПОЙТИ	VERB	VBC	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	10	conj	_	_
+15	в	В	ADP	IN	_	16	case	_	_
+16	институт	ИНСТИТУТ	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	14	obl	_	SpaceAfter=No
+17	.	.	PUNCT	.	_	2	punct	_	SpacesAfter=\n
+
+# sent_id = 14
+# text = В 9 часов 30 минут Джон пришел в институт.
+1	В	В	ADP	IN	_	3	case	_	_
+2	9	9	NUM	CD	Case=Acc|NumType=Card	3	nummod:gov	_	_
+3	часов	ЧАС	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	7	obl	_	_
+4	30	30	NUM	CD	Case=Nom|NumType=Card	5	nummod:gov	_	_
+5	минут	МИНУТА	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	3	nsubj	_	_
+6	Джон	ДЖОН	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	_
+7	пришел	ПРИЙТИ	VERB	VBC	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+8	в	В	ADP	IN	_	9	case	_	_
+9	институт.	институт.	PRON	DT	Animacy=Inan|Case=Dat|Gender=Neut|Number=Sing	7	obl	_	SpacesAfter=\n
+
+# sent_id = 15
+# text = – Что случилось, молодой человек?
+1	–	–	PUNCT	,	_	3	punct	_	_
+2	Что	ЧТО	PRON	WP	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	_
+3	случилось	СЛУЧИТЬСЯ	VERB	VBC	Aspect=Perf|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Mid	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	,	_	6	punct	_	_
+5	молодой	МОЛОДОЙ	ADJ	JJL	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	6	amod	_	_
+6	человек	ЧЕЛОВЕК	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	SpaceAfter=No
+7	?	?	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 16
+# text = Куда вы идете? – спросил дежурный.
+1	Куда	КУДА	ADV	RB	_	3	advmod	_	_
+2	вы	ВЫ	PRON	PRP	Case=Nom|Number=Plur|Person=2	3	nsubj	_	_
+3	идете	идете	VERB	VBC	Aspect=Imp|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	.	_	6	punct	_	_
+5	–	–	PUNCT	,	_	6	punct	_	_
+6	спросил	сПРОСИТЬ	VERB	VBC	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	3	conj	_	_
+7	дежурный	дежурный	ADJ	JJL	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	6	amod	_	SpaceAfter=No
+8	.	.	PUNCT	.	_	3	punct	_	SpacesAfter=\n
+
+# sent_id = 17
+# text = – Я иду на урок.
+1	–	–	PUNCT	,	_	3	punct	_	_
+2	Я	Й	PRON	PRP	Case=Nom|Number=Sing|Person=1	3	nsubj	_	_
+3	иду	иду	ADV	RB	_	0	root	_	_
+4	на	НА	ADP	IN	_	5	case	_	_
+5	урок	урок	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	3	nmod	_	SpaceAfter=No
+6	.	.	PUNCT	.	_	3	punct	_	_
+
+# sent_id = 18
+# text = Сегодня я не опоздал, – ответил Джон. – Идите домой, молодой человек!
+1	Сегодня	СЕГОДНЯ	ADV	RB	_	4	advmod	_	_
+2	я	Я	PRON	PRP	Case=Nom|Number=Sing|Person=1	4	nsubj	_	_
+3	не	НЕ	PART	NEG	Polarity=Neg	4	advmod	_	_
+4	опоздал	опоздал	VERB	VBC	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	–	–	PUNCT	,	_	7	punct	_	_
+7	ответил	ответил	VERB	VBC	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	4	parataxis	_	_
+8	Джон.	Джон.	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	SpacesAfter=\n
+9	–	–	PUNCT	,	_	10	punct	_	_
+10	Идите	Идите	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	8	flat	_	_
+11	домой	ДОМОЙ	ADV	RB	_	7	advmod	_	SpaceAfter=No
+12	,	,	PUNCT	,	_	14	punct	_	_
+13	молодой	МОЛОДОЙ	ADJ	JJL	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	14	amod	_	_
+14	человек	ЧЕЛОВЕК	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	7	appos	_	SpaceAfter=No
+15	!	!	PUNCT	.	_	4	punct	_	_
+
+# sent_id = 19
+# text = Сегодня нет урока.
+1	Сегодня	СЕГОДНЯ	ADV	RB	_	2	advmod	_	_
+2	нет	НЕТ	VERB	VBC	Aspect=Imp|Tense=Pres	0	root	_	_
+3	урока	урока	NOUN	NN	Animacy=Anim|Case=Acc|Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	.	_	2	punct	_	_
+
+# sent_id = 20
+# text = Сегодня воскресенье.
+1	Сегодня	СЕГОДНЯ	ADV	RB	_	2	discourse	_	_
+2	воскресенье	ВОСКРЕСЕНЬЕ	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	.	_	2	punct	_	SpacesAfter=\n
+

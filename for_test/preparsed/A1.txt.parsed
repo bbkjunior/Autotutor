@@ -1,0 +1,121 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Однажды в поликлинику пришел больной.
+1	Однажды	однажды	ADV	_	Degree=Pos	4	advmod	_	_
+2	в	в	ADP	_	_	3	case	_	_
+3	поликлинику	поликлиника	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	4	obl	_	_
+4	пришел	приходить	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	больной	больной	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = – Что у вас болит? – спросил врач.
+1	–	–	PUNCT	_	_	2	punct	_	_
+2	Что	что	PRON	_	Case=Nom	5	nsubj	_	_
+3	у	у	ADP	_	_	4	case	_	_
+4	вас	вы	PRON	_	Case=Gen|Number=Plur|Person=2	5	nmod	_	_
+5	болит	болеть	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	8	obl	_	SpaceAfter=No
+6	?	?	PUNCT	_	_	5	punct	_	_
+7	–	–	PUNCT	_	_	5	punct	_	_
+8	спросил	спрашивать	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+9	врач	врач	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	8	nsubj	_	SpaceAfter=No
+10	.	.	PUNCT	_	_	9	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = – У меня болит живот, – ответил молодой человек.
+1	–	–	PUNCT	_	_	2	punct	_	_
+2	У	у	ADP	_	_	3	case	_	_
+3	меня	я	PRON	_	Case=Gen|Number=Sing|Person=1	4	obl	_	_
+4	болит	болеть	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	живот	живот	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	4	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	_	_
+7	–	–	PUNCT	_	_	5	punct	_	_
+8	ответил	отвечать	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+9	молодой	молодой	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	10	amod	_	_
+10	человек	человек	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	8	nsubj	_	SpaceAfter=No
+11	.	.	PUNCT	_	_	10	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = – Что вы ели вчера?
+1	–	–	PUNCT	_	_	2	punct	_	_
+2	Что	что	PRON	_	Case=Acc	4	obj	_	_
+3	вы	вы	PRON	_	Case=Nom|Number=Plur|Person=2	4	nsubj	_	_
+4	ели	есть	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	вчера	вчера	ADV	_	Degree=Pos	4	advmod	_	SpaceAfter=No
+6	?	?	PUNCT	_	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 5
+# text = – Зеленые яблоки.
+1	–	–	PUNCT	_	_	2	punct	_	_
+2	Зеленые	зеленый	ADJ	_	Case=Nom|Degree=Pos|Number=Plur	3	amod	_	_
+3	яблоки	яблоко	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Plur	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	_	SpacesAfter=\n
+
+# sent_id = 6
+# text = – Хорошо.
+1	–	–	PUNCT	_	_	2	punct	_	_
+2	Хорошо	хороший	ADJ	_	Degree=Pos|Gender=Neut|Number=Sing|Variant=Short	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 7
+# text = Я дам вам лекарство для глаз, – сказал врач больному.
+1	Я	я	PRON	_	Case=Nom|Number=Sing|Person=1	2	nsubj	_	_
+2	дам	давать	VERB	_	Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin|Voice=Act	0	root	_	_
+3	вам	вы	PRON	_	Case=Dat|Number=Plur|Person=2	2	obl	_	_
+4	лекарство	лекарство	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	2	obj	_	_
+5	для	для	ADP	_	_	6	case	_	_
+6	глаз	глаз	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	4	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	_	_
+8	–	–	PUNCT	_	_	6	punct	_	_
+9	сказал	сказать	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+10	врач	врач	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	9	nsubj	_	_
+11	больному	больной	NOUN	_	Animacy=Anim|Case=Dat|Gender=Masc|Number=Sing	10	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	_	_	11	punct	_	SpacesAfter=\n
+
+# sent_id = 8
+# text = – Почему для глаз?
+1	–	–	PUNCT	_	_	2	punct	_	_
+2	Почему	почему	ADV	_	Degree=Pos	0	root	_	_
+3	для	для	ADP	_	_	4	case	_	_
+4	глаз	глаз	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	2	nmod	_	SpaceAfter=No
+5	?	?	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 9
+# text = Ведь у меня болит живот? – удивился молодой человек.
+1	Ведь	ведь	PART	_	_	3	advmod	_	_
+2	у	у	ADP	_	_	3	case	_	_
+3	меня	я	PRON	_	Case=Gen|Number=Sing|Person=1	4	obl	_	_
+4	болит	болеть	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	живот	живот	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	SpaceAfter=No
+6	?	?	PUNCT	_	_	5	punct	_	_
+7	–	–	PUNCT	_	_	5	punct	_	_
+8	удивился	удивляться	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Mid	4	parataxis	_	_
+9	молодой	молодой	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	10	amod	_	_
+10	человек	человек	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	8	nsubj	_	SpaceAfter=No
+11	.	.	PUNCT	_	_	10	punct	_	SpacesAfter=\n
+
+# sent_id = 10
+# text = – Я дам вам лекарство для глаз, чтобы вы лучше видели, что вы едите, – сказал врач.
+1	–	–	PUNCT	_	_	2	punct	_	_
+2	Я	я	PRON	_	Case=Nom|Number=Sing|Person=1	3	nsubj	_	_
+3	дам	давать	VERB	_	Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin|Voice=Act	19	ccomp	_	_
+4	вам	вы	PRON	_	Case=Dat|Number=Plur|Person=2	3	obl	_	_
+5	лекарство	лекарство	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	3	obj	_	_
+6	для	для	ADP	_	_	7	case	_	_
+7	глаз	глаз	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	5	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	_	_	7	punct	_	_
+9	чтобы	чтобы	SCONJ	_	Mood=Cnd	3	mark	_	_
+10	вы	вы	PRON	_	Case=Nom|Number=Plur|Person=2	12	nsubj	_	_
+11	лучше	хороший	ADV	_	Degree=Cmp	12	advmod	_	_
+12	видели	видеть	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	3	advcl	_	SpaceAfter=No
+13	,	,	PUNCT	_	_	12	punct	_	_
+14	что	что	SCONJ	_	_	12	mark	_	_
+15	вы	вы	PRON	_	Case=Nom|Number=Plur|Person=2	16	nsubj	_	_
+16	едите	едить	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	12	advcl	_	SpaceAfter=No
+17	,	,	PUNCT	_	_	16	punct	_	_
+18	–	–	PUNCT	_	_	16	punct	_	_
+19	сказал	сказать	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+20	врач	врач	NOUN	_	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	19	nsubj	_	SpaceAfter=No
+21	.	.	PUNCT	_	_	20	punct	_	SpacesAfter=\n
+

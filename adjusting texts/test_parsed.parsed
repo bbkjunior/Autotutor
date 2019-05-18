@@ -1,0 +1,19 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = С тех пор как Нонна отказала Андрею, старик был с Нонной официально сух
+1	С	С	ADP	IN	_	3	case	_	_
+2	тех	ТОТ	DET	DT	Animacy=Inan|Case=Gen|Number=Plur	3	det	_	_
+3	пор	ПОРА	NOUN	NN	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	6	obl	_	_
+4	как	КАК	ADP	IN	_	5	case	_	_
+5	Нонна	НОННА	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Fem|Number=Sing	6	nsubj	_	_
+6	отказала	отказала	VERB	VBC	Aspect=Perf|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	0	root	_	_
+7	Андрею	Андрею	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	6	conj	_	SpaceAfter=No
+8	,	,	PUNCT	,	_	9	punct	_	_
+9	старик	СТАРИК	NOUN	NN	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	7	conj	_	_
+10	был	БЫТЬ	AUX	VBC	Aspect=Imp|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin	14	cop	_	_
+11	с	С	ADP	IN	_	12	case	_	_
+12	Нонной	АНННо	PROPN	NNP	Animacy=Anim|Case=Nom|Gender=Masc|Number=Sing	14	nmod	_	_
+13	официально	ОФИЦИАЛЬНО	ADV	RB	_	14	advmod	_	_
+14	сух	сух	NOUN	NN	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	7	obj	_	SpacesAfter=\n
+

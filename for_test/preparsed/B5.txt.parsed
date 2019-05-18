@@ -1,0 +1,130 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Небесное тело, находящееся на удалении от Солнца в 140 раз большем, чем Земля, обнаружили американские астрономы.
+1	Небесное	небесный	ADJ	_	Case=Nom|Degree=Pos|Gender=Neut|Number=Sing	2	amod	_	_
+2	тело	тело	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	12	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	_	_
+4	находящееся	находиться	VERB	_	Aspect=Imp|Case=Nom|Gender=Neut|Number=Sing|Tense=Pres|VerbForm=Part|Voice=Mid	2	amod	_	_
+5	на	на	ADP	_	_	6	case	_	_
+6	удалении	удаление	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	4	obl	_	_
+7	от	от	ADP	_	_	8	case	_	_
+8	Солнца	солнце	PROPN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	6	nmod	_	_
+9	в	в	ADP	_	_	11	case	_	_
+10	140	140	NUM	_	_	11	nummod	_	_
+11	раз	раз	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	12	nmod	_	_
+12	большем	больший	ADJ	_	Case=Loc|Degree=Pos|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+13	,	,	PUNCT	_	_	12	punct	_	_
+14	чем	чем	SCONJ	_	_	15	cc	_	_
+15	Земля	земля	PROPN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	12	advmod	_	SpaceAfter=No
+16	,	,	PUNCT	_	_	15	punct	_	_
+17	обнаружили	обнаруживать	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	12	conj	_	_
+18	американские	американский	ADJ	_	Animacy=Inan|Case=Acc|Degree=Pos|Number=Plur	19	amod	_	_
+19	астрономы	астроном	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	17	obj	_	SpaceAfter=No
+20	.	.	PUNCT	_	_	19	punct	_	_
+
+# sent_id = 2
+# text = Как сообщил в среду интернет-портал Space.com, оно получило предварительное наименование FarFarOut ("Очень-очень далекий").
+1	Как	как	SCONJ	_	_	7	mark	_	_
+2	сообщил	сообщать	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	7	parataxis	_	_
+3	в	в	ADP	_	_	4	case	_	_
+4	среду	среда	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	2	obl	_	_
+5	интернет	интернет	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	SpaceAfter=No
+6	-	-	PUNCT	_	_	5	punct	_	SpaceAfter=No
+7	портал	портать	VERB	_	Aspect=Perf|Gender=Masc|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+8	Space.com	Space.com	NOUN	_	_	7	obl	_	SpaceAfter=No
+9	,	,	PUNCT	_	_	8	punct	_	_
+10	оно	оно	PRON	_	Case=Nom|Gender=Neut|Number=Sing|Person=3	11	nsubj	_	_
+11	получило	получать	VERB	_	Aspect=Perf|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	7	conj	_	_
+12	предварительное	предварительный	ADJ	_	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing	13	amod	_	_
+13	наименование	наименование	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	11	obj	_	_
+14	FarFarOut	FarFarOut	PROPN	_	Foreign=Yes	13	flat:foreign	_	_
+15	(	(	PUNCT	_	_	17	punct	_	SpaceAfter=No
+16	"	"	PUNCT	_	_	17	punct	_	SpaceAfter=No
+17	Очень	очень	ADV	_	Degree=Pos	20	advmod	_	SpaceAfter=No
+18	-	-	PUNCT	_	_	17	punct	_	SpaceAfter=No
+19	очень	очень	ADV	_	Degree=Pos	20	advmod	_	_
+20	далекий	далекий	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	14	parataxis	_	SpaceAfter=No
+21	"	"	PUNCT	_	_	20	punct	_	SpaceAfter=No
+22	)	)	PUNCT	_	_	20	punct	_	SpaceAfter=No
+23	.	.	PUNCT	_	_	20	punct	_	_
+
+# sent_id = 3
+# text = Объект находится "далеко за Плутоном".
+1	Объект	объект	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	_
+2	находится	находиться	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	0	root	_	_
+3	"	"	PUNCT	_	_	4	punct	_	SpaceAfter=No
+4	далеко	далеко	ADV	_	Degree=Pos	6	advmod	_	_
+5	за	за	ADP	_	_	6	case	_	_
+6	Плутоном	Плутон	PROPN	_	Animacy=Anim|Case=Ins|Gender=Masc|Number=Sing	2	obl	_	SpaceAfter=No
+7	"	"	PUNCT	_	_	6	punct	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	6	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = "Это открытие было сделано буквально только что, - приводит портал Space.com слова сотрудника вашингтонского Научного фонда Карнеги Скотта Шепарда.
+1	"	"	PUNCT	_	_	2	punct	_	SpaceAfter=No
+2	Это	этот	DET	_	Case=Nom|Gender=Neut|Number=Sing	3	amod	_	_
+3	открытие	открытие	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	5	nsubj	_	_
+4	было	быть	AUX	_	Aspect=Imp|Gender=Neut|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	5	aux:pass	_	_
+5	сделано	делать	VERB	_	Aspect=Perf|Gender=Neut|Number=Sing|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	0	root	_	_
+6	буквально	буквально	ADV	_	Degree=Pos	5	advmod	_	_
+7	только	только	PART	_	_	8	advmod	_	_
+8	что	что	PRON	_	Case=Nom	11	nsubj	_	SpaceAfter=No
+9	,	,	PUNCT	_	_	8	punct	_	_
+10	-	-	PUNCT	_	_	8	punct	_	_
+11	приводит	приводить	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+12	портал	портать	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	11	obj	_	_
+13	Space.com	Space.com	NOUN	_	_	12	nmod	_	_
+14	слова	слово	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	13	nmod	_	_
+15	сотрудника	сотрудник	NOUN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	14	nmod	_	_
+16	вашингтонского	вашингтонский	ADJ	_	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	18	amod	_	_
+17	Научного	научный	ADJ	_	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	18	amod	_	_
+18	фонда	фонд	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	15	nmod	_	_
+19	Карнеги	карнеги	PROPN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	15	appos	_	_
+20	Скотта	скотт	PROPN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	19	flat:name	_	_
+21	Шепарда	Шепард	PROPN	_	Animacy=Anim|Case=Gen|Gender=Masc|Number=Sing	20	flat:name	_	SpaceAfter=No
+22	.	.	PUNCT	_	_	21	punct	_	_
+
+# sent_id = 5
+# text = - Объект находится практически на пределе наших возможностей наблюдения".
+1	-	-	PUNCT	_	_	2	punct	_	_
+2	Объект	объект	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	_
+3	находится	находиться	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	0	root	_	_
+4	практически	практически	ADV	_	Degree=Pos	6	advmod	_	_
+5	на	на	ADP	_	_	6	case	_	_
+6	пределе	предел	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	3	obl	_	_
+7	наших	наш	DET	_	Case=Gen|Number=Plur	8	amod	_	_
+8	возможностей	возможность	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	6	nmod	_	_
+9	наблюдения	наблюдение	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	8	nmod	_	SpaceAfter=No
+10	"	"	PUNCT	_	_	9	punct	_	SpaceAfter=No
+11	.	.	PUNCT	_	_	9	punct	_	SpacesAfter=\n
+
+# sent_id = 6
+# text = Пока нет данных об орбите этого небесного тела и его массе.
+1	Пока	пока	SCONJ	_	_	3	cc	_	_
+2	нет	нет	PART	_	_	3	advmod	_	_
+3	данных	данные	NOUN	_	Animacy=Inan|Case=Gen|Number=Plur	0	root	_	_
+4	об	о	ADP	_	_	5	case	_	_
+5	орбите	орбита	NOUN	_	Animacy=Inan|Case=Loc|Gender=Fem|Number=Sing	3	nmod	_	_
+6	этого	этот	DET	_	Case=Gen|Gender=Neut|Number=Sing	8	amod	_	_
+7	небесного	небесный	ADJ	_	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	8	amod	_	_
+8	тела	тело	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	5	nmod	_	_
+9	и	и	CCONJ	_	_	11	cc	_	_
+10	его	он	PRON	_	Case=Gen|Gender=Masc|Number=Sing|Person=3	11	nmod	_	_
+11	массе	масса	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	5	conj	_	SpaceAfter=No
+12	.	.	PUNCT	_	_	11	punct	_	_
+
+# sent_id = 7
+# text = Кроме того, обнаружение объекта должно быть подтверждено другими астрономами.
+1	Кроме	кроме	ADP	_	_	2	case	_	_
+2	того	то	PRON	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	6	parataxis	_	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	_	_
+4	обнаружение	обнаружение	NOUN	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	6	nsubj	_	_
+5	объекта	объект	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	_
+6	должно	должен	ADJ	_	Degree=Pos|Gender=Neut|Number=Sing|Variant=Short	0	root	_	_
+7	быть	быть	AUX	_	Aspect=Imp|VerbForm=Inf|Voice=Act	8	aux:pass	_	_
+8	подтверждено	подтверждать	VERB	_	Aspect=Perf|Gender=Neut|Number=Sing|Tense=Past|Variant=Short|VerbForm=Part|Voice=Pass	6	dep	_	_
+9	другими	другой	ADJ	_	Case=Ins|Degree=Pos|Number=Plur	10	amod	_	_
+10	астрономами	астроном	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Plur	8	obl	_	SpaceAfter=No
+11	.	.	PUNCT	_	_	10	punct	_	SpacesAfter=\n
+

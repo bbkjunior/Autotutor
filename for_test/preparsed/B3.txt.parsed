@@ -1,0 +1,206 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = А: Все мы знаем, что личность формируется только в диалоге с жизнью, откликаясь на ее вопросы.
+1	А	а	CCONJ	_	_	5	cc	_	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	_	_
+3	Все	весь	DET	_	Case=Nom|Number=Plur	4	amod	_	_
+4	мы	мы	PRON	_	Case=Nom|Number=Plur|Person=1	5	nsubj	_	_
+5	знаем	знать	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	_	_
+7	что	что	SCONJ	_	_	5	mark	_	_
+8	личность	личность	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	9	nsubj	_	_
+9	формируется	формироваться	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	5	advcl	_	_
+10	только	только	PART	_	_	12	advmod	_	_
+11	в	в	ADP	_	_	12	case	_	_
+12	диалоге	диалог	NOUN	_	Animacy=Inan|Case=Loc|Gender=Masc|Number=Sing	9	obl	_	_
+13	с	с	ADP	_	_	14	case	_	_
+14	жизнью	жизнь	NOUN	_	Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing	12	nmod	_	SpaceAfter=No
+15	,	,	PUNCT	_	_	14	punct	_	_
+16	откликаясь	откликаться	VERB	_	Aspect=Imp|Tense=Pres|VerbForm=Conv|Voice=Mid	9	advcl	_	_
+17	на	на	ADP	_	_	19	case	_	_
+18	ее	она	PRON	_	Case=Gen|Gender=Fem|Number=Sing|Person=3	19	nmod	_	_
+19	вопросы	вопрос	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	16	obl	_	SpaceAfter=No
+20	.	.	PUNCT	_	_	19	punct	_	_
+
+# sent_id = 2
+# text = Мы привыкли анализировать, как происходит это формирование.
+1	Мы	мы	PRON	_	Case=Nom|Number=Plur|Person=1	2	nsubj	_	_
+2	привыкли	привыкать	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	анализировать	анализировать	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Act	2	xcomp	_	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	_	_
+5	как	как	ADV	_	Degree=Pos	6	advmod	_	_
+6	происходит	происходить	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	ccomp	_	_
+7	это	это	DET	_	Case=Acc|Gender=Neut|Number=Sing	8	amod	_	_
+8	формирование	формирование	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	6	obj	_	SpaceAfter=No
+9	.	.	PUNCT	_	_	8	punct	_	_
+
+# sent_id = 3
+# text = Иногда задаемся вопросом: почему оно происходит?
+1	Иногда	иногда	ADV	_	Degree=Pos	2	advmod	_	_
+2	задаемся	задаться	VERB	_	Aspect=Imp|Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Mid	0	root	_	_
+3	вопросом	вопрос	NOUN	_	Animacy=Inan|Case=Ins|Gender=Masc|Number=Sing	2	obl	_	SpaceAfter=No
+4	:	:	PUNCT	_	_	3	punct	_	_
+5	почему	почему	ADV	_	Degree=Pos	7	advmod	_	_
+6	оно	оно	PRON	_	Case=Nom|Gender=Neut|Number=Sing|Person=3	7	nsubj	_	_
+7	происходит	происходить	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	dep	_	SpaceAfter=No
+8	?	?	PUNCT	_	_	7	punct	_	_
+
+# sent_id = 4
+# text = Но забыли о главном: для чего оно происходит?
+1	Но	но	CCONJ	_	_	2	cc	_	_
+2	забыли	забывать	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	о	о	ADP	_	_	4	case	_	_
+4	главном	главное	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	2	obl	_	SpaceAfter=No
+5	:	:	PUNCT	_	_	4	punct	_	_
+6	для	для	ADP	_	_	7	case	_	_
+7	чего	что	PRON	_	Case=Gen	9	obl	_	_
+8	оно	оно	PRON	_	Case=Nom|Gender=Neut|Number=Sing|Person=3	9	nsubj	_	_
+9	происходит	происходить	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	parataxis	_	SpaceAfter=No
+10	?	?	PUNCT	_	_	9	punct	_	_
+
+# sent_id = 5
+# text = Так вот, для чего обществу, шире — социально-историческому процессу — нужна личность?
+1	Так	так	ADV	_	Degree=Pos	15	parataxis	_	_
+2	вот	вот	PART	_	_	1	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	_	_
+4	для	для	ADP	_	_	5	case	_	_
+5	чего	что	PRON	_	Case=Gen	15	nmod	_	_
+6	обществу	общество	NOUN	_	Animacy=Inan|Case=Dat|Gender=Neut|Number=Sing	15	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	_	_
+8	шире	широкий	ADJ	_	Degree=Cmp	6	conj	_	_
+9	—	—	PUNCT	_	_	8	punct	_	_
+10	социально	социальный	ADJ	_	Degree=Pos	12	compound	_	SpaceAfter=No
+11	-	-	PUNCT	_	_	10	punct	_	SpaceAfter=No
+12	историческому	исторический	ADJ	_	Case=Dat|Degree=Pos|Gender=Masc|Number=Sing	13	amod	_	_
+13	процессу	процесс	NOUN	_	Animacy=Inan|Case=Dat|Gender=Masc|Number=Sing	8	nmod	_	_
+14	—	—	PUNCT	_	_	13	punct	_	_
+15	нужна	нужный	ADJ	_	Degree=Pos|Gender=Fem|Number=Sing|Variant=Short	0	root	_	_
+16	личность	личность	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	15	nsubj	_	SpaceAfter=No
+17	?	?	PUNCT	_	_	16	punct	_	SpacesAfter=\n
+
+# sent_id = 6
+# text = Увы, сейчас буквально вся психологическая наука втянулась в какое-то коллекционирование личностных черт, конституций, типов темперамента.
+1	Увы	увы	ADV	_	Degree=Pos	8	parataxis	_	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	_	_
+3	сейчас	сейчас	ADV	_	Degree=Pos	8	advmod	_	_
+4	буквально	буквально	ADV	_	Degree=Pos	8	advmod	_	_
+5	вся	весь	DET	_	Case=Nom|Gender=Fem|Number=Sing	7	amod	_	_
+6	психологическая	психологический	ADJ	_	Case=Nom|Degree=Pos|Gender=Fem|Number=Sing	7	amod	_	_
+7	наука	наука	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	8	nsubj	_	_
+8	втянулась	втянуться	VERB	_	Aspect=Perf|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Mid	0	root	_	_
+9	в	в	ADP	_	_	11	case	_	_
+10	какое-то	какой-то	ADJ	_	Case=Acc|Degree=Pos|Gender=Neut|Number=Sing	11	amod	_	_
+11	коллекционирование	коллекционирование	NOUN	_	Animacy=Inan|Case=Acc|Gender=Neut|Number=Sing	8	obl	_	_
+12	личностных	личностный	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	13	amod	_	_
+13	черт	черта	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	11	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	_	_	13	punct	_	_
+15	конституций	конституция	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	13	conj	_	SpaceAfter=No
+16	,	,	PUNCT	_	_	15	punct	_	_
+17	типов	тип	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	13	conj	_	_
+18	темперамента	темперамент	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	17	nmod	_	SpaceAfter=No
+19	.	.	PUNCT	_	_	18	punct	_	_
+
+# sent_id = 7
+# text = Мы словно включились в игру «кто больше», создавая списки «параметров личности», иногда до 170 характеристик.
+1	Мы	мы	PRON	_	Case=Nom|Number=Plur|Person=1	3	nsubj	_	_
+2	словно	словно	PART	_	_	3	advmod	_	_
+3	включились	включаться	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin|Voice=Mid	0	root	_	_
+4	в	в	ADP	_	_	5	case	_	_
+5	игру	игра	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	3	obl	_	_
+6	«кто	«ктый	PRON	_	Case=Nom	3	nsubj	_	_
+7	больше»	больше»	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	6	amod	_	SpaceAfter=No
+8	,	,	PUNCT	_	_	7	punct	_	_
+9	создавая	создавать	VERB	_	Aspect=Imp|Tense=Pres|VerbForm=Conv|Voice=Act	6	advcl	_	_
+10	списки	список	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Plur	9	obj	_	_
+11	«параметров	«параметр	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Plur	10	nmod	_	_
+12	личности»	личности»	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	11	amod	_	SpaceAfter=No
+13	,	,	PUNCT	_	_	12	punct	_	_
+14	иногда	иногда	ADV	_	Degree=Pos	9	advmod	_	_
+15	до	до	ADP	_	_	17	case	_	_
+16	170	170	NUM	_	_	17	nummod	_	_
+17	характеристик	характеристика	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	9	obl	_	SpaceAfter=No
+18	.	.	PUNCT	_	_	17	punct	_	SpacesAfter=\n
+
+# sent_id = 8
+# text = З: Я уверен, что уже пришла пора оставить поиск лучшей из возможных дефиниций.
+1	З	за	ADV	_	Degree=Pos	0	root	_	SpaceAfter=No
+2	:	:	PUNCT	_	_	1	punct	_	_
+3	Я	я	PRON	_	Case=Nom|Number=Sing|Person=1	4	nsubj	_	_
+4	уверен	уверенный	ADJ	_	Degree=Pos|Gender=Masc|Number=Sing|Variant=Short	1	parataxis	_	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	_	_
+6	что	что	SCONJ	_	_	4	mark	_	_
+7	уже	уже	ADV	_	Degree=Pos	8	advmod	_	_
+8	пришла	приходить	VERB	_	Aspect=Perf|Gender=Fem|Mood=Ind|Number=Sing|Tense=Past|VerbForm=Fin|Voice=Act	4	advcl	_	_
+9	пора	пора	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	8	nsubj	_	_
+10	оставить	оставлять	VERB	_	Aspect=Perf|VerbForm=Inf|Voice=Act	8	xcomp	_	_
+11	поиск	поиск	NOUN	_	Animacy=Inan|Case=Acc|Gender=Masc|Number=Sing	10	obj	_	_
+12	лучшей	лучший	ADJ	_	Case=Gen|Degree=Pos|Gender=Fem|Number=Sing	11	nmod	_	_
+13	из	из	ADP	_	_	15	case	_	_
+14	возможных	возможный	ADJ	_	Case=Gen|Degree=Pos|Number=Plur	15	amod	_	_
+15	дефиниций	дефиниция	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	12	nmod	_	SpaceAfter=No
+16	.	.	PUNCT	_	_	15	punct	_	_
+
+# sent_id = 9
+# text = Я убежден, что личность начинается с первого свободного действия, с первого поступка, а необходима она как особый инструмент для того, чтобы разбираться в поле существующих возможностей поведения.
+1	Я	я	PRON	_	Case=Nom|Number=Sing|Person=1	2	nsubj	_	_
+2	убежден	убежденный	ADJ	_	Degree=Pos|Gender=Masc|Number=Sing|Variant=Short	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	_	_
+4	что	что	SCONJ	_	_	2	mark	_	_
+5	личность	личность	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	6	nsubj	_	_
+6	начинается	начинаться	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	2	advcl	_	_
+7	с	с	ADP	_	_	10	case	_	_
+8	первого	первый	ADJ	_	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	10	amod	_	_
+9	свободного	свободный	ADJ	_	Case=Gen|Degree=Pos|Gender=Neut|Number=Sing	10	amod	_	_
+10	действия	действие	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	6	obl	_	SpaceAfter=No
+11	,	,	PUNCT	_	_	10	punct	_	_
+12	с	с	ADP	_	_	14	case	_	_
+13	первого	первый	ADJ	_	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	14	amod	_	_
+14	поступка	поступок	NOUN	_	Animacy=Inan|Case=Gen|Gender=Masc|Number=Sing	10	conj	_	SpaceAfter=No
+15	,	,	PUNCT	_	_	14	punct	_	_
+16	а	а	CCONJ	_	_	17	cc	_	_
+17	необходима	необходимый	ADJ	_	Degree=Pos|Gender=Fem|Number=Sing|Variant=Short	6	conj	_	_
+18	она	она	PRON	_	Case=Nom|Gender=Fem|Number=Sing|Person=3	17	nsubj	_	_
+19	как	как	SCONJ	_	_	21	cc	_	_
+20	особый	особый	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing	21	amod	_	_
+21	инструмент	инструмент	NOUN	_	Animacy=Inan|Case=Nom|Gender=Masc|Number=Sing	17	advmod	_	_
+22	для	для	ADP	_	_	23	case	_	_
+23	того	то	PRON	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	21	nmod	_	SpaceAfter=No
+24	,	,	PUNCT	_	_	23	punct	_	_
+25	чтобы	чтобы	SCONJ	_	Mood=Cnd	23	mark	_	_
+26	разбираться	разбираться	VERB	_	Aspect=Imp|VerbForm=Inf|Voice=Mid	23	advcl	_	_
+27	в	в	ADP	_	_	28	case	_	_
+28	поле	поле	NOUN	_	Animacy=Inan|Case=Loc|Gender=Neut|Number=Sing	26	obl	_	_
+29	существующих	существовать	VERB	_	Aspect=Imp|Case=Gen|Number=Plur|Tense=Pres|VerbForm=Part|Voice=Act	30	amod	_	_
+30	возможностей	возможность	NOUN	_	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	28	nmod	_	_
+31	поведения	поведение	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	30	nmod	_	SpaceAfter=No
+32	.	.	PUNCT	_	_	31	punct	_	_
+
+# sent_id = 10
+# text = А это, в свою очередь, необходимо уже и обществу.
+1	А	а	CCONJ	_	_	8	cc	_	_
+2	это	это	PRON	_	Animacy=Inan|Case=Nom|Gender=Neut|Number=Sing	8	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	_	_
+4	в	в	ADP	_	_	6	case	_	_
+5	свою	свой	DET	_	Case=Acc|Gender=Fem|Number=Sing	6	amod	_	_
+6	очередь	очередь	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Sing	8	parataxis	_	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	_	_
+8	необходимо	необходимый	ADJ	_	Degree=Pos|Gender=Neut|Number=Sing|Variant=Short	0	root	_	_
+9	уже	уже	ADV	_	Degree=Pos	11	advmod	_	_
+10	и	и	PART	_	_	11	advmod	_	_
+11	обществу	общество	NOUN	_	Animacy=Inan|Case=Dat|Gender=Neut|Number=Sing	8	advcl	_	SpaceAfter=No
+12	.	.	PUNCT	_	_	11	punct	_	_
+
+# sent_id = 11
+# text = Личность, расширяя свои возможности, расширяет возможности общества.
+1	Личность	личность	NOUN	_	Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing	7	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	_	_
+3	расширяя	расширять	VERB	_	Aspect=Imp|Tense=Pres|VerbForm=Conv|Voice=Act	7	advcl	_	_
+4	свои	свой	DET	_	Case=Acc|Number=Plur	5	amod	_	_
+5	возможности	возможность	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Plur	3	obj	_	SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	_	_
+7	расширяет	расширять	VERB	_	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	возможности	возможность	NOUN	_	Animacy=Inan|Case=Acc|Gender=Fem|Number=Plur	7	obj	_	_
+9	общества	общество	NOUN	_	Animacy=Inan|Case=Gen|Gender=Neut|Number=Sing	8	nmod	_	SpaceAfter=No
+10	.	.	PUNCT	_	_	9	punct	_	SpacesAfter=\n
+
