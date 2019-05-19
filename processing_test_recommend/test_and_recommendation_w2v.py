@@ -5,8 +5,6 @@ import random
 import numpy as np
 from sklearn.model_selection import train_test_split
 
-import random
-import numpy as np
 
 from collections import OrderedDict
 from sklearn.linear_model import LinearRegression, LogisticRegression
@@ -15,6 +13,9 @@ from sklearn.linear_model import Perceptron, SGDRegressor
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 from statistics import mean
+
+from keras.models import Sequential
+from keras.layers import Dense
 
 class user_vector:
     def __init__(self,debug = False):
@@ -74,7 +75,7 @@ class user_vector:
         current_sentence_features.append(sentence_map['spec_sentence_features']['deepr'])
         current_sentence_features.append(sentence_map['spec_sentence_features']['case_complexity'])
         current_sentence_features.append(sentence_map['spec_sentence_features']['mean_depend_length'])
-        current_sentence_features.extend(sentence_map['average_vocabulary'])
+        #current_sentence_features.extend(sentence_map['average_vocabulary'])
         current_sentence_features.append(answer_value)#target variable
         self.sentence_features.append(current_sentence_features)
         
@@ -152,6 +153,15 @@ class user_vector:
         linreg_accuracy = rf_vocab.score(X_test, y_test)
         
         vocab_model = rf_vocab
+        
+        model = Sequential()
+        model.add(Dense(12, input_dim=300, activation='relu'))
+        model.add(Dense(8, activation='relu'))
+        model.add(Dense(1, activation='sigmoid'))
+        model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+        model.fit(X_train, y_train, epochs=150, batch_size=10)
+        y_test = model.predict(X_test)
+        keras.metrics.categorical_accuracy(y_true, y_pred)
         
         if self.debug:
             print("SGDRegressor model trained with accuracy = ", accuracy)

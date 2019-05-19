@@ -82,11 +82,14 @@ def get_tf_idf_dict(lemm_text_list, save_to_csv = False):
     
 def get_verb_prop(word, morph):
     analysis = morph.parse(word)[0]
-    if (analysis.tag.POS == 'GRND' ):
-        return 'GRND'
-    elif("PRT" in analysis.tag.POS):
-        return 'PRT'
-    else:
+    try: 
+        if (analysis.tag.POS == 'GRND' ):
+            return 'GRND'
+        elif("PRT" in analysis.tag.POS):
+            return 'PRT'
+        else:
+            return None
+    except:
         return None
         
 def create_map(conllu_map, tf_idf_dict):
@@ -135,7 +138,7 @@ def get_dependencies (conllu_map, text_map_input):
         one_sentence_map = OrderedDict([("spec_sentence_features",(OrderedDict([("negation", 0),('coreference',0),("vozvr_verb",0),("total_vozvr",0),
                                                                                 ("prich",0),("total_prich",0),("deepr",0),("total_deepr",0),
                                                                        ("case_complexity",0),("total_case",0)]))), ("syntax_prop",OrderedDict()), 
-                                        ("average_vocabulary", []), ("sentence_words", [])])
+                                         ("sentence_words", [])])#("average_vocabulary", []),
                                         
         dep_dict = {}
         nominal2real_index_dict = {}
@@ -192,10 +195,8 @@ def update_with_lex_vector(sentence_map_input):
                 right_index = word_index + 1
                 if left_index < 0:
                     left_vector = 300 * [0]
-                if right_index > len(sentence['sentence_words']):
-                    right_vector = 300 * [1]
-                if np.any(sentence['sentence_words'][left_index]['lex_vector'] == None):
-                    print("LEFT NONE DETECTED")
+                elif (np.any(sentence['sentence_words'][left_index]['lex_vector'] == None)):
+                    #print("LEFT NONE DETECTED")
                     NONE_DETECT = True
                     for other_ind in range(left_index-2, -1, -1):
                         if other_ind == -1:
@@ -205,11 +206,14 @@ def update_with_lex_vector(sentence_map_input):
                             break
                 else:
                     left_vector = sentence['sentence_words'][left_index]['lex_vector']
-                if np.any(sentence['sentence_words'][right_index]['lex_vector'] == None):
-                    print("RIGHT NONE DETECTED")
+                    
+                if right_index >= len(sentence['sentence_words']):
+                    right_vector = 300 * [1]
+                elif np.any(sentence['sentence_words'][right_index]['lex_vector'] == None):
+                    #print("RIGHT NONE DETECTED")
                     NONE_DETECT = True
-                    for other_ind in range(right_index+2, len(sentence['sentence_words']) + 1):
-                        if other_ind == len(sentence['sentence_words']) + 1:
+                    for other_ind in range(right_index+2, len(sentence['sentence_words'])):
+                        if other_ind == len(sentence['sentence_words']):
                             right_vector = 300 * [1] 
                         if not np.any(sentence['sentence_words'][other_ind]['lex_vector'] == None):
                             right_vector = sentence['sentence_words'][other_ind]['lex_vector']
@@ -218,7 +222,7 @@ def update_with_lex_vector(sentence_map_input):
                     right_vector = sentence['sentence_words'][right_index]['lex_vector']
                 
                 sentence['sentence_words'][word_index]['lex_vector'] = (left_vector + right_vector) / 2
-                if NONE_DETECT: print(sentence['sentence_words'][word_index]['lex_vector'])
+                #if NONE_DETECT: print(sentence['sentence_words'][word_index]['lex_vector'])
     return sentence_map 
     
 def increment_dict(dict_name, property_name, value):
@@ -285,9 +289,11 @@ def features_extraction(sentence_map_input):
                 previous_word_is_noun = False
         
         current_sentence_vocab_vectors = np.matrix(current_sentence_vocab_vectors)
+        """
         mean_sentence_vocab_vector = current_sentence_vocab_vectors.mean(0)
         mean_sentence_vocab_vector = mean_sentence_vocab_vector.tolist()
         sentence['average_vocabulary'] = mean_sentence_vocab_vector[0]
+        """
     return sentence_map
     
 def calculate_lix_from_list_of_sentences(processed_text_sentences):
@@ -379,9 +385,12 @@ def text_features_cal(sentence_map, orig_sentences_list, lemm_sentences_list):
     
     return text_map
 
-def get_text_map(text):
+def get_text_map(text, raw_text_input = False):
     model = Model('./udpipe parsers/russian-syntagrus-ud-2.0-170801.udpipe')
-    raw_text = read_text(text)
+    if raw_text_input:
+        raw_text = text 
+    else:
+        raw_text = read_text(text)
     conllu = get_conllu_from_unite_line_text(raw_text, model)
     conllu_text_map = get_conllu_text_map(conllu)
     lemm_sentences,sentences_list = get_lemm_and_orig_text_from_udmap(conllu_text_map)
@@ -393,7 +402,7 @@ def get_text_map(text):
     json_text_map = text_features_cal(sentence_map_feat, sentences_list, lemm_sentences)
     return json_text_map
 
-    
+"""    
 json_text_map = get_text_map("./text_8.txt")
 print( json_text_map['sent_properties'])
 
@@ -405,7 +414,7 @@ for sent in json_text_map['sentences_map']:
         print(word['word'],word['vocabulary_prop'], word['grammar_prop'])
         print("\n")
     print ("====================")
-    
+"""    
 
 
     

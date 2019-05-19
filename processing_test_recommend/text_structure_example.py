@@ -17,12 +17,15 @@ text_map = OrderedDict([("lix", 0),
 
 {   "LIX": value,
     "Type_Token_Ration": value,
-    "sentences_map": [{"special_sentence_features": {"percentage_of_difficult_language_objects":value, 
-                                                   "percentage_of_difficult_POS":value, 
-                                                   "mean_syntax dependncies":value},
-                     
-                    "sentence_words":[{"original_word": word, "lemma":lemma, "importance" : tf_idf, "grammar_prop": POS, "lex_vector": word2vec}, 
-                                      { ... }]},
+    "sentences_map": [{"special_sentence_features": 
+                            {"percentage_of_difficult_language_objects":value, 
+                           "percentage_of_difficult_POS":value, 
+                           "mean_syntax dependncies":value},
+                    "sentence_words":
+                            [{"original_word": word, 
+                            "lemma":lemma, "importance" : tf_idf, 
+                            "grammar_prop": POS, "lex_vector": word2vec}, 
+                            { ... }]},
                        {...}]
   } 
   
