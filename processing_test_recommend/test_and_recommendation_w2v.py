@@ -123,7 +123,16 @@ class user_vector:
             else:
                 current_lex_vector.append(-1 * un_unit[1])
                 self.vocab_features.append(current_lex_vector)
-                
+     
+    def export_user_db(self):
+        words_db = np.array([np.array(word) for word in self.vocab_features])
+        np.savetxt('word_db.csv', words_db, delimiter=',') 
+        
+        sentence_db = np.array([np.array(sent) for sent in self.sentence_features])
+        np.savetxt('sentence_db.csv', sentence_db, delimiter=',') 
+        
+        text_db = np.array([np.array(text) for text in self.text_fearues])
+        np.savetxt('text_db.csv', text_db, delimiter=',') 
     def export_user_vector(self):
         #vocabulary vector
         
