@@ -20,6 +20,22 @@ import pymorphy2
 
 from ud_class import Model
 
+import simplejson
+
+class PrettyFloat(float):
+    def __repr__(self):
+        return '%.15g' % self
+
+def pretty_floats(obj):
+    if isinstance(obj, float):
+        return PrettyFloat(obj)
+    elif isinstance(obj, dict):
+        return dict((k, pretty_floats(v)) for k, v in obj.items())
+    elif isinstance(obj, (list, tuple)):
+        return list(map(pretty_floats, obj)) # in Python3 do: list(map(pretty_floats, obj))
+    return obj
+
+
 fasttext = FastTextKeyedVectors.load("D:/fasttext_word2vec/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
 
 def read_text(path):
@@ -158,7 +174,7 @@ def get_dependencies (conllu_map, text_map_input):
         for word in sentence:
             if (word[3] != 'PUNCT'):
                 head_nominal_index = word[6]
-                if (int(head_nominal_index) != 0):
+                if (int(head_nominal_index) != 0 and int(head_nominal_index) in nominal2real_index_dict):
                     current_element_real_index = nominal2real_index_dict[word[0]]
                     head_element_real_index = nominal2real_index_dict[head_nominal_index]
                     distance = abs(current_element_real_index - head_element_real_index)
@@ -185,44 +201,81 @@ def update_with_lex_vector(sentence_map_input):
                 word_vector = None
                 #words_not_found += 1
             word['lex_vector'] = word_vector
-    #if some vectors not found        
+    #if some vectors not found  make average  
+    #then average thirgram
     for sentence in sentence_map:
         for word_index in range(len(sentence['sentence_words'])):
             NONE_DETECT = False
+            left_is_beginning = False
+            right_is_end = False
             #print(len(sentence['sentence_words'][word_index]['lex_vector']))
             if np.any(sentence['sentence_words'][word_index]['lex_vector'] == None):
-                left_index = word_index - 1
-                right_index = word_index + 1
-                if left_index < 0:
-                    left_vector = 300 * [0]
-                elif (np.any(sentence['sentence_words'][left_index]['lex_vector'] == None)):
-                    #print("LEFT NONE DETECTED")
-                    NONE_DETECT = True
-                    for other_ind in range(left_index-2, -1, -1):
-                        if other_ind == -1:
-                            left_vector = 300 * [0] 
-                        if not np.any(sentence['sentence_words'][other_ind]['lex_vector'] == None):
-                            left_vector = sentence['sentence_words'][other_ind]['lex_vector']
-                            break
-                else:
-                    left_vector = sentence['sentence_words'][left_index]['lex_vector']
-                    
-                if right_index >= len(sentence['sentence_words']):
-                    right_vector = 300 * [1]
-                elif np.any(sentence['sentence_words'][right_index]['lex_vector'] == None):
-                    #print("RIGHT NONE DETECTED")
-                    NONE_DETECT = True
-                    for other_ind in range(right_index+2, len(sentence['sentence_words'])):
-                        if other_ind == len(sentence['sentence_words']):
-                            right_vector = 300 * [1] 
-                        if not np.any(sentence['sentence_words'][other_ind]['lex_vector'] == None):
-                            right_vector = sentence['sentence_words'][other_ind]['lex_vector']
-                            break
-                else:
-                    right_vector = sentence['sentence_words'][right_index]['lex_vector']
+                NONE_DETECT = True
                 
-                sentence['sentence_words'][word_index]['lex_vector'] = (left_vector + right_vector) / 2
-                #if NONE_DETECT: print(sentence['sentence_words'][word_index]['lex_vector'])
+            left_index = word_index - 1
+            right_index = word_index + 1
+            if left_index < 0:
+                left_word = "["
+                left_is_beginning = True
+            elif (np.any(sentence['sentence_words'][left_index]['lex_vector'] == None)):
+                #print("LEFT NONE DETECTED")
+                #NONE_DETECT = True
+                for other_ind in range(left_index-2, -1, -1):
+                    if other_ind == -1:
+                        left_word = "["
+                        left_is_beginning = True
+                    if not np.any(sentence['sentence_words'][other_ind]['lex_vector'] == None):
+                        left_word = sentence['sentence_words'][other_ind]['word']
+                        left_vector = sentence['sentence_words'][other_ind]['lex_vector']
+                        break
+            else:
+                left_word = sentence['sentence_words'][left_index]['word']
+                left_vector = sentence['sentence_words'][left_index]['lex_vector']
+                
+            if right_index >= len(sentence['sentence_words']):
+                right_word = "]"
+                right_is_end = True
+            elif np.any(sentence['sentence_words'][right_index]['lex_vector'] == None):
+                #print("RIGHT NONE DETECTED")
+                #NONE_DETECT = True
+                for other_ind in range(right_index+2, len(sentence['sentence_words'])):
+                    if other_ind == len(sentence['sentence_words']):
+                        right_is_end = True
+                        right_word = "]"
+                    if not np.any(sentence['sentence_words'][other_ind]['lex_vector'] == None):
+                        right_word = sentence['sentence_words'][other_ind]['word']
+                        right_vector = sentence['sentence_words'][other_ind]['lex_vector']
+                        break
+            else:
+                right_word = sentence['sentence_words'][right_index]['word']
+                right_vector = sentence['sentence_words'][right_index]['lex_vector']
+                
+            
+                
+            if NONE_DETECT:  
+                #if any of vectorsabsent neglect this one
+                try:
+                    #sentence['sentence_words'][word_index]['lex_vector'] = pretty_floats(list(( np.asarray(left_vector, dtype=float) + np.asarray(right_vector, dtype=float)) / 2))
+                    sentence['sentence_words'][word_index]['lex_vector'] = (left_vector + right_vector)/2
+                except:
+                    sentence['sentence_words'][word_index]['lex_vector'] = np.array([0] * 300)
+            elif left_is_beginning and not right_is_end:
+                curr_word_vect = sentence['sentence_words'][word_index]['lex_vector']
+                #sentence['sentence_words'][word_index]['lex_vector'] = pretty_floats(list((curr_word_vect + right_vector)/2))
+                sentence['sentence_words'][word_index]['lex_vector'] = (curr_word_vect + right_vector)/2
+            elif not left_is_beginning and  right_is_end:
+                curr_word_vect = sentence['sentence_words'][word_index]['lex_vector']
+                #sentence['sentence_words'][word_index]['lex_vector'] = pretty_floats(list((left_vector + curr_word_vect )/2))
+                sentence['sentence_words'][word_index]['lex_vector'] = (left_vector + curr_word_vect )/2
+            elif left_is_beginning and right_is_end:
+                #keep original vector
+                pass
+            else:
+                curr_word_vect = sentence['sentence_words'][word_index]['lex_vector']
+                #sentence['sentence_words'][word_index]['lex_vector'] = pretty_floats(list((left_vector + curr_word_vect + right_vector)/3))
+                sentence['sentence_words'][word_index]['lex_vector'] = (left_vector + curr_word_vect + right_vector)/3
+            trigram = left_word + ' ' + sentence['sentence_words'][word_index]['word'] + ' ' + right_word
+            sentence['sentence_words'][word_index]['lex_trigram'] = trigram
     return sentence_map 
     
 def increment_dict(dict_name, property_name, value):
@@ -241,7 +294,7 @@ def features_extraction(sentence_map_input):
         current_sentence_vocab_vectors = []
         
         if (len(sentence['syntax_prop']['distances_list']) > 0):
-            sentence['spec_sentence_features']['mean_depend_length'] = mean(sentence['syntax_prop']['distances_list'])
+            sentence['spec_sentence_features']['mean_depend_length'] = mean(sentence['syntax_prop']['distances_list']) * 0.1
         else:
             sentence['spec_sentence_features']['mean_depend_length'] = 0
         
@@ -328,7 +381,7 @@ def text_features_cal(sentence_map, orig_sentences_list, lemm_sentences_list):
     
     lix = calculate_lix_from_list_of_sentences(orig_sentences_list)
     ttr = calculate_type_token_ratio(lemm_sentences_list)
-    text_map['lix'] = lix
+    text_map['lix'] = lix *0.01
     text_map['ttr'] = ttr
     
     #

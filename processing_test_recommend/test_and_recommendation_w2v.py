@@ -25,6 +25,7 @@ class user_vector:
         #coreference_items, negation_items, sent_special_pos, dependencies_length, Y (answer)                   
         self.text_fearues = [] #OrderedDict([("lix",[]),("ttr",[])])
         self.answers_count = OrderedDict([("correct_answers",0),("incorrect_answers",0)])
+        self.trigramms_list = []
         
     def start_new_text(self):
         self.answers_count['correct_answers'] = 0
@@ -91,7 +92,7 @@ class user_vector:
         for word_w in sentence_map['sentence_words']:
             understanding_importance = word_w['vocabulary_prop']['tf_idf']
             understanding_importance_sum += understanding_importance
-            understanding_importance_list.append([word_w['lemma'], understanding_importance,word_w['lex_vector']])
+            understanding_importance_list.append([word_w['lemma'], understanding_importance,word_w['lex_vector'],word_w['lex_trigram']])
             
         for un_unit in understanding_importance_list:
             if(understanding_importance_sum > 0):
@@ -101,7 +102,7 @@ class user_vector:
         
         for unit_index in range(len(understanding_importance_list) ):
             current_element = understanding_importance_list[unit_index][2]
-            
+            """
             left_unit_index = unit_index - 1
             if left_unit_index <0:
                 left_element = 300 * [0] 
@@ -112,19 +113,28 @@ class user_vector:
                 right_element = 300 * [1]
             else:
                 right_element = understanding_importance_list[right_unit_index][2]
+             """   
             current_lex_vector = []
             #print("current_element", current_element)
-            current_lex_vector.extend((left_element + current_element + right_element)/3)
+            current_lex_vector.extend(current_element)
             
             if (correct_answer): 
-                current_lex_vector.append(un_unit[1])
+                current_lex_vector.append(understanding_importance_list[unit_index][1])
+                self.trigramms_list.append(understanding_importance_list[unit_index][3])
+                #current_lex_vector.append(understanding_importance_list[unit_index][3])
                 self.vocab_features.append(current_lex_vector)
                 #print("current_lex_vector", current_lex_vector)
             else:
-                current_lex_vector.append(-1 * un_unit[1])
+                current_lex_vector.append(-1 * understanding_importance_list[unit_index][1])
+                self.trigramms_list.append(understanding_importance_list[unit_index][3])
+                #current_lex_vector.append(understanding_importance_list[unit_index][3])
                 self.vocab_features.append(current_lex_vector)
      
     def export_user_db(self):
+        with open ("trigramm_db.txt", "w", encoding = "utf-8") as f:
+            for trig in self.trigramms_list:
+                f.write(trig + '\n')
+                
         words_db = np.array([np.array(word) for word in self.vocab_features])
         np.savetxt('word_db.csv', words_db, delimiter=',') 
         

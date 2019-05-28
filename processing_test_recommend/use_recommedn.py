@@ -45,8 +45,7 @@ answer_dict = {"222" :['0-' ,'1-' ,'2+' ,'4+'],
 "611":['1+'],
 "251":['5-', '4+', '2+', '1+', '3+']}
 
-texts = [file_name for file_name in os.listdir("./for_test/") if file_name.endswith(".txt")]
-print(texts)
+
 
 texts_ind_list = [222,862,321, 364, 502, 878, 666,92, 615, 450, 722, 732, 611, 251]
 texts = pd.read_csv("3000.csv")
