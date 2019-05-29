@@ -5,11 +5,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import pandas as pd
 from gensim.models.keyedvectors import FastTextKeyedVectors
 from collections import OrderedDict
-
 import copy
 
 import re
-
 from statistics import mean 
 import numpy as np
 
@@ -22,7 +20,8 @@ from ud_class import Model
 
 
 
-fasttext = FastTextKeyedVectors.load("D:/fasttext_word2vec/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
+#fasttext = FastTextKeyedVectors.load("D:/fasttext_word2vec/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
+fasttext = FastTextKeyedVectors.load("/Users/lilyakhoang/input/araneum_none_fasttextskipgram_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
 
 def read_text(path):
     raw_text = ''
