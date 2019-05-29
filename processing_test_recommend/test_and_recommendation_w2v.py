@@ -130,19 +130,22 @@ class user_vector:
                 #current_lex_vector.append(understanding_importance_list[unit_index][3])
                 self.vocab_features.append(current_lex_vector)
      
-    def export_user_db(self):
+    def export_user_db(learner_id, self):
         with open ("trigramm_db.txt", "w", encoding = "utf-8") as f:
             for trig in self.trigramms_list:
                 f.write(trig + '\n')
                 
         words_db = np.array([np.array(word) for word in self.vocab_features])
-        np.savetxt('word_db.csv', words_db, delimiter=',') 
+        word_db_path = learner_id + '_word_db.csv'
+        np.savetxt(word_db_path, words_db, delimiter=',') 
         
         sentence_db = np.array([np.array(sent) for sent in self.sentence_features])
-        np.savetxt('sentence_db.csv', sentence_db, delimiter=',') 
+        sentence_db_path = learner_id + '_sentence_db.csv'
+        np.savetxt(sentence_db_path, sentence_db, delimiter=',') 
         
         text_db = np.array([np.array(text) for text in self.text_fearues])
-        np.savetxt('text_db.csv', text_db, delimiter=',') 
+        text_db_path = learner_id + '_text_db.csv'
+        np.savetxt(text_db_path, text_db, delimiter=',') 
     def export_user_vector(self):
         #vocabulary vector
         

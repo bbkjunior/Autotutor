@@ -45,7 +45,7 @@ answer_dict = {"222" :['0-' ,'1-' ,'2+' ,'4+'],
 "611":['1+'],
 "251":['5-', '4+', '2+', '1+', '3+']}
 
-
+user_id = "vasya_pupkin"
 
 texts_ind_list = [222,862,321, 364, 502, 878, 666,92, 615, 450, 722, 732, 611, 251]
 texts = pd.read_csv("3000.csv")
@@ -64,7 +64,7 @@ for txt_ind in texts_ind_list:
         print("sentence_ind", sentence_ind, "correctness", correctness)
         user.update_vector_with_answer_sentence(text_map['sentences_map'][int(sentence_ind)],correctness)
     user.end_text(text_map)
-user.export_user_db()
+user.export_user_db(user_id)
 
 """
     user.start_new_text()
