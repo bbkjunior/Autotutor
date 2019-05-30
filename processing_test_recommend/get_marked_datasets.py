@@ -1,23 +1,22 @@
 from test_and_recommendation_w2v import user_vector
-from text_processing_udpipe_w2v import get_text_map
+#from text_processing_udpipe_w2v import get_text_map
 import os
 from random import randint
 import random
 import numpy as np
 import pandas as pd
-
+import json
 
 """
-from collections import OrderedDict
-from sklearn.linear_model import LinearRegression, LogisticRegression
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.linear_model import Perceptron, SGDRegressor
-from sklearn.metrics import accuracy_score
-from sklearn.model_selection import train_test_split
-from statistics import mean
+import argparse
+parser = argparse.ArgumentParser(add_help=True)
+parser.add_argument('answers_json', help='path to the file with raw text')
+args = parser.parse_args()
 """
+#with open(args.answers_json, encoding = "utf-8") as f:
+ #   answer_dict = json.load(f)
 
-user = user_vector(debug = True)
+
 """
 json_text_map = get_text_map("./text_8.txt")
 
@@ -30,6 +29,7 @@ user.update_vector_with_answer_sentence(json_text_map['sentences_map'][6],0)
 user.end_text(json_text_map)
 """
 
+"""
 answer_dict = {"222" :['0-' ,'1-' ,'2+' ,'4+'],
 "862":['1+','2-', '4+', '6-', '12-'],
 "321":['5+' ,'0-' ,'4-' ,'1+'],
@@ -44,27 +44,32 @@ answer_dict = {"222" :['0-' ,'1-' ,'2+' ,'4+'],
 "732":['8-', '0-', '3-', '4-', '2+', '1-'],
 "611":['1+'],
 "251":['5-', '4+', '2+', '1+', '3+']}
+"""
 
-user_id = "vasya_pupkin"
-
-texts_ind_list = [222,862,321, 364, 502, 878, 666,92, 615, 450, 722, 732, 611, 251]
-texts = pd.read_csv("3000.csv")
-
-for txt_ind in texts_ind_list:
-    #path = os.path.join("./for_test/", txt)
-    print(txt_ind)
-    text_map = get_text_map(texts.iloc[txt_ind]["texts_3000"], raw_text_input = True)
-    user.start_new_text()
-    answer_indexes = answer_dict[str(txt_ind)]
-    for answer in answer_indexes:
-        sentence_ind = answer[:-1]
-        correctness = answer[-1]
-        if correctness == "-":correctness = False
-        elif correctness == "+":correctness = True
-        print("sentence_ind", sentence_ind, "correctness", correctness)
-        user.update_vector_with_answer_sentence(text_map['sentences_map'][int(sentence_ind)],correctness)
-    user.end_text(text_map)
-user.export_user_db(user_id)
+def generate_user_knowledge_database(answers_dict_json):
+    with open(answers_dict_json, "r") as f:
+        answers_dict = json.load(f)
+    texts = pd.read_csv("3000.csv")
+    user_id = answers_dict['user_id']
+    user = user_vector(debug = False)
+    for txt_ind in answers_dict['answers'].keys():
+        #path = os.path.join("./for_test/", txt)
+        #print(txt_ind)
+        #text_map = get_text_map(texts.iloc[txt_ind]["texts_3000"], raw_text_input = True)
+        text_path = "./text_maps/text_" + str(txt_ind) + ".json"
+        with open(text_path, "r", encoding = "utf-8") as f:
+            text_map = json.load(f)
+        user.start_new_text()
+        answer_indexes = answers_dict['answers'][str(txt_ind)]
+        for answer in answer_indexes:
+            sentence_ind = answer[:-1]
+            correctness = answer[-1]
+            if correctness == "-":correctness = False
+            elif correctness == "+":correctness = True
+            #print("sentence_ind", sentence_ind, "correctness", correctness)
+            user.update_vector_with_answer_sentence(text_map['sentences_map'][int(sentence_ind)],correctness)
+        user.end_text(text_map)
+    user.export_user_db(user_id)
 
 """
     user.start_new_text()

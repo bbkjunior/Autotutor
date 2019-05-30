@@ -1,4 +1,4 @@
-from text_processing_udpipe_w2v import get_text_map
+#from text_processing_udpipe_w2v import get_text_map
 from ud_class import Model
 
 import random
@@ -130,7 +130,7 @@ class user_vector:
                 #current_lex_vector.append(understanding_importance_list[unit_index][3])
                 self.vocab_features.append(current_lex_vector)
      
-    def export_user_db(learner_id, self):
+    def export_user_db(self, learner_id):
         with open ("trigramm_db.txt", "w", encoding = "utf-8") as f:
             for trig in self.trigramms_list:
                 f.write(trig + '\n')
@@ -183,7 +183,7 @@ class user_vector:
         model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
         model.fit(X_train, y_train, epochs=150, batch_size=10)
         y_test = model.predict(X_test)
-        keras.metrics.categorical_accuracy(y_true, y_pred)
+        #keras.metrics.categorical_accuracy(y_true, y_pred)
         
         if self.debug:
             print("SGDRegressor model trained with accuracy = ", accuracy)
