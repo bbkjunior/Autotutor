@@ -20,20 +20,6 @@ import pymorphy2
 
 from ud_class import Model
 
-#import simplejson
-
-class PrettyFloat(float):
-    def __repr__(self):
-        return '%.15g' % self
-
-def pretty_floats(obj):
-    if isinstance(obj, float):
-        return PrettyFloat(obj)
-    elif isinstance(obj, dict):
-        return dict((k, pretty_floats(v)) for k, v in obj.items())
-    elif isinstance(obj, (list, tuple)):
-        return list(map(pretty_floats, obj)) # in Python3 do: list(map(pretty_floats, obj))
-    return obj
 
 
 #fasttext = FastTextKeyedVectors.load("D:/fasttext_word2vec/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")

@@ -1,5 +1,5 @@
 #from text_processing_udpipe_w2v import get_text_map
-from ud_class import Model
+#from ud_class import Model
 import random
 import numpy as np
 from collections import OrderedDict
@@ -144,6 +144,7 @@ class user_vector:
         text_db = np.array([np.array(text) for text in self.text_fearues])
         text_db_path = learner_id + '_text_db.csv'
         np.savetxt(text_db_path, text_db, delimiter=',') 
+    """
     def export_user_vector(self):
         #vocabulary vector
         
@@ -217,5 +218,6 @@ class user_vector:
         text_model = text_feat_reg
             
         return vocab_model, sentence_model, text_model
+        """
         
         
