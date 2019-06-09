@@ -6,6 +6,8 @@ import nltk
 from pymystem3 import Mystem
 from string import punctuation
 full_punctuation = punctuation + "–" + "," + "»" + "«" + "…" +'’'
+from nltk.metrics.association import QuadgramAssocMeasures
+
 
 
 #POS filter approach
@@ -159,23 +161,22 @@ def get_freq_colloc(text_split):
     trigramFreqTable = pd.DataFrame(list(trigram_freq), columns=['trigram','freq']).sort_values(by='freq', ascending=False)
 
     quadgram_freq = quadgramFinder.ngram_fd.items()
-    trigramFreqTable = pd.DataFrame(list(quadgram_freq), columns=['quadgramF','freq']).sort_values(by='freq', ascending=False)
+    quadragramFreqTable = pd.DataFrame(list(quadgram_freq), columns=['quadgramF','freq']).sort_values(by='freq', ascending=False)
 
-    return bigramFreqTable, trigramFreqTable, trigramFreqTable
+    return bigramFreqTable, trigramFreqTable, quadragramFreqTable
 
 def get_pmi_colloc(text_split):
     bigrams = nltk.collocations.BigramAssocMeasures()
     trigrams = nltk.collocations.TrigramAssocMeasures()
-    quadragram = nltk.metrics.QuadgramAssocMeasures
-    #quadragram = nltk.collocations.QuadgramAssocMeasures()
+    quadragram = QuadgramAssocMeasures()
 
     bigramFinder = nltk.collocations.BigramCollocationFinder.from_words(text_split)
     trigramFinder = nltk.collocations.TrigramCollocationFinder.from_words(text_split)
     quadgramFinder = nltk.collocations.QuadgramCollocationFinder.from_words(text_split)
     
     bigramFinder.apply_freq_filter(20)
-    trigramFinder.apply_freq_filter(20)
-    quadgramFinder.apply_freq_filter(20)
+    trigramFinder.apply_freq_filter(15)
+    quadgramFinder.apply_freq_filter(10)
 
     bigramPMITable = pd.DataFrame(list(bigramFinder.score_ngrams(bigrams.pmi)), columns=['bigram','PMI']).sort_values(by='PMI', ascending=False)
     trigramPMITable = pd.DataFrame(list(trigramFinder.score_ngrams(trigrams.pmi)), columns=['trigram','PMI']).sort_values(by='PMI', ascending=False)
