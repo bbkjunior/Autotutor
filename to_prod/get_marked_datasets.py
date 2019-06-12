@@ -46,9 +46,12 @@ answer_dict = {"222" :['0-' ,'1-' ,'2+' ,'4+'],
 "251":['5-', '4+', '2+', '1+', '3+']}
 """
 
-def generate_user_knowledge_database(answers_dict_json):
-    with open(answers_dict_json, "r") as f:
-        answers_dict = json.load(f)
+def generate_user_knowledge_database(answers_dict_json, raw_json = False):
+    if raw_json:
+        with open(answers_dict_json, "r") as f:
+            answers_dict = json.load(f)
+    else:
+        answers_dict = answers_dict_json
     texts = pd.read_csv("3000.csv")
     user_id = answers_dict['user_id']
     user = user_vector(debug = False)

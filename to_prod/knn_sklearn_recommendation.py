@@ -19,37 +19,38 @@ with open(args.answers_json, encoding = "utf-8") as f:
 #print(ans_dict)
 """
 
-def extract_text_map_features(text_map_path):
-    with open(text_map_path, "r") as f:
+def extract_text_map_features(text_map_path, raw_json = False):
+    with open(text_map_path, "r", encoding = "utf-8") as f:
         rec_text_map = json.load(f)
         #load text features
-        rec_text_features_vector = []
-        rec_text_features_vector.append(rec_text_map['lix'])
-        rec_text_features_vector.append(rec_text_map['ttr'])
-        rec_text_features_vector.extend(rec_text_map['sent_properties'])
 
-        #load sentence features
-        sentence_map = rec_text_map['sentences_map']
-        recommended_sentences = []
-        for sentence_ind in range(len(sentence_map)):
-            rec_sent_feat = []
-            rec_sent_feat.append(sentence_map[sentence_ind]['spec_sentence_features']['negation'])
-            rec_sent_feat.append(sentence_map[sentence_ind]['spec_sentence_features']['coreference'])
-            rec_sent_feat.append(sentence_map[sentence_ind]['spec_sentence_features']['vozvr_verb'])
-            rec_sent_feat.append(sentence_map[sentence_ind]['spec_sentence_features']['prich'])
-            rec_sent_feat.append(sentence_map[sentence_ind]['spec_sentence_features']['deepr'])
-            rec_sent_feat.append(sentence_map[sentence_ind]['spec_sentence_features']['case_complexity'])
-            rec_sent_feat.append(sentence_map[sentence_ind]['spec_sentence_features']['mean_depend_length'])
-            rec_sent_vec = np.array(rec_sent_feat).reshape(1, -1)
-            recommended_sentences.append(rec_sent_vec)
+    rec_text_features_vector = []
+    rec_text_features_vector.append(rec_text_map['lix'])
+    rec_text_features_vector.append(rec_text_map['ttr'])
+    rec_text_features_vector.extend(rec_text_map['sent_properties'])
 
-        #load words features
-        recommended_words = []
-        for sentence in sentence_map:
-            for word_element in sentence['sentence_words']:
-                word_vector = word_element['lex_vector']
-                word_vector = np.array(word_vector).reshape(1, -1)
-                recommended_words.append(word_vector)
+    #load sentence features
+    sentence_map = rec_text_map['sentences_map']
+    recommended_sentences = []
+    for sentence_ind in range(len(sentence_map)):
+        rec_sent_feat = []
+        rec_sent_feat.append(sentence_map[sentence_ind]['spec_sentence_features']['negation'])
+        rec_sent_feat.append(sentence_map[sentence_ind]['spec_sentence_features']['coreference'])
+        rec_sent_feat.append(sentence_map[sentence_ind]['spec_sentence_features']['vozvr_verb'])
+        rec_sent_feat.append(sentence_map[sentence_ind]['spec_sentence_features']['prich'])
+        rec_sent_feat.append(sentence_map[sentence_ind]['spec_sentence_features']['deepr'])
+        rec_sent_feat.append(sentence_map[sentence_ind]['spec_sentence_features']['case_complexity'])
+        rec_sent_feat.append(sentence_map[sentence_ind]['spec_sentence_features']['mean_depend_length'])
+        rec_sent_vec = np.array(rec_sent_feat).reshape(1, -1)
+        recommended_sentences.append(rec_sent_vec)
+
+    #load words features
+    recommended_words = []
+    for sentence in sentence_map:
+        for word_element in sentence['sentence_words']:
+            word_vector = word_element['lex_vector']
+            word_vector = np.array(word_vector).reshape(1, -1)
+            recommended_words.append(word_vector)
     return recommended_words, recommended_sentences, rec_text_features_vector
 
 def predict_text_understanding(rec_text_words_vectors,rec_text_sentences_vectors, rec_text_txt_vector, word_model, sent_model, text_model):
@@ -99,11 +100,13 @@ def calc_dev_from_eighty_percent(understanding_vector):
     st_dev = math.sqrt(diff_squared)
     return st_dev
 
-def get_recommended_text_json(answers_dict_json):
+def get_recommended_text_json(answers_dict_json, raw_json = False, save_json_to_directory = False):
     #print("GET RECOMMENDED STARTED")
-    with open(answers_dict_json, encoding = "utf-8") as f:
-            ans_dict = json.load(f)
-
+    if raw_json:
+        with open(answers_dict_json, encoding = "utf-8") as f:
+                ans_dict = json.load(f)
+    else:
+        ans_dict = answers_dict_json
     user_id = ans_dict['user_id']
     #подгружаем базу текстов
     db_3000 = pd.read_csv("3000.csv")
@@ -162,8 +165,11 @@ def get_recommended_text_json(answers_dict_json):
         raw_text = db_3000.iloc[text_ind]['texts_3000']
         if len (raw_text) > 50:
             text_name = "recommended_text_" + str(rex_text_index)
-            output_texts[text_name] = raw_text
+            output_texts[text_name] ={"text_ind":text_ind,"raw_text": raw_text}
             rex_text_index += 1
-    recommendation_json_path = user_id + "_text_recommendation.json"
-    with open(recommendation_json_path, "w", encoding = "utf-8") as f:
-            json.dump(output_texts, f, ensure_ascii=False, indent = 4)
+    if save_json_to_directory:
+        recommendation_json_path = user_id + "_text_recommendation.json"
+        with open(recommendation_json_path, "w", encoding = "utf-8") as f:
+                json.dump(output_texts, f, ensure_ascii=False, indent = 4)
+    else:
+        return output_texts
