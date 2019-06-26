@@ -21,8 +21,15 @@ import pymorphy2
 
 from ud_class import Model
 
+import json
+
+import operator
+
 fasttext = FastTextKeyedVectors.load("D:/fasttext_word2vec/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
 
+with open ("3000_words_articles_w2v.json" , "r") as f:
+    colloc_db = json.load(f)
+    
 def read_text(path):
     raw_text = ''
     with open (path, 'r', encoding = "utf-8") as f:
@@ -64,7 +71,11 @@ def get_lemm_and_orig_text_from_udmap(conllu_map):
         for word in sentence: 
             if (word[3] != 'PUNCT'):
                 #print(word[2])
-                lemm_line += word[2] + ' '
+                clean_lemma = ''
+                for char in word[2]:
+                    if char not in full_punctuation:
+                        clean_lemma += char.lower()
+                lemm_line += clean_lemma + ' '
                 line += word[1] + ' '
         
         lemm_sentences_list.append(lemm_line.strip())
@@ -104,8 +115,12 @@ def create_map(conllu_map, tf_idf_dict):
         sentence_map = []
         for word in sentence: 
             if (word[3] != 'PUNCT'):
-                weight = OrderedDict([("word", word[1]),("lemma",word[2]), ("vocabulary_prop",(OrderedDict([("tf_idf", 0),("nominal_index",word[0])]))), 
-                                     ("grammar_prop", OrderedDict([('pos',word[3] )])),("lex_vector",None)])
+                clean_lemma = ''
+                for char in word[2]:
+                    if char not in full_punctuation:
+                        clean_lemma += char.lower()
+                weight = OrderedDict([("word", word[1]),("lemma",clean_lemma), ("vocabulary_prop",(OrderedDict([("tf_idf", 0),("nominal_index",word[0])]))), 
+                                     ("grammar_prop", OrderedDict([('pos',word[3] )]))])#,("lex_vector",None)
                 if(word[3] == "VERB"):
                     verb_prop = get_verb_prop (word[1], morph)
                     if verb_prop:
@@ -118,9 +133,9 @@ def create_map(conllu_map, tf_idf_dict):
                                 case = gr.split("=")[1]
                                 weight['grammar_prop']['case'] = case
                 
-                lemma_lower = word[2].lower()
-                if (lemma_lower in tf_idf_dict):
-                    weight["vocabulary_prop"]["tf_idf"] = tf_idf_dict[lemma_lower][sentence_ind]
+                #lemma_lower = word[2].lower()
+                if (clean_lemma in tf_idf_dict):
+                    weight["vocabulary_prop"]["tf_idf"] = tf_idf_dict[clean_lemma][sentence_ind]
                 sentence_map.append(weight)
                 
         text_map.append(sentence_map)
@@ -175,9 +190,80 @@ def get_dependencies (conllu_map, text_map_input):
         sentence_map.append(one_sentence_map)   
     return sentence_map
     
-    
-#vector function here
+
+def get_colloc(ngr, words_list, handled_words_indexes, collocations_dict, sentence_collected_collocation):#присваивать по диту и потом cортировать по ключам
+    for word_ind in range(min(ngr,len(words_list)), len(words_list) + 1):
+        ngramm = ''
+        sub_ind = []
+        for word_sub_ind in range(word_ind - ngr, word_ind): 
+            if word_sub_ind in handled_words_indexes:
+                #print("ALREADY HANDLED")
+                ngramm = None
+                break
+            sub_ind.append(word_sub_ind)
+            ngramm += words_list[word_sub_ind]['lemma'] + ' '
+            
+        if ngramm:
+            #print(sub_ind)
+            ngramm = ngramm.strip() 
+            if ngramm in collocations_dict:
+                #print("COLLOC FOUND")
+                handled_words_indexes.extend(sub_ind)
+                sentence_collected_collocation[sub_ind[0]] = ngramm
+                #print("sentence_collected_collocation", sentence_collected_collocation)
+        #print(ngramm)
  
+#vector function here
+def update_with_colloc_vectors(text_map_input):
+    text_map = copy.deepcopy(text_map_input)
+    #print(text_map)
+    
+    for sentence in text_map:
+        sentence['collocation_index_list'] = []
+        sentence['collocation_vectors_list'] = []
+        sentence_collocations = {}
+        handled_words_ind = []
+        get_colloc(4, sentence['sentence_words'], handled_words_ind, colloc_db['4'], sentence_collocations)
+        #print("handled_words_ind after qgramm", sorted(handled_words_ind))
+        get_colloc(3, sentence['sentence_words'], handled_words_ind, colloc_db['3'], sentence_collocations)
+        #print("handled_words_ind after trigramm", sorted(handled_words_ind))
+        get_colloc(2, sentence['sentence_words'], handled_words_ind, colloc_db['2'], sentence_collocations)
+        #print("handled_words_ind after bigramm", sorted(handled_words_ind))
+        for ind in range (len(sentence['sentence_words']) + 1):
+            if ind not in handled_words_ind:
+                try:
+                    w2v = fasttext[sentence['sentence_words'][ind]['lemma']]
+                    sentence_collocations[ind] = sentence['sentence_words'][ind]['lemma']
+                except:
+                    pass
+        #print("FINAL COLLOCATIONS")
+        colloc_list = []
+        for i in sorted (sentence_collocations) : 
+            sentence['collocation_index_list'].append((i, sentence_collocations[i]))
+            ngramm = sentence_collocations[i]
+            ngramms_list = ngramm.split()
+            w2v_list = []
+            for word in ngramms_list:
+                #print(word)
+                try:
+                    w2v = fasttext[word]
+                    w2v_list.append(w2v)
+                except:
+                    pass
+            colleted_w2v_count = len(w2v_list)
+            if colleted_w2v_count > 0:
+                vect_sum = 300 * [0]
+                for w2v in w2v_list:
+                    vect_sum += w2v
+                vect_sum /=  colleted_w2v_count
+            else:
+                vect_sum = None
+            if np.any(vect_sum):
+               sentence['collocation_vectors_list'].append((ngramm, vect_sum.reshape(1,-1).tolist()))
+            #print ((i, sentence_collocations[i]))
+        
+    return text_map
+           
 def increment_dict(dict_name, property_name, value):
     if property_name in dict_name:
         dict_name[property_name] += value
@@ -199,8 +285,8 @@ def features_extraction(sentence_map_input):
             sentence['spec_sentence_features']['mean_depend_length'] = 0
         
         for word in sentence['sentence_words'] :
-            current_lex_vector = word['lex_vector']
-            current_sentence_vocab_vectors.append(current_lex_vector)
+            #current_lex_vector = word['lex_vector']
+            #current_sentence_vocab_vectors.append(current_lex_vector)
             
             if word['lemma'] == 'который' or word['lemma'] == 'это' or word['lemma'] == 'этот':
                 #spec_word_partial_importance = word['vocabulary_prop']['tf_idf']/sentence['syntax_prop']['sent_vocab_imp']
@@ -351,19 +437,25 @@ def get_text_map(text, raw_text_input = False):
     tf_idf_dict = get_tf_idf_dict (lemm_sentences)
     text_map = create_map(conllu_text_map, tf_idf_dict)
     sentence_map_dep =  get_dependencies(conllu_text_map, text_map)
-    #sentence_map_vec = update_with_lex_vector (sentence_map_dep)
-    sentence_map_feat = features_extraction(sentence_map_dep) 
+    sentence_map_colloc = update_with_colloc_vectors (sentence_map_dep)
+    sentence_map_feat = features_extraction(sentence_map_colloc) 
     json_text_map = text_features_cal(sentence_map_feat, sentences_list, lemm_sentences)
     return json_text_map
     
     
 text = """'Указом президента России Бориса Ельцина внесены изменения в  существующую структуру Федеральной службы безопасности РФ, утвержденную в июле прошлого года. Как говорится в поступившем сегодня сообщении Центра общественных связей ФСБ, в соответствии с Основами (Концепцией) государственной политики Российской Федерации по военномустроительству на период до 2005 года, на базе Департамента по борьбе с терроризмом и Управления конституционной безопасности ФСБ создан Департамент по защите конституционного строя и борьбе с терроризмом. В составе департамента организуются три управления с четко определенной компетенцией. В ФСБ отмечают, что "в современных условиях для российскойгосударственности имеют приоритетное значение вопросы защитыконституционного строя, сохранения целостности страны, борьбыс терроризмом и всеми формами экстремизма, а также разведывательно-подрывной деятельностью спецслужб и организаций иностранных государств". Как подчеркивается в сообщении, "органам безопасности в решении данных проблем отведена особая роль"""
 
+#json_text_map = get_text_map(text, raw_text_input = True)
+
+
 json_text_map = get_text_map(text, raw_text_input = True)
+
+with open("text_map_improved_example.json", "w") as f:
+    json.dump(json_text_map,f, indent = 4, ensure_ascii = False) 
 print( json_text_map['sent_properties'])
 
 for sent in json_text_map['sentences_map']:
-    #print(sent["average_vocabulary"],'\n')
+    print(sent["collocation_index_list"],'\n')
     print(sent["spec_sentence_features"],'\n')
     print("~~~~")
     for word in sent["sentence_words"]:
