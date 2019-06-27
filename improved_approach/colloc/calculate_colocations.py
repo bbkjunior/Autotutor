@@ -11,7 +11,7 @@ from nltk.corpus import wordnet
 from nltk.stem import WordNetLemmatizer
 from pymystem3 import Mystem
 
-
+import os
 
 
 #common functions
@@ -93,7 +93,11 @@ def get_lemm_and_orig_text_from_udmap(conllu_map):
         for word in sentence: 
             if (word[3] != 'PUNCT'):
                 #print(word[2])
-                lemm_line += word[2] + ' '
+                clean_lemma = ''
+                for char in word[2]:
+                    if char not in full_punctuation:
+                        clean_lemma += char.lower()
+                lemm_line += clean_lemma + ' '
                 line += word[1] + ' '
     
     lemm_sentences_list.append(lemm_line.strip())
@@ -107,11 +111,17 @@ def assign_pos_index(conllu_text_map):
         one_sentence_tagged = ''
         for word in sentence:
             if word[3] != "PUNCT":
-                word_pos = word[2] + '_' + word[3]
+                clean_lemma = ''
+                for char in word[2]:
+                    if char not in full_punctuation:
+                        clean_lemma += char.lower()
+                
+                word_pos =  clean_lemma + '_' + word[3]
                 one_sentence_tagged += word_pos + ' '
         one_sentence_tagged = one_sentence_tagged.strip()
         sentences_tagged.append(one_sentence_tagged)
     return sentences_tagged
+ 
 
 def get_pos_indexed_lemmatized_line(raw_text, ud_model):
     conllu = get_conllu_from_unite_line_text(raw_text, ud_model)
@@ -145,8 +155,11 @@ def rightTypes_bigram_with_pos_filter(ngram, stopwords, debug = False):
         if word_itself in stopwords or word.isspace():
             if debug:print("stopword found")
             return False
-    pos_1 = ngram[0].split("_")[1]
-    pos_2 = ngram[1].split("_")[1]
+    try:
+        pos_1 = ngram[0].split("_")[1]
+        pos_2 = ngram[1].split("_")[1]
+    except:
+        return False
     acceptable_types = ('ADJ', 'NOUN')
     if pos_1 in acceptable_types and pos_2 in acceptable_types:
         if debug:print("fltr ok")
@@ -162,8 +175,11 @@ def rightTypes_trigram_with_pos_filter(ngram, stopwords,debug = False):
         if word_itself in stopwords or word.isspace():
             if debug:print("stopword found")
             return False
-    pos_1 = ngram[0].split("_")[1]
-    pos_3 = ngram[2].split("_")[1]
+    try:
+        pos_1 = ngram[0].split("_")[1]
+        pos_3 = ngram[2].split("_")[1]
+    except:
+        return False
     acceptable_types = ('ADJ', 'NOUN')
     if pos_1 in acceptable_types and pos_3 in acceptable_types:
         if debug:print("fltr ok")
@@ -172,13 +188,30 @@ def rightTypes_trigram_with_pos_filter(ngram, stopwords,debug = False):
         if debug:print("pos not ok")
         return False
 
-def get_pos_filtered_colloc_from_corpus_list(corpus_list, lang):
+def get_clean_lemm_list(corpus_list, lang):
     if lang == "rus":
         model = Model('russian-syntagrus-ud-2.0-170801.udpipe')
         stopwords = set(nltk.corpus.stopwords.words('russian'))
     elif lang == "en":
         stopwords = set(nltk.corpus.stopwords.words('english'))
         model = Model('english-partut-ud-2.0-170801.udpipe')
+    else:
+        print("NO AVAILABLE LANGUAGE SPECIFIED. EXIT")
+        return 0
+    united_corpus_pos_tagged_list = get_corpus_split_line(corpus_list, model)
+    lemm_corpus_split_list = unpos_split_line(united_corpus_pos_tagged_list)
+
+    return lemm_corpus_split_list
+
+def get_pos_filtered_colloc_from_corpus_list(corpus_list, lang):
+    if lang == "rus":
+        model = Model('russian-syntagrus-ud-2.0-170801.udpipe')
+        stopwords = set(nltk.corpus.stopwords.words('russian'))
+    elif lang == "en":
+        module_dir = os.path.dirname(__file__)  # get current directory
+        file_path = os.path.join(module_dir, 'english-partut-ud-2.0-170801.udpipe')
+        stopwords = set(nltk.corpus.stopwords.words('english'))
+        model = Model(file_path)
     else:
         print("NO AVAILABLE LANGUAGE SPECIFIED. EXIT")
         return 0

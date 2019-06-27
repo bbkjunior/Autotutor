@@ -25,11 +25,14 @@ import json
 
 import operator
 
-fasttext = FastTextKeyedVectors.load("D:/fasttext_word2vec/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
+fasttext = FastTextKeyedVectors.load("‎⁨Macintosh HD⁩\\Users⁩\\nigula⁩\\input⁩⁨\\araneum_none_fasttextcbow_300_5_2018⁩\\araneum_none_fasttextcbow_300_5_2018.model")
+#fasttext = FastTextKeyedVectors.load("D:/fasttext_word2vec/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
 
-with open ("3000_words_articles_w2v.json" , "r") as f:
+with open ("smart_colloc_freq.json" , "r") as f:
     colloc_db = json.load(f)
-    
+with open ("unigr_freq.json" , "r") as f:
+    unigramm_db = json.load(f)
+     
 def read_text(path):
     raw_text = ''
     with open (path, 'r', encoding = "utf-8") as f:
@@ -209,7 +212,7 @@ def get_colloc(ngr, words_list, handled_words_indexes, collocations_dict, senten
             if ngramm in collocations_dict:
                 #print("COLLOC FOUND")
                 handled_words_indexes.extend(sub_ind)
-                sentence_collected_collocation[sub_ind[0]] = ngramm
+                sentence_collected_collocation[sub_ind[0]] = (ngramm, collocations_dict[ngramm])
                 #print("sentence_collected_collocation", sentence_collected_collocation)
         #print(ngramm)
  
@@ -233,7 +236,7 @@ def update_with_colloc_vectors(text_map_input):
             if ind not in handled_words_ind:
                 try:
                     w2v = fasttext[sentence['sentence_words'][ind]['lemma']]
-                    sentence_collocations[ind] = sentence['sentence_words'][ind]['lemma']
+                    sentence_collocations[ind] = (sentence['sentence_words'][ind]['lemma'], unigramm_db[sentence['sentence_words'][ind]['lemma']])
                 except:
                     pass
         #print("FINAL COLLOCATIONS")
