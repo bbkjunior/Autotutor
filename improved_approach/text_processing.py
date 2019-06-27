@@ -282,9 +282,12 @@ def update_with_colloc_vectors(text_map_input):
             else:
                 vect_sum = None
             if np.any(vect_sum):
-               sentence['collocation_vectors_list'].append((ngramm, vect_sum.reshape(1,-1).tolist()))
+               sentence['collocation_vectors_list'].append((i, sentence_collocations[i],vect_sum.reshape(1,-1).tolist()))
+               #sentence['collocation_vectors_list'].append((ngramm, vect_sum.reshape(1,-1).tolist()))
             else:
-               sentence['collocation_vectors_list'].append((ngramm, None))
+               sentence['collocation_vectors_list'].append((i, sentence_collocations[i],None))
+               #sentence['collocation_vectors_list'].append((ngramm, None))
+            
             #print ((i, sentence_collocations[i]))
         
     return text_map
