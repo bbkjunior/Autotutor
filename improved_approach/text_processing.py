@@ -25,14 +25,18 @@ import json
 
 import operator
 
-fasttext = FastTextKeyedVectors.load("‎⁨Macintosh HD⁩\\Users⁩\\nigula⁩\\input⁩⁨\\araneum_none_fasttextcbow_300_5_2018⁩\\araneum_none_fasttextcbow_300_5_2018.model")
-#fasttext = FastTextKeyedVectors.load("D:/fasttext_word2vec/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
+#fasttext = FastTextKeyedVectors.load("‎⁨Macintosh HD⁩\\Users⁩\\nigula⁩\\input⁩⁨\\araneum_none_fasttextcbow_300_5_2018⁩\\araneum_none_fasttextcbow_300_5_2018.model")
+fasttext = FastTextKeyedVectors.load("D:/fasttext_word2vec/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
 
-with open ("smart_colloc_freq.json" , "r") as f:
+    
+with open ("smart_colloc_freq.json" , "r", encoding='utf-8') as f:
     colloc_db = json.load(f)
-with open ("unigr_freq.json" , "r") as f:
+with open ("unigr_freq.json" , "r", encoding='utf-8') as f:
     unigramm_db = json.load(f)
-     
+    
+with open ("lyashevskaya_freq_dict.json" , "r", encoding="utf-8") as f:
+    lyashevskaya_freq_dict = json.load(f)
+print(lyashevskaya_freq_dict) 
 def read_text(path):
     raw_text = ''
     with open (path, 'r', encoding = "utf-8") as f:
@@ -194,27 +198,35 @@ def get_dependencies (conllu_map, text_map_input):
     return sentence_map
     
 
-def get_colloc(ngr, words_list, handled_words_indexes, collocations_dict, sentence_collected_collocation):#присваивать по диту и потом cортировать по ключам
+def get_colloc(ngr, words_list, handled_words_indexes, collocations_dict, sentence_collected_collocation, debug = False):#присваивать по диту и потом cортировать по ключам
     for word_ind in range(min(ngr,len(words_list)), len(words_list) + 1):
         ngramm = ''
         sub_ind = []
         for word_sub_ind in range(word_ind - ngr, word_ind): 
             if word_sub_ind in handled_words_indexes:
-                #print("ALREADY HANDLED")
+                if debug:print("ALREADY HANDLED")
                 ngramm = None
                 break
             sub_ind.append(word_sub_ind)
             ngramm += words_list[word_sub_ind]['lemma'] + ' '
             
         if ngramm:
-            #print(sub_ind)
+            if debug:print(sub_ind)
             ngramm = ngramm.strip() 
             if ngramm in collocations_dict:
-                #print("COLLOC FOUND")
+                if debug:print("COLLOC FOUND")
+                ngramm_lemmas_list = ngramm.split()
+                freq_list = []
+                for lemma in ngramm_lemmas_list:
+                    if lemma in lyashevskaya_freq_dict:
+                        freq_list.append(lyashevskaya_freq_dict[lemma])
+                    else:
+                        freq_list.append(0)
+                freq_mean = mean(freq_list)
                 handled_words_indexes.extend(sub_ind)
-                sentence_collected_collocation[sub_ind[0]] = (ngramm, collocations_dict[ngramm])
-                #print("sentence_collected_collocation", sentence_collected_collocation)
-        #print(ngramm)
+                sentence_collected_collocation[sub_ind[0]] = (ngramm, collocations_dict[ngramm],freq_mean)
+                if debug:print("sentence_collected_collocation", sentence_collected_collocation)
+        if debug:print(ngramm)
  
 #vector function here
 def update_with_colloc_vectors(text_map_input):
@@ -226,6 +238,7 @@ def update_with_colloc_vectors(text_map_input):
         sentence['collocation_vectors_list'] = []
         sentence_collocations = {}
         handled_words_ind = []
+        #print(colloc_db['4'])
         get_colloc(4, sentence['sentence_words'], handled_words_ind, colloc_db['4'], sentence_collocations)
         #print("handled_words_ind after qgramm", sorted(handled_words_ind))
         get_colloc(3, sentence['sentence_words'], handled_words_ind, colloc_db['3'], sentence_collocations)
@@ -235,15 +248,21 @@ def update_with_colloc_vectors(text_map_input):
         for ind in range (len(sentence['sentence_words']) + 1):
             if ind not in handled_words_ind:
                 try:
-                    w2v = fasttext[sentence['sentence_words'][ind]['lemma']]
-                    sentence_collocations[ind] = (sentence['sentence_words'][ind]['lemma'], unigramm_db[sentence['sentence_words'][ind]['lemma']])
+                    lemma = sentence['sentence_words'][ind]['lemma']
+                    w2v = fasttextlemma
+                    if lemma in lyashevskaya_freq_dict:
+                        sentence_collocations[ind] = (lemma, unigramm_db[lemma],lyashevskaya_freq_dict[lemma])
+                    else:
+                        sentence_collocations[ind] = (lemma, unigramm_db[lemma],0)
                 except:
                     pass
-        #print("FINAL COLLOCATIONS")
+        print("FINAL COLLOCATIONS")
+        print(sentence_collocations)
         colloc_list = []
         for i in sorted (sentence_collocations) : 
+            #print(i, sentence_collocations[i])
             sentence['collocation_index_list'].append((i, sentence_collocations[i]))
-            ngramm = sentence_collocations[i]
+            ngramm = sentence_collocations[i][0]
             ngramms_list = ngramm.split()
             w2v_list = []
             for word in ngramms_list:
