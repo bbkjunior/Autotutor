@@ -25,8 +25,8 @@ import json
 
 import operator
 
-fasttext = FastTextKeyedVectors.load("/Users/nigula/input/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
-#fasttext = FastTextKeyedVectors.load("D:/fasttext_word2vec/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
+#fasttext = FastTextKeyedVectors.load("/Users/nigula/input/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
+fasttext = FastTextKeyedVectors.load("D:/fasttext_word2vec/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
 
     
 with open ("smart_colloc_freq.json" , "r", encoding='utf-8') as f:
@@ -393,13 +393,20 @@ def calculate_type_token_ratio(lemm_text_sentences):
 def text_features_cal(sentence_map, orig_sentences_list, lemm_sentences_list):
     #negation coreference (sentences per all sent) vozvr_verb prich deepr case_complexity (per overall voc_imp) mean_depend_length (mean)qq
     #sence freq eng abstr
-    text_map = OrderedDict([("lix", 0), ("ttr", 0), ("sent_properties",[]),("sentences_map", sentence_map)])
+    text_map = OrderedDict([("lix", 0), ("ttr", 0), ("overall_colloc_text",[]), ("sent_properties",[]),("sentences_map", sentence_map)])
     
     lix = calculate_lix_from_list_of_sentences(orig_sentences_list)
     ttr = calculate_type_token_ratio(lemm_sentences_list)
     text_map['lix'] = lix *0.01
     text_map['ttr'] = ttr
-    
+    sentence_ind = 0
+    for sentence in sentence_map:
+        sentencce_json = {}
+        sentencce_json[sentence_ind] = []
+        for word_element in sentence['collocation_index_list']:
+            sentencce_json[sentence_ind].append((word_element[0],word_element[1][0]))
+        text_map['overall_colloc_text'].append(sentencce_json)
+        sentence_ind += 1
     #
     sentences_count = 0
     negation_count = 0
