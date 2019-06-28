@@ -25,18 +25,17 @@ import json
 
 import operator
 
-#fasttext = FastTextKeyedVectors.load("‎⁨Macintosh HD⁩\\Users⁩\\nigula⁩\\input⁩⁨\\araneum_none_fasttextcbow_300_5_2018⁩\\araneum_none_fasttextcbow_300_5_2018.model")
-fasttext = FastTextKeyedVectors.load("D:/fasttext_word2vec/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
+fasttext = FastTextKeyedVectors.load("/Users/nigula/input/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
+#fasttext = FastTextKeyedVectors.load("D:/fasttext_word2vec/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
 
     
 with open ("smart_colloc_freq.json" , "r", encoding='utf-8') as f:
     colloc_db = json.load(f)
+
 with open ("unigr_freq.json" , "r", encoding='utf-8') as f:
     unigramm_db = json.load(f)
-    
 with open ("lyashevskaya_freq_dict.json" , "r", encoding="utf-8") as f:
     lyashevskaya_freq_dict = json.load(f)
-#print(lyashevskaya_freq_dict) 
 def read_text(path):
     raw_text = ''
     with open (path, 'r', encoding = "utf-8") as f:
@@ -199,34 +198,37 @@ def get_dependencies (conllu_map, text_map_input):
     
 
 def get_colloc(ngr, words_list, handled_words_indexes, collocations_dict, sentence_collected_collocation, debug = False):#присваивать по диту и потом cортировать по ключам
-    for word_ind in range(min(ngr,len(words_list)), len(words_list) + 1):
-        ngramm = ''
-        sub_ind = []
-        for word_sub_ind in range(word_ind - ngr, word_ind): 
-            if word_sub_ind in handled_words_indexes:
-                if debug:print("ALREADY HANDLED")
-                ngramm = None
-                break
-            sub_ind.append(word_sub_ind)
-            ngramm += words_list[word_sub_ind]['lemma'] + ' '
-            
-        if ngramm:
-            if debug:print(sub_ind)
-            ngramm = ngramm.strip() 
-            if ngramm in collocations_dict:
-                if debug:print("COLLOC FOUND")
-                ngramm_lemmas_list = ngramm.split()
-                freq_list = []
-                for lemma in ngramm_lemmas_list:
-                    if lemma in lyashevskaya_freq_dict:
-                        freq_list.append(lyashevskaya_freq_dict[lemma])
-                    else:
-                        freq_list.append(0)
-                freq_mean = mean(freq_list)
-                handled_words_indexes.extend(sub_ind)
-                sentence_collected_collocation[sub_ind[0]] = (ngramm, collocations_dict[ngramm],freq_mean)
-                if debug:print("sentence_collected_collocation", sentence_collected_collocation)
-        if debug:print(ngramm)
+    if ngr <  len(words_list):
+        for word_ind in range(ngr, len(words_list) + 1):
+            #print("word_ind", word_ind)
+            ngramm = ''
+            sub_ind = []
+            for word_sub_ind in range(word_ind - ngr, word_ind): 
+                if word_sub_ind in handled_words_indexes:
+                    if debug:print("ALREADY HANDLED")
+                    ngramm = None
+                    break
+                sub_ind.append(word_sub_ind)
+                #print("word_sub_ind", word_sub_ind)
+                ngramm += words_list[word_sub_ind]['lemma'] + ' '
+                if debug:print(ngramm)
+            if ngramm:
+                if debug:print(sub_ind)
+                ngramm = ngramm.strip() 
+                if ngramm in collocations_dict:
+                    if debug:print("COLLOC FOUND")
+                    ngramm_lemmas_list = ngramm.split()
+                    freq_list = []
+                    for lemma in ngramm_lemmas_list:
+                        if lemma in lyashevskaya_freq_dict:
+                            freq_list.append(lyashevskaya_freq_dict[lemma])
+                        else:
+                            freq_list.append(0)
+                    freq_mean = mean(freq_list)
+                    handled_words_indexes.extend(sub_ind)
+                    sentence_collected_collocation[sub_ind[0]] = (ngramm, collocations_dict[ngramm],freq_mean)
+                    if debug:print("sentence_collected_collocation", sentence_collected_collocation)
+            if debug:print(ngramm)
  
 #vector function here
 def update_with_colloc_vectors(text_map_input):
@@ -257,8 +259,8 @@ def update_with_colloc_vectors(text_map_input):
                         #print(lemma, "out of dict")
                 except:
                     pass
-        print("FINAL COLLOCATIONS")
-        print(sentence_collocations)
+        #print("FINAL COLLOCATIONS")
+        #print(sentence_collocations)
         colloc_list = []
         for i in sorted (sentence_collocations) : 
             #print(i, sentence_collocations[i])
@@ -470,12 +472,21 @@ def get_text_map(text, raw_text_input = False):
     json_text_map = text_features_cal(sentence_map_feat, sentences_list, lemm_sentences)
     return json_text_map
     
-    
+   
 text = """Указом президента России Бориса Ельцина внесены изменения в  существующую структуру Федеральной службы безопасности РФ, утвержденную в июле прошлого года. Как говорится в поступившем сегодня сообщении Центра общественных связей ФСБ, в соответствии с Основами (Концепцией) государственной политики Российской Федерации по военномустроительству на период до 2005 года, на базе Департамента по борьбе с терроризмом и Управления конституционной безопасности ФСБ создан Департамент по защите конституционного строя и борьбе с терроризмом. В составе департамента организуются три управления с четко определенной компетенцией. В ФСБ отмечают, что "в современных условиях для российскойгосударственности имеют приоритетное значение вопросы защитыконституционного строя, сохранения целостности страны, борьбыс терроризмом и всеми формами экстремизма, а также разведывательно-подрывной деятельностью спецслужб и организаций иностранных государств". Как подчеркивается в сообщении, "органам безопасности в решении данных проблем отведена особая роль"""
 
+text_short = """Однажды в поликлинику пришел больной.
+– Что у вас болит? – спросил врач.
+– У меня болит живот, – ответил молодой человек.
+– Что вы ели вчера?
+– Зеленые яблоки.
+– Хорошо. Я дам вам лекарство для глаз, – сказал врач больному.
+– Почему для глаз? Ведь у меня болит живот? – удивился молодой человек.
+– Я дам вам лекарство для глаз, чтобы вы лучше видели, что вы едите, – сказал врач.
+"""
 #json_text_map = get_text_map(text, raw_text_input = True)
 
-
+"""
 json_text_map = get_text_map(text, raw_text_input = True)
 
 with open("text_map_improved_example.json", "w") as f:
@@ -490,3 +501,4 @@ for sent in json_text_map['sentences_map']:
         print(word['word'],word['vocabulary_prop'], word['grammar_prop'])
         print("\n")
     print ("====================")
+"""
