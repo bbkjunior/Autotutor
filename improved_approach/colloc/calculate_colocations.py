@@ -100,7 +100,7 @@ def get_lemm_and_orig_text_from_udmap(conllu_map):
                 lemm_line += clean_lemma + ' '
                 line += word[1] + ' '
     
-    lemm_sentences_list.append(lemm_line.strip())
+        lemm_sentences_list.append(lemm_line.strip())
     sentences_list.append(line.strip())
     #print()
     return lemm_sentences_list, sentences_list
