@@ -27,7 +27,7 @@ import operator
 
 #fasttext = FastTextKeyedVectors.load("/Users/nigula/input/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
 #fasttext = FastTextKeyedVectors.load("D:/fasttext_word2vec/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
-fasttext = FastTextKeyedVectors.load("/Users/nigula/input/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
+fasttext = FastTextKeyedVectors.load("/Users/lilyakhoang/input/araneum_none_fasttextskipgram_300_5_2018/araneum_none_fasttextskipgram_300_5_2018.model")
 
     
 with open ("smart_colloc_freq.json" , "r", encoding='utf-8') as f:
@@ -400,16 +400,21 @@ def text_features_cal(sentence_map, orig_sentences_list, lemm_sentences_list):
     ttr = calculate_type_token_ratio(lemm_sentences_list)
     text_map['lix'] = lix *0.01
     text_map['ttr'] = ttr
+    text_map['sentences_count'] = 0
+    text_map['average_sentence_length'] = 0
     sentence_ind = 0
+    words_count = 0
     for sentence in sentence_map:
         sentencce_json = {}
         sentencce_json[sentence_ind] = []
+        words_count += len(sentence['sentence_words'])
         for word_element in sentence['collocation_index_list']:
             sentencce_json[sentence_ind].append((word_element[0],word_element[1][0]))
         text_map['overall_colloc_text'].append(sentencce_json)
         sentence_ind += 1
     #
     sentences_count = 0
+    
     negation_count = 0
     coreference_count = 0
     #
@@ -450,6 +455,8 @@ def text_features_cal(sentence_map, orig_sentences_list, lemm_sentences_list):
     mean_vocab_vector = mean_vocab_vector.tolist()
     
     text_map['vocab_properties'] = mean_vocab_vector [0]"""
+    text_map['sentences_count'] = sentences_count 
+    text_map['average_sentence_length'] = words_count/sentences_count
 
     text_map['sent_properties'].append(negation_count/sentences_count)#negation_count
     text_map['sent_properties'].append(coreference_count/sentences_count)#coreference_count
@@ -494,11 +501,12 @@ text_short = """Однажды в поликлинику пришел больн
 """
 #json_text_map = get_text_map(text, raw_text_input = True)
 
-"""
+
 json_text_map = get_text_map(text, raw_text_input = True)
 
 with open("text_map_improved_example.json", "w") as f:
     json.dump(json_text_map,f, indent = 4, ensure_ascii = False) 
+"""
 print( json_text_map['sent_properties'])
 
 for sent in json_text_map['sentences_map']:
