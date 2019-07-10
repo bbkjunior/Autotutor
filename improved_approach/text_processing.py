@@ -26,8 +26,8 @@ import json
 import operator
 
 #fasttext = FastTextKeyedVectors.load("/Users/nigula/input/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
-#fasttext = FastTextKeyedVectors.load("D:/fasttext_word2vec/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
-fasttext = FastTextKeyedVectors.load("/Users/lilyakhoang/input/araneum_none_fasttextskipgram_300_5_2018/araneum_none_fasttextskipgram_300_5_2018.model")
+fasttext = FastTextKeyedVectors.load("D:/fasttext_word2vec/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
+#fasttext = FastTextKeyedVectors.load("/Users/lilyakhoang/input/araneum_none_fasttextskipgram_300_5_2018/araneum_none_fasttextskipgram_300_5_2018.model")
 
     
 with open ("smart_colloc_freq.json" , "r", encoding='utf-8') as f:
@@ -248,21 +248,31 @@ def update_with_colloc_vectors(text_map_input):
         #print("handled_words_ind after trigramm", sorted(handled_words_ind))
         get_colloc(2, sentence['sentence_words'], handled_words_ind, colloc_db['2'], sentence_collocations)
         #print("handled_words_ind after bigramm", sorted(handled_words_ind))
-        for ind in range (len(sentence['sentence_words']) + 1):
+        for ind in range (len(sentence['sentence_words'])):
             if ind not in handled_words_ind:
+                #try:
+                #print(len(sentence['sentence_words']), ind)
+                lemma = sentence['sentence_words'][ind]['lemma']
                 try:
-                    lemma = sentence['sentence_words'][ind]['lemma']
                     w2v = fasttext[lemma]
+                    try:
+                        unigr_freq = unigramm_db[lemma]
+                    except:
+                        unigr_freq = 0
                     if lemma in lyashevskaya_freq_dict:
-                        sentence_collocations[ind] = (lemma, unigramm_db[lemma],lyashevskaya_freq_dict[lemma])
+                        sentence_collocations[ind] = (lemma, unigr_freq,lyashevskaya_freq_dict[lemma])
                     else:
-                        sentence_collocations[ind] = (lemma, unigramm_db[lemma],0)
+                        sentence_collocations[ind] = (lemma, unigr_freq,0)
                         #print(lemma, "out of dict")
+                    
                 except:
+                    #print(lemma, "missed during unigr extraction")
                     pass
+                  
         #print("FINAL COLLOCATIONS")
         #print(sentence_collocations)
         colloc_list = []
+        #print(sorted (sentence_collocations))
         for i in sorted (sentence_collocations) : 
             #print(i, sentence_collocations[i])
             sentence['collocation_index_list'].append((i, sentence_collocations[i]))
@@ -283,6 +293,7 @@ def update_with_colloc_vectors(text_map_input):
                     vect_sum += w2v
                 vect_sum /=  colleted_w2v_count
             else:
+                print(ngramms_list, "none in fasttext")
                 vect_sum = None
             if np.any(vect_sum):
                sentence['collocation_vectors_list'].append((i, sentence_collocations[i],vect_sum.reshape(1,-1).tolist()))
@@ -455,8 +466,8 @@ def text_features_cal(sentence_map, orig_sentences_list, lemm_sentences_list):
     mean_vocab_vector = mean_vocab_vector.tolist()
     
     text_map['vocab_properties'] = mean_vocab_vector [0]"""
-    text_map['sentences_count'] = sentences_count 
-    text_map['average_sentence_length'] = words_count/sentences_count
+    text_map['sentences_count'] = sentences_count * 0.01
+    text_map['average_sentence_length'] = words_count/sentences_count * 0.01
 
     text_map['sent_properties'].append(negation_count/sentences_count)#negation_count
     text_map['sent_properties'].append(coreference_count/sentences_count)#coreference_count
@@ -501,12 +512,12 @@ text_short = """Однажды в поликлинику пришел больн
 """
 #json_text_map = get_text_map(text, raw_text_input = True)
 
-
+"""
 json_text_map = get_text_map(text, raw_text_input = True)
 
 with open("text_map_improved_example.json", "w") as f:
     json.dump(json_text_map,f, indent = 4, ensure_ascii = False) 
-"""
+
 print( json_text_map['sent_properties'])
 
 for sent in json_text_map['sentences_map']:
