@@ -29,12 +29,9 @@ import operator
 fasttext = FastTextKeyedVectors.load("D:/fasttext_word2vec/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
 #fasttext = FastTextKeyedVectors.load("/Users/lilyakhoang/input/araneum_none_fasttextskipgram_300_5_2018/araneum_none_fasttextskipgram_300_5_2018.model")
 
-    
-with open ("smart_colloc_freq.json" , "r", encoding='utf-8') as f:
-    colloc_db = json.load(f)
+#"smart_colloc_freq.json"
 
-with open ("unigr_freq.json" , "r", encoding='utf-8') as f:
-    unigramm_db = json.load(f)
+
 with open ("lyashevskaya_freq_dict.json" , "r", encoding="utf-8") as f:
     lyashevskaya_freq_dict = json.load(f)
 def read_text(path):
@@ -232,7 +229,7 @@ def get_colloc(ngr, words_list, handled_words_indexes, collocations_dict, senten
             if debug:print(ngramm)
  
 #vector function here
-def update_with_colloc_vectors(text_map_input):
+def update_with_colloc_vectors(text_map_input,colloc_db, unigramm_db):
     text_map = copy.deepcopy(text_map_input)
     #print(text_map)
     
@@ -480,8 +477,14 @@ def text_features_cal(sentence_map, orig_sentences_list, lemm_sentences_list):
     
     return text_map
     
-    
-def get_text_map(text, raw_text_input = False):
+    #"D:\input\music_smart_colloc_freq.json"
+    #"C:\Autotutor\improved_approach\colloc\music_unigr_freq.json"
+def get_text_map(text, unigramm_db_path, colloc_db_path, raw_text_input = False):
+    with open (colloc_db_path, "r", encoding='utf-8') as f:
+        colloc_db = json.load(f)
+    #"unigr_freq.json"
+    with open (unigramm_db_path, "r", encoding='utf-8') as f:
+        unigramm_db = json.load(f)
     model = Model('./colloc/russian-syntagrus-ud-2.0-170801.udpipe')
     if raw_text_input:
         raw_text = text 
@@ -493,7 +496,7 @@ def get_text_map(text, raw_text_input = False):
     tf_idf_dict = get_tf_idf_dict (lemm_sentences)
     text_map = create_map(conllu_text_map, tf_idf_dict)
     sentence_map_dep =  get_dependencies(conllu_text_map, text_map)
-    sentence_map_colloc = update_with_colloc_vectors (sentence_map_dep)
+    sentence_map_colloc = update_with_colloc_vectors (sentence_map_dep,colloc_db,unigramm_db)
     sentence_map_feat = features_extraction(sentence_map_colloc) 
     json_text_map = text_features_cal(sentence_map_feat, sentences_list, lemm_sentences)
     return json_text_map
