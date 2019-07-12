@@ -195,7 +195,7 @@ def get_dependencies (conllu_map, text_map_input):
     return sentence_map
     
 
-def get_colloc(ngr, words_list, handled_words_indexes, collocations_dict, sentence_collected_collocation, debug = False):#присваивать по диту и потом cортировать по ключам
+def get_colloc(ngr, words_list, handled_words_indexes, collocations_dict, sentence_collected_collocation, unigramm_db, debug = False):#присваивать по диту и потом cортировать по ключам
     if ngr <  len(words_list):
         for word_ind in range(ngr, len(words_list) + 1):
             #print("word_ind", word_ind)
@@ -213,18 +213,25 @@ def get_colloc(ngr, words_list, handled_words_indexes, collocations_dict, senten
             if ngramm:
                 if debug:print(sub_ind)
                 ngramm = ngramm.strip() 
-                if ngramm in collocations_dict:
+                #print(collocations_dict)
+                if ngramm in collocations_dict.keys():
                     if debug:print("COLLOC FOUND")
                     ngramm_lemmas_list = ngramm.split()
                     freq_list = []
+                    local_corpora_freq_list = []
                     for lemma in ngramm_lemmas_list:
                         if lemma in lyashevskaya_freq_dict:
                             freq_list.append(lyashevskaya_freq_dict[lemma])
                         else:
                             freq_list.append(0)
+                        if lemma in unigramm_db:
+                            local_corpora_freq_list.append(unigramm_db[lemma])
+                        else:
+                            local_corpora_freq_list.append(0)
                     freq_mean = mean(freq_list)
+                    local_corpora_mean = mean(local_corpora_freq_list)
                     handled_words_indexes.extend(sub_ind)
-                    sentence_collected_collocation[sub_ind[0]] = (ngramm, collocations_dict[ngramm],freq_mean)
+                    sentence_collected_collocation[sub_ind[0]] = (ngramm, local_corpora_mean,freq_mean)
                     if debug:print("sentence_collected_collocation", sentence_collected_collocation)
             if debug:print(ngramm)
  
@@ -239,11 +246,11 @@ def update_with_colloc_vectors(text_map_input,colloc_db, unigramm_db):
         sentence_collocations = {}
         handled_words_ind = []
         #print(colloc_db['4'])
-        get_colloc(4, sentence['sentence_words'], handled_words_ind, colloc_db['4'], sentence_collocations)
+        get_colloc(4, sentence['sentence_words'], handled_words_ind, colloc_db['4'], sentence_collocations,unigramm_db)
         #print("handled_words_ind after qgramm", sorted(handled_words_ind))
-        get_colloc(3, sentence['sentence_words'], handled_words_ind, colloc_db['3'], sentence_collocations)
+        get_colloc(3, sentence['sentence_words'], handled_words_ind, colloc_db['3'], sentence_collocations,unigramm_db)
         #print("handled_words_ind after trigramm", sorted(handled_words_ind))
-        get_colloc(2, sentence['sentence_words'], handled_words_ind, colloc_db['2'], sentence_collocations)
+        get_colloc(2, sentence['sentence_words'], handled_words_ind, colloc_db['2'], sentence_collocations,unigramm_db)
         #print("handled_words_ind after bigramm", sorted(handled_words_ind))
         for ind in range (len(sentence['sentence_words'])):
             if ind not in handled_words_ind:
@@ -482,6 +489,7 @@ def text_features_cal(sentence_map, orig_sentences_list, lemm_sentences_list):
 def get_text_map(text, unigramm_db_path, colloc_db_path, raw_text_input = False):
     with open (colloc_db_path, "r", encoding='utf-8') as f:
         colloc_db = json.load(f)
+    #print("COLLOC", colloc_db['2'])
     #"unigr_freq.json"
     with open (unigramm_db_path, "r", encoding='utf-8') as f:
         unigramm_db = json.load(f)
@@ -515,12 +523,12 @@ text_short = """Однажды в поликлинику пришел больн
 """
 #json_text_map = get_text_map(text, raw_text_input = True)
 
-"""
-json_text_map = get_text_map(text, raw_text_input = True)
+
+json_text_map = get_text_map(text, "C:\Autotutor\improved_approach\colloc\music_unigr_freq.json", "D:\input\music_smart_colloc_freq.json",raw_text_input = True)
 
 with open("text_map_improved_example.json", "w") as f:
     json.dump(json_text_map,f, indent = 4, ensure_ascii = False) 
-
+"""
 print( json_text_map['sent_properties'])
 
 for sent in json_text_map['sentences_map']:
