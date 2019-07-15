@@ -1101,320 +1101,128 @@
   ],
   "similar_collocations": [
     [
-      "российский",
-      [
-        [
-          {
-            "colloc_db_index": 317,
-            "sim_colloc": "российский",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 0.9999999999999999
-          },
-          1.0000000000000004
-        ],
-        [
-          {
-            "colloc_db_index": 73,
-            "sim_colloc": "россия",
-            "w2v_sim": 0.7607047783798407,
-            "freqence_similarity": 0.9997252932392311
-          },
-          0.8085088813517189
-        ],
-        [
-          {
-            "colloc_db_index": 680,
-            "sim_colloc": "россия",
-            "w2v_sim": 0.7607047783798407,
-            "freqence_similarity": 0.9997252932392311
-          },
-          0.8085088813517189
-        ],
-        [
-          {
-            "colloc_db_index": 668,
-            "sim_colloc": "российский паспорт",
-            "w2v_sim": 0.722654871876511,
-            "freqence_similarity": 0.8356656987016031
-          },
-          0.7452570372415295
-        ],
-        [
-          {
-            "colloc_db_index": 601,
-            "sim_colloc": "британский",
-            "w2v_sim": 0.6776014679741227,
-            "freqence_similarity": 0.966290176493199
-          },
-          0.735339209677938
-        ]
-      ]
-    ],
-    [
-      "эстрадный",
-      [
-        [
-          {
-            "colloc_db_index": 94,
-            "sim_colloc": "музыкальный",
-            "w2v_sim": 0.7223848043847596,
-            "freqence_similarity": 0.9989654123164662
-          },
-          0.777700925971101
-        ],
-        [
-          {
-            "colloc_db_index": 203,
-            "sim_colloc": "оперный",
-            "w2v_sim": 0.6846418488630004,
-            "freqence_similarity": 1.0
-          },
-          0.7477134790904003
-        ],
-        [
-          {
-            "colloc_db_index": 308,
-            "sim_colloc": "концертный",
-            "w2v_sim": 0.654925251502332,
-            "freqence_similarity": 0.9969143347815028
-          },
-          0.7233230681581663
-        ],
-        [
-          {
-            "colloc_db_index": 362,
-            "sim_colloc": "концертный",
-            "w2v_sim": 0.654925251502332,
-            "freqence_similarity": 0.9969143347815028
-          },
-          0.7233230681581663
-        ],
-        [
-          {
-            "colloc_db_index": 563,
-            "sim_colloc": "концертный",
-            "w2v_sim": 0.654925251502332,
-            "freqence_similarity": 0.9969143347815028
-          },
-          0.7233230681581663
-        ]
-      ]
-    ],
-    [
-      "певица",
-      [
-        [
-          {
-            "colloc_db_index": 646,
-            "sim_colloc": "певица",
-            "w2v_sim": 1.0000000000000002,
-            "freqence_similarity": 1.0
-          },
-          1.0000000000000002
-        ],
-        [
-          {
-            "colloc_db_index": 175,
-            "sim_colloc": "певец",
-            "w2v_sim": 0.8338055998958123,
-            "freqence_similarity": 1.0
-          },
-          0.8670444799166499
-        ],
-        [
-          {
-            "colloc_db_index": 484,
-            "sim_colloc": "певец",
-            "w2v_sim": 0.8338055998958123,
-            "freqence_similarity": 1.0
-          },
-          0.8670444799166499
-        ],
-        [
-          {
-            "colloc_db_index": 594,
-            "sim_colloc": "артистка",
-            "w2v_sim": 0.7237961644906423,
-            "freqence_similarity": 1.0
-          },
-          0.7790369315925139
-        ],
-        [
-          {
-            "colloc_db_index": 624,
-            "sim_colloc": "артистка",
-            "w2v_sim": 0.7237961644906423,
-            "freqence_similarity": 1.0
-          },
-          0.7790369315925139
-        ]
-      ]
+      "российский эстрадный певица",
+      []
     ],
     [
       "лолита",
-      [
-        [
-          {
-            "colloc_db_index": 646,
-            "sim_colloc": "певица",
-            "w2v_sim": 0.5481530060917668,
-            "freqence_similarity": 1.0
-          },
-          0.6385224048734135
-        ]
-      ]
+      []
     ],
     [
       "милявская",
       []
     ],
     [
-      "не",
+      "не пускать",
       [
         [
           {
-            "colloc_db_index": 148,
-            "sim_colloc": "не",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 0.9999999999999999
+            "marked_colloc_db_index": 205,
+            "sim_colloc": "не знать",
+            "w2v_sim": 0.7264620959715056,
+            "freqence_similarity": 0.9995871694403444
           },
-          1.0000000000000004
+          0.7810871106652734
         ],
         [
           {
-            "colloc_db_index": 416,
+            "marked_colloc_db_index": 97,
             "sim_colloc": "не",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 0.9999999999999999
+            "w2v_sim": 0.6803354618299022,
+            "freqence_similarity": 0.9999970757599781
           },
-          1.0000000000000004
+          0.7442677846159174
         ],
         [
           {
-            "colloc_db_index": 444,
+            "marked_colloc_db_index": 302,
             "sim_colloc": "не",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 0.9999999999999999
+            "w2v_sim": 0.6803354618299022,
+            "freqence_similarity": 0.9999970757599781
           },
-          1.0000000000000004
+          0.7442677846159174
         ],
         [
           {
-            "colloc_db_index": 463,
-            "sim_colloc": "не",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 0.9999999999999999
+            "marked_colloc_db_index": 464,
+            "sim_colloc": "не исключать что",
+            "w2v_sim": 0.691185045271023,
+            "freqence_similarity": 0.9318663911546026
           },
-          1.0000000000000004
+          0.739321314447739
         ],
         [
           {
-            "colloc_db_index": 487,
-            "sim_colloc": "пока не",
-            "w2v_sim": 0.9243911379359111,
-            "freqence_similarity": 0.9950914577514334
-          },
-          0.9385312018990156
-        ]
-      ]
-    ],
-    [
-      "пускать",
-      [
-        [
-          {
-            "colloc_db_index": 500,
+            "marked_colloc_db_index": 326,
             "sim_colloc": "отпускать",
-            "w2v_sim": 0.8015777622786927,
-            "freqence_similarity": 0.9984167811167354
+            "w2v_sim": 0.6904905882507846,
+            "freqence_similarity": 0.8689252959864573
           },
-          0.8409455660463013
-        ],
-        [
-          {
-            "colloc_db_index": 152,
-            "sim_colloc": "ходить",
-            "w2v_sim": 0.728486007306417,
-            "freqence_similarity": 0.9999834778574215
-          },
-          0.7827855014166178
-        ],
-        [
-          {
-            "colloc_db_index": 642,
-            "sim_colloc": "ходить",
-            "w2v_sim": 0.728486007306417,
-            "freqence_similarity": 0.9999834778574215
-          },
-          0.7827855014166178
-        ],
-        [
-          {
-            "colloc_db_index": 462,
-            "sim_colloc": "вешать",
-            "w2v_sim": 0.694238326932052,
-            "freqence_similarity": 0.9996392194884096
-          },
-          0.7553185054433236
-        ],
-        [
-          {
-            "colloc_db_index": 394,
-            "sim_colloc": "болтать",
-            "w2v_sim": 0.67845906719351,
-            "freqence_similarity": 0.9999272840029723
-          },
-          0.7427527105554025
+          0.7261775297979192
         ]
       ]
     ],
     [
-      "на украина",
+      "на",
       [
         [
           {
-            "colloc_db_index": 181,
+            "marked_colloc_db_index": 131,
             "sim_colloc": "на",
-            "w2v_sim": 0.6730348051980579,
-            "freqence_similarity": 0.6678879610142163
+            "w2v_sim": 1.0,
+            "freqence_similarity": 1.0
           },
-          0.6720054363612896
+          1.0
         ],
         [
           {
-            "colloc_db_index": 190,
+            "marked_colloc_db_index": 133,
             "sim_colloc": "на",
-            "w2v_sim": 0.6730348051980579,
-            "freqence_similarity": 0.6678879610142163
+            "w2v_sim": 1.0,
+            "freqence_similarity": 1.0
           },
-          0.6720054363612896
+          1.0
         ],
         [
           {
-            "colloc_db_index": 201,
+            "marked_colloc_db_index": 308,
             "sim_colloc": "на",
-            "w2v_sim": 0.6730348051980579,
-            "freqence_similarity": 0.6678879610142163
+            "w2v_sim": 1.0,
+            "freqence_similarity": 1.0
           },
-          0.6720054363612896
+          1.0
         ],
         [
           {
-            "colloc_db_index": 205,
-            "sim_colloc": "на",
-            "w2v_sim": 0.6730348051980579,
-            "freqence_similarity": 0.6678879610142163
+            "marked_colloc_db_index": 421,
+            "sim_colloc": "на они",
+            "w2v_sim": 0.8784022890907963,
+            "freqence_similarity": 0.9824397473746392
           },
-          0.6720054363612896
+          0.899209780747565
+        ]
+      ]
+    ],
+    [
+      "украина",
+      [
+        [
+          {
+            "marked_colloc_db_index": 453,
+            "sim_colloc": "россия",
+            "w2v_sim": 0.7208879974078408,
+            "freqence_similarity": 0.9441052831631386
+          },
+          0.7655314545589004
         ],
         [
           {
-            "colloc_db_index": 232,
-            "sim_colloc": "на",
-            "w2v_sim": 0.6730348051980579,
-            "freqence_similarity": 0.6678879610142163
+            "marked_colloc_db_index": 466,
+            "sim_colloc": "россия",
+            "w2v_sim": 0.7208879974078408,
+            "freqence_similarity": 0.9441052831631386
           },
-          0.6720054363612896
+          0.7655314545589004
         ]
       ]
     ],
@@ -1423,48 +1231,48 @@
       [
         [
           {
-            "colloc_db_index": 332,
+            "marked_colloc_db_index": 215,
             "sim_colloc": "это",
             "w2v_sim": 1.0,
-            "freqence_similarity": 0.3780856531397121
+            "freqence_similarity": 0.9997932297621723
           },
-          0.8756171306279424
+          0.9999586459524346
         ],
         [
           {
-            "colloc_db_index": 372,
+            "marked_colloc_db_index": 242,
             "sim_colloc": "это",
             "w2v_sim": 1.0,
-            "freqence_similarity": 0.3780856531397121
+            "freqence_similarity": 0.9997932297621723
           },
-          0.8756171306279424
+          0.9999586459524346
         ],
         [
           {
-            "colloc_db_index": 376,
+            "marked_colloc_db_index": 244,
             "sim_colloc": "это",
             "w2v_sim": 1.0,
-            "freqence_similarity": 0.3780856531397121
+            "freqence_similarity": 0.9997932297621723
           },
-          0.8756171306279424
+          0.9999586459524346
         ],
         [
           {
-            "colloc_db_index": 615,
+            "marked_colloc_db_index": 403,
             "sim_colloc": "это",
             "w2v_sim": 1.0,
-            "freqence_similarity": 0.3780856531397121
+            "freqence_similarity": 0.9997932297621723
           },
-          0.8756171306279424
+          0.9999586459524346
         ],
         [
           {
-            "colloc_db_index": 612,
-            "sim_colloc": "как это",
-            "w2v_sim": 0.8069021405965241,
-            "freqence_similarity": 0.999999887329267
+            "marked_colloc_db_index": 406,
+            "sim_colloc": "это",
+            "w2v_sim": 1.0,
+            "freqence_similarity": 0.9997932297621723
           },
-          0.8455216899430728
+          0.9999586459524346
         ]
       ]
     ],
@@ -1473,193 +1281,35 @@
       [
         [
           {
-            "colloc_db_index": 150,
+            "marked_colloc_db_index": 99,
             "sim_colloc": "она",
             "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 1.0000000000000002
           },
           1.0
         ],
         [
           {
-            "colloc_db_index": 155,
+            "marked_colloc_db_index": 238,
             "sim_colloc": "она",
             "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 1.0000000000000002
           },
           1.0
-        ],
-        [
-          {
-            "colloc_db_index": 164,
-            "sim_colloc": "она",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
-          },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 364,
-            "sim_colloc": "она",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
-          },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 229,
-            "sim_colloc": "он",
-            "w2v_sim": 0.6308276257528229,
-            "freqence_similarity": 0.9989615026175371
-          },
-          0.7044544011257659
         ]
       ]
     ],
     [
-      "сообщать в",
+      "сообщать",
       [
         [
           {
-            "colloc_db_index": 209,
-            "sim_colloc": "сообщать в",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
+            "marked_colloc_db_index": 135,
+            "sim_colloc": "сообщать в понедельник",
+            "w2v_sim": 0.6968649316819068,
+            "freqence_similarity": 0.8902363055382846
           },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 722,
-            "sim_colloc": "отмечать в",
-            "w2v_sim": 0.8030445724382237,
-            "freqence_similarity": 0.9999992686273002
-          },
-          0.842435511676039
-        ],
-        [
-          {
-            "colloc_db_index": 503,
-            "sim_colloc": "участвовать в",
-            "w2v_sim": 0.7047071158598593,
-            "freqence_similarity": 0.9999997953672202
-          },
-          0.7637656517613315
-        ],
-        [
-          {
-            "colloc_db_index": 576,
-            "sim_colloc": "оказываться в",
-            "w2v_sim": 0.7037217571275098,
-            "freqence_similarity": 0.999998627388937
-          },
-          0.7629771311797954
-        ],
-        [
-          {
-            "colloc_db_index": 718,
-            "sim_colloc": "и в",
-            "w2v_sim": 0.6969700367986743,
-            "freqence_similarity": 0.9999991821615203
-          },
-          0.7575758658712435
-        ]
-      ]
-    ],
-    [
-      "воскресенье",
-      []
-    ],
-    [
-      "23",
-      []
-    ],
-    [
-      "апрель",
-      [
-        [
-          {
-            "colloc_db_index": 54,
-            "sim_colloc": "сентябрь",
-            "w2v_sim": 0.9656434662691842,
-            "freqence_similarity": 0.9985510732000507
-          },
-          0.9722249876553576
-        ],
-        [
-          {
-            "colloc_db_index": 189,
-            "sim_colloc": "апрель 2014 год",
-            "w2v_sim": 0.7378223706727196,
-            "freqence_similarity": 0.8167390988748034
-          },
-          0.7536057163131364
-        ]
-      ]
-    ],
-    [
-      "на свой",
-      [
-        [
-          {
-            "colloc_db_index": 636,
-            "sim_colloc": "на они",
-            "w2v_sim": 0.740309833433249,
-            "freqence_similarity": 0.9999783874269461
-          },
-          0.7922435442319885
-        ],
-        [
-          {
-            "colloc_db_index": 482,
-            "sim_colloc": "на основание",
-            "w2v_sim": 0.6288804170207767,
-            "freqence_similarity": 0.9926702461228313
-          },
-          0.7016383828411876
-        ],
-        [
-          {
-            "colloc_db_index": 181,
-            "sim_colloc": "на",
-            "w2v_sim": 0.8608621255577408,
-            "freqence_similarity": 0.015089083094281388
-          },
-          0.691707517065049
-        ],
-        [
-          {
-            "colloc_db_index": 190,
-            "sim_colloc": "на",
-            "w2v_sim": 0.8608621255577408,
-            "freqence_similarity": 0.015089083094281388
-          },
-          0.691707517065049
-        ],
-        [
-          {
-            "colloc_db_index": 201,
-            "sim_colloc": "на",
-            "w2v_sim": 0.8608621255577408,
-            "freqence_similarity": 0.015089083094281388
-          },
-          0.691707517065049
-        ]
-      ]
-    ],
-    [
-      "страница",
-      [
-        [
-          {
-            "colloc_db_index": 451,
-            "sim_colloc": "сайт",
-            "w2v_sim": 0.6780228113293465,
-            "freqence_similarity": 0.5714793870894488
-          },
-          0.656714126481367
+          0.7355392064531824
         ]
       ]
     ],
@@ -1668,7 +1318,7 @@
       [
         [
           {
-            "colloc_db_index": 125,
+            "marked_colloc_db_index": 173,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -1677,7 +1327,7 @@
         ],
         [
           {
-            "colloc_db_index": 134,
+            "marked_colloc_db_index": 359,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -1686,7 +1336,7 @@
         ],
         [
           {
-            "colloc_db_index": 153,
+            "marked_colloc_db_index": 446,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -1695,7 +1345,79 @@
         ],
         [
           {
-            "colloc_db_index": 171,
+            "marked_colloc_db_index": 484,
+            "sim_colloc": "и в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 0.9882469849756766
+          },
+          0.9976493969951357
+        ],
+        [
+          {
+            "marked_colloc_db_index": 176,
+            "sim_colloc": "в который",
+            "w2v_sim": 0.9658765429499789,
+            "freqence_similarity": 0.9999954592428122
+          },
+          0.9727003262085456
+        ]
+      ]
+    ],
+    [
+      "воскресенье 23 апрель",
+      []
+    ],
+    [
+      "на",
+      [
+        [
+          {
+            "marked_colloc_db_index": 131,
+            "sim_colloc": "на",
+            "w2v_sim": 1.0,
+            "freqence_similarity": 1.0
+          },
+          1.0
+        ],
+        [
+          {
+            "marked_colloc_db_index": 133,
+            "sim_colloc": "на",
+            "w2v_sim": 1.0,
+            "freqence_similarity": 1.0
+          },
+          1.0
+        ],
+        [
+          {
+            "marked_colloc_db_index": 308,
+            "sim_colloc": "на",
+            "w2v_sim": 1.0,
+            "freqence_similarity": 1.0
+          },
+          1.0
+        ],
+        [
+          {
+            "marked_colloc_db_index": 421,
+            "sim_colloc": "на они",
+            "w2v_sim": 0.8784022890907963,
+            "freqence_similarity": 0.9824397473746392
+          },
+          0.899209780747565
+        ]
+      ]
+    ],
+    [
+      "свой страница",
+      []
+    ],
+    [
+      "в",
+      [
+        [
+          {
+            "marked_colloc_db_index": 173,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -1704,12 +1426,39 @@
         ],
         [
           {
-            "colloc_db_index": 275,
+            "marked_colloc_db_index": 359,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
           },
           1.0000000000000004
+        ],
+        [
+          {
+            "marked_colloc_db_index": 446,
+            "sim_colloc": "в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0
+          },
+          1.0000000000000004
+        ],
+        [
+          {
+            "marked_colloc_db_index": 484,
+            "sim_colloc": "и в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 0.9882469849756766
+          },
+          0.9976493969951357
+        ],
+        [
+          {
+            "marked_colloc_db_index": 176,
+            "sim_colloc": "в который",
+            "w2v_sim": 0.9658765429499789,
+            "freqence_similarity": 0.9999954592428122
+          },
+          0.9727003262085456
         ]
       ]
     ],
@@ -1718,52 +1467,116 @@
       []
     ],
     [
-      "в тот число в",
+      "в",
       [
         [
           {
-            "colloc_db_index": 235,
-            "sim_colloc": "в тот число",
-            "w2v_sim": 0.9428073846297282,
-            "freqence_similarity": 0.9999791911037724
+            "marked_colloc_db_index": 173,
+            "sim_colloc": "в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0
           },
-          0.9542417459245371
+          1.0000000000000004
         ],
         [
           {
-            "colloc_db_index": 718,
+            "marked_colloc_db_index": 359,
+            "sim_colloc": "в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0
+          },
+          1.0000000000000004
+        ],
+        [
+          {
+            "marked_colloc_db_index": 446,
+            "sim_colloc": "в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0
+          },
+          1.0000000000000004
+        ],
+        [
+          {
+            "marked_colloc_db_index": 484,
             "sim_colloc": "и в",
-            "w2v_sim": 0.8746896887818033,
-            "freqence_similarity": 0.9999998906233106
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 0.9882469849756766
           },
-          0.8997517291501049
+          0.9976493969951357
         ],
         [
           {
-            "colloc_db_index": 125,
-            "sim_colloc": "в",
-            "w2v_sim": 0.8746896887818033,
-            "freqence_similarity": 0.9790807221137774
+            "marked_colloc_db_index": 176,
+            "sim_colloc": "в который",
+            "w2v_sim": 0.9658765429499789,
+            "freqence_similarity": 0.9999954592428122
           },
-          0.8955678954481983
+          0.9727003262085456
+        ]
+      ]
+    ],
+    [
+      "тот число",
+      [
+        [
+          {
+            "marked_colloc_db_index": 149,
+            "sim_colloc": "в тот число",
+            "w2v_sim": 0.7263060171650273,
+            "freqence_similarity": 0.9620515469901973
+          },
+          0.7734551231300614
+        ]
+      ]
+    ],
+    [
+      "в",
+      [
+        [
+          {
+            "marked_colloc_db_index": 173,
+            "sim_colloc": "в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0
+          },
+          1.0000000000000004
         ],
         [
           {
-            "colloc_db_index": 134,
+            "marked_colloc_db_index": 359,
             "sim_colloc": "в",
-            "w2v_sim": 0.8746896887818033,
-            "freqence_similarity": 0.9790807221137774
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0
           },
-          0.8955678954481983
+          1.0000000000000004
         ],
         [
           {
-            "colloc_db_index": 153,
+            "marked_colloc_db_index": 446,
             "sim_colloc": "в",
-            "w2v_sim": 0.8746896887818033,
-            "freqence_similarity": 0.9790807221137774
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0
           },
-          0.8955678954481983
+          1.0000000000000004
+        ],
+        [
+          {
+            "marked_colloc_db_index": 484,
+            "sim_colloc": "и в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 0.9882469849756766
+          },
+          0.9976493969951357
+        ],
+        [
+          {
+            "marked_colloc_db_index": 176,
+            "sim_colloc": "в который",
+            "w2v_sim": 0.9658765429499789,
+            "freqence_similarity": 0.9999954592428122
+          },
+          0.9727003262085456
         ]
       ]
     ],
@@ -1776,39 +1589,12 @@
       [
         [
           {
-            "colloc_db_index": 132,
+            "marked_colloc_db_index": 391,
             "sim_colloc": "как",
             "w2v_sim": 1.0,
-            "freqence_similarity": 1.0000000000000002
+            "freqence_similarity": 1.0
           },
           1.0
-        ],
-        [
-          {
-            "colloc_db_index": 595,
-            "sim_colloc": "как",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0000000000000002
-          },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 612,
-            "sim_colloc": "как это",
-            "w2v_sim": 0.8197847494541388,
-            "freqence_similarity": 0.016970493619038247
-          },
-          0.6592218982871187
-        ],
-        [
-          {
-            "colloc_db_index": 373,
-            "sim_colloc": "чтото",
-            "w2v_sim": 0.503114646577663,
-            "freqence_similarity": 0.9999183565813384
-          },
-          0.6024753885783982
         ]
       ]
     ],
@@ -1821,48 +1607,48 @@
       [
         [
           {
-            "colloc_db_index": 326,
+            "marked_colloc_db_index": 209,
             "sim_colloc": "казаться",
             "w2v_sim": 0.7469210190249922,
-            "freqence_similarity": 0.9999268854383552
+            "freqence_similarity": 0.9930204953386907
           },
-          0.7975221923076649
+          0.7961409142877319
         ],
         [
           {
-            "colloc_db_index": 344,
-            "sim_colloc": "казаться",
-            "w2v_sim": 0.7469210190249922,
-            "freqence_similarity": 0.9999268854383552
-          },
-          0.7975221923076649
-        ],
-        [
-          {
-            "colloc_db_index": 322,
+            "marked_colloc_db_index": 205,
             "sim_colloc": "не знать",
             "w2v_sim": 0.7257381281193712,
-            "freqence_similarity": 0.9977609279310146
+            "freqence_similarity": 0.9997491942031315
           },
-          0.7801426880817
+          0.7805403413361234
         ],
         [
           {
-            "colloc_db_index": 394,
+            "marked_colloc_db_index": 225,
+            "sim_colloc": "казаться бы",
+            "w2v_sim": 0.6937467975854819,
+            "freqence_similarity": 0.9984341665710917
+          },
+          0.7546842713826039
+        ],
+        [
+          {
+            "marked_colloc_db_index": 257,
             "sim_colloc": "болтать",
             "w2v_sim": 0.680560647789776,
-            "freqence_similarity": 0.9996667202561432
+            "freqence_similarity": 0.9171988689990762
           },
-          0.7443818622830495
+          0.7278882920316361
         ],
         [
           {
-            "colloc_db_index": 389,
-            "sim_colloc": "видеть",
-            "w2v_sim": 0.6720386464087799,
-            "freqence_similarity": 0.9998427482848854
+            "marked_colloc_db_index": 254,
+            "sim_colloc": "видеть что",
+            "w2v_sim": 0.727442863527558,
+            "freqence_similarity": 0.6336737920026027
           },
-          0.737599466784001
+          0.7086890492225669
         ]
       ]
     ],
@@ -1871,21 +1657,21 @@
       [
         [
           {
-            "colloc_db_index": 4,
+            "marked_colloc_db_index": 4,
             "sim_colloc": "где",
             "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 0.9999999999999999
           },
           1.0000000000000004
         ],
         [
           {
-            "colloc_db_index": 85,
-            "sim_colloc": "где",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 1.0
+            "marked_colloc_db_index": 53,
+            "sim_colloc": "где быть",
+            "w2v_sim": 0.8555651336206603,
+            "freqence_similarity": 0.9916296707393113
           },
-          1.0000000000000004
+          0.8827780410443906
         ]
       ]
     ],
@@ -1894,12 +1680,12 @@
       [
         [
           {
-            "colloc_db_index": 386,
-            "sim_colloc": "я",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 0.9999999999999999
+            "marked_colloc_db_index": 251,
+            "sim_colloc": "если я",
+            "w2v_sim": 0.9242891873343747,
+            "freqence_similarity": 0.999998503676989
           },
-          1.0000000000000004
+          0.9394310506028976
         ]
       ]
     ],
@@ -1908,12 +1694,12 @@
       [
         [
           {
-            "colloc_db_index": 386,
-            "sim_colloc": "я",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 0.9999999999999999
+            "marked_colloc_db_index": 251,
+            "sim_colloc": "если я",
+            "w2v_sim": 0.9242891873343747,
+            "freqence_similarity": 0.999998503676989
           },
-          1.0000000000000004
+          0.9394310506028976
         ]
       ]
     ],
@@ -1922,7 +1708,7 @@
       [
         [
           {
-            "colloc_db_index": 125,
+            "marked_colloc_db_index": 173,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -1931,7 +1717,7 @@
         ],
         [
           {
-            "colloc_db_index": 134,
+            "marked_colloc_db_index": 359,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -1940,7 +1726,7 @@
         ],
         [
           {
-            "colloc_db_index": 153,
+            "marked_colloc_db_index": 446,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -1949,21 +1735,21 @@
         ],
         [
           {
-            "colloc_db_index": 171,
-            "sim_colloc": "в",
+            "marked_colloc_db_index": 484,
+            "sim_colloc": "и в",
             "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 0.9882469849756766
           },
-          1.0000000000000004
+          0.9976493969951357
         ],
         [
           {
-            "colloc_db_index": 275,
-            "sim_colloc": "в",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 1.0
+            "marked_colloc_db_index": 176,
+            "sim_colloc": "в который",
+            "w2v_sim": 0.9658765429499789,
+            "freqence_similarity": 0.9999954592428122
           },
-          1.0000000000000004
+          0.9727003262085456
         ]
       ]
     ],
@@ -1976,12 +1762,12 @@
       [
         [
           {
-            "colloc_db_index": 386,
-            "sim_colloc": "я",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 0.9999999999999999
+            "marked_colloc_db_index": 251,
+            "sim_colloc": "если я",
+            "w2v_sim": 0.9242891873343747,
+            "freqence_similarity": 0.999998503676989
           },
-          1.0000000000000004
+          0.9394310506028976
         ]
       ]
     ],
@@ -1990,7 +1776,7 @@
       [
         [
           {
-            "colloc_db_index": 125,
+            "marked_colloc_db_index": 173,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -1999,7 +1785,7 @@
         ],
         [
           {
-            "colloc_db_index": 134,
+            "marked_colloc_db_index": 359,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -2008,7 +1794,7 @@
         ],
         [
           {
-            "colloc_db_index": 153,
+            "marked_colloc_db_index": 446,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -2017,21 +1803,21 @@
         ],
         [
           {
-            "colloc_db_index": 171,
-            "sim_colloc": "в",
+            "marked_colloc_db_index": 484,
+            "sim_colloc": "и в",
             "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 0.9882469849756766
           },
-          1.0000000000000004
+          0.9976493969951357
         ],
         [
           {
-            "colloc_db_index": 275,
-            "sim_colloc": "в",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 1.0
+            "marked_colloc_db_index": 176,
+            "sim_colloc": "в который",
+            "w2v_sim": 0.9658765429499789,
+            "freqence_similarity": 0.9999954592428122
           },
-          1.0000000000000004
+          0.9727003262085456
         ]
       ]
     ],
@@ -2044,48 +1830,21 @@
       [
         [
           {
-            "colloc_db_index": 462,
+            "marked_colloc_db_index": 301,
             "sim_colloc": "вешать",
             "w2v_sim": 0.6886090134688239,
-            "freqence_similarity": 0.9755106252051915
+            "freqence_similarity": 0.8888489935709798
           },
-          0.7459893358160974
+          0.728657009489255
         ],
         [
           {
-            "colloc_db_index": 500,
+            "marked_colloc_db_index": 326,
             "sim_colloc": "отпускать",
             "w2v_sim": 0.6610566664000656,
-            "freqence_similarity": 0.9538749302707948
+            "freqence_similarity": 0.9616469025571394
           },
-          0.7196203191742114
-        ],
-        [
-          {
-            "colloc_db_index": 679,
-            "sim_colloc": "выводить",
-            "w2v_sim": 0.6328986165760353,
-            "freqence_similarity": 0.9973468958710123
-          },
-          0.7057882724350307
-        ],
-        [
-          {
-            "colloc_db_index": 488,
-            "sim_colloc": "вернуть",
-            "w2v_sim": 0.6037526485177305,
-            "freqence_similarity": 0.9960125993319985
-          },
-          0.6822046386805841
-        ],
-        [
-          {
-            "colloc_db_index": 231,
-            "sim_colloc": "переводить",
-            "w2v_sim": 0.5900776589571259,
-            "freqence_similarity": 0.9928613481084685
-          },
-          0.6706343967873944
+          0.7211747136314803
         ]
       ]
     ],
@@ -2094,7 +1853,7 @@
       [
         [
           {
-            "colloc_db_index": 20,
+            "marked_colloc_db_index": 17,
             "sim_colloc": "с",
             "w2v_sim": 1.0000000000000007,
             "freqence_similarity": 1.0
@@ -2103,178 +1862,86 @@
         ],
         [
           {
-            "colloc_db_index": 446,
+            "marked_colloc_db_index": 352,
             "sim_colloc": "с",
             "w2v_sim": 1.0000000000000007,
             "freqence_similarity": 1.0
           },
           1.0000000000000007
-        ],
-        [
-          {
-            "colloc_db_index": 539,
-            "sim_colloc": "с",
-            "w2v_sim": 1.0000000000000007,
-            "freqence_similarity": 1.0
-          },
-          1.0000000000000007
-        ],
-        [
-          {
-            "colloc_db_index": 61,
-            "sim_colloc": "связывать с",
-            "w2v_sim": 0.7287208056685364,
-            "freqence_similarity": 0.9673086917805295
-          },
-          0.776438382890935
-        ],
-        [
-          {
-            "colloc_db_index": 147,
-            "sim_colloc": "с он",
-            "w2v_sim": 0.7818033745958217,
-            "freqence_similarity": 0.006515679249118708
-          },
-          0.6267458355264812
         ]
       ]
     ],
     [
       "поезд",
+      []
+    ],
+    [
+      "я",
       [
         [
           {
-            "colloc_db_index": 143,
-            "sim_colloc": "поездка",
-            "w2v_sim": 0.5355628376688317,
-            "freqence_similarity": 0.9879960402750646
+            "marked_colloc_db_index": 251,
+            "sim_colloc": "если я",
+            "w2v_sim": 0.9242891873343747,
+            "freqence_similarity": 0.999998503676989
           },
-          0.6260494781900784
-        ],
-        [
-          {
-            "colloc_db_index": 426,
-            "sim_colloc": "проезд",
-            "w2v_sim": 0.5268752467345164,
-            "freqence_similarity": 0.9964858211729777
-          },
-          0.6207973616222087
+          0.9394310506028976
         ]
       ]
     ],
     [
-      "я не мочь",
+      "не",
       [
         [
           {
-            "colloc_db_index": 139,
-            "sim_colloc": "не мочь",
-            "w2v_sim": 0.8159323380159413,
-            "freqence_similarity": 0.9999114736331913
-          },
-          0.8527281651393914
-        ],
-        [
-          {
-            "colloc_db_index": 700,
-            "sim_colloc": "мы мочь",
-            "w2v_sim": 0.6526434364289726,
-            "freqence_similarity": 0.9999939836963829
-          },
-          0.7221135458824547
-        ],
-        [
-          {
-            "colloc_db_index": 148,
+            "marked_colloc_db_index": 97,
             "sim_colloc": "не",
-            "w2v_sim": 0.596177389021665,
-            "freqence_similarity": 0.9950809676551489
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0
           },
-          0.6759581047483618
+          1.0000000000000004
         ],
         [
           {
-            "colloc_db_index": 416,
+            "marked_colloc_db_index": 302,
             "sim_colloc": "не",
-            "w2v_sim": 0.596177389021665,
-            "freqence_similarity": 0.9950809676551489
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0
           },
-          0.6759581047483618
+          1.0000000000000004
         ],
         [
           {
-            "colloc_db_index": 444,
-            "sim_colloc": "не",
-            "w2v_sim": 0.596177389021665,
-            "freqence_similarity": 0.9950809676551489
+            "marked_colloc_db_index": 316,
+            "sim_colloc": "пока не",
+            "w2v_sim": 0.9243911379359111,
+            "freqence_similarity": 0.9996341218017151
           },
-          0.6759581047483618
+          0.9394397347090719
+        ]
+      ]
+    ],
+    [
+      "мочь",
+      [
+        [
+          {
+            "marked_colloc_db_index": 67,
+            "sim_colloc": "мочь",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0000000000000002
+          },
+          1.0000000000000004
         ]
       ]
     ],
     [
       "навещать",
-      [
-        [
-          {
-            "colloc_db_index": 581,
-            "sim_colloc": "покидать",
-            "w2v_sim": 0.688658906139173,
-            "freqence_similarity": 0.8402966482242443
-          },
-          0.7189864545561873
-        ],
-        [
-          {
-            "colloc_db_index": 500,
-            "sim_colloc": "отпускать",
-            "w2v_sim": 0.6433148099054093,
-            "freqence_similarity": 1.0
-          },
-          0.7146518479243276
-        ],
-        [
-          {
-            "colloc_db_index": 152,
-            "sim_colloc": "ходить",
-            "w2v_sim": 0.6134717573600774,
-            "freqence_similarity": 0.9987236254802304
-          },
-          0.6905221309841081
-        ],
-        [
-          {
-            "colloc_db_index": 642,
-            "sim_colloc": "ходить",
-            "w2v_sim": 0.6134717573600774,
-            "freqence_similarity": 0.9987236254802304
-          },
-          0.6905221309841081
-        ],
-        [
-          {
-            "colloc_db_index": 488,
-            "sim_colloc": "вернуть",
-            "w2v_sim": 0.6182550848784082,
-            "freqence_similarity": 0.9768534777364433
-          },
-          0.6899747634500153
-        ]
-      ]
+      []
     ],
     [
       "свой",
-      [
-        [
-          {
-            "colloc_db_index": 169,
-            "sim_colloc": "свой",
-            "w2v_sim": 1.0000000000000002,
-            "freqence_similarity": 1.0
-          },
-          1.0000000000000002
-        ]
-      ]
+      []
     ],
     [
       "ребенок",
@@ -2285,37 +1952,28 @@
       [
         [
           {
-            "colloc_db_index": 10,
+            "marked_colloc_db_index": 9,
             "sim_colloc": "который",
             "w2v_sim": 1.0,
-            "freqence_similarity": 1.0000000000000002
+            "freqence_similarity": 1.0
           },
           1.0
         ],
         [
           {
-            "colloc_db_index": 162,
+            "marked_colloc_db_index": 107,
             "sim_colloc": "который",
             "w2v_sim": 1.0,
-            "freqence_similarity": 1.0000000000000002
+            "freqence_similarity": 1.0
           },
           1.0
         ],
         [
           {
-            "colloc_db_index": 178,
+            "marked_colloc_db_index": 413,
             "sim_colloc": "который",
             "w2v_sim": 1.0,
-            "freqence_similarity": 1.0000000000000002
-          },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 625,
-            "sim_colloc": "который",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0000000000000002
+            "freqence_similarity": 1.0
           },
           1.0
         ]
@@ -2330,48 +1988,21 @@
       [
         [
           {
-            "colloc_db_index": 136,
+            "marked_colloc_db_index": 65,
+            "sim_colloc": "что",
+            "w2v_sim": 0.924829824711312,
+            "freqence_similarity": 0.9985061573016619
+          },
+          0.939565091229382
+        ],
+        [
+          {
+            "marked_colloc_db_index": 87,
             "sim_colloc": "о то что",
             "w2v_sim": 0.7482131720984417,
-            "freqence_similarity": 0.9939571669659825
+            "freqence_similarity": 0.9986578519224784
           },
-          0.79736197107195
-        ],
-        [
-          {
-            "colloc_db_index": 103,
-            "sim_colloc": "что",
-            "w2v_sim": 0.924829824711312,
-            "freqence_similarity": 0.1597257506563471
-          },
-          0.7718090099003191
-        ],
-        [
-          {
-            "colloc_db_index": 390,
-            "sim_colloc": "что",
-            "w2v_sim": 0.924829824711312,
-            "freqence_similarity": 0.1597257506563471
-          },
-          0.7718090099003191
-        ],
-        [
-          {
-            "colloc_db_index": 303,
-            "sim_colloc": "чтобы",
-            "w2v_sim": 0.6366493499683519,
-            "freqence_similarity": 0.9999752282627832
-          },
-          0.7093145256272382
-        ],
-        [
-          {
-            "colloc_db_index": 378,
-            "sim_colloc": "чтобы",
-            "w2v_sim": 0.6366493499683519,
-            "freqence_similarity": 0.9999752282627832
-          },
-          0.7093145256272382
+          0.7983021080632491
         ]
       ]
     ],
@@ -2380,76 +2011,25 @@
       [
         [
           {
-            "colloc_db_index": 386,
-            "sim_colloc": "я",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 0.9999999999999999
+            "marked_colloc_db_index": 251,
+            "sim_colloc": "если я",
+            "w2v_sim": 0.9242891873343747,
+            "freqence_similarity": 0.999998503676989
           },
-          1.0000000000000004
+          0.9394310506028976
         ]
       ]
     ],
     [
-      "запрещать",
-      [
-        [
-          {
-            "colloc_db_index": 439,
-            "sim_colloc": "запрет",
-            "w2v_sim": 0.6505282355477395,
-            "freqence_similarity": 0.7718253451777468
-          },
-          0.674787657473741
-        ],
-        [
-          {
-            "colloc_db_index": 491,
-            "sim_colloc": "отказываться",
-            "w2v_sim": 0.5923065639263987,
-            "freqence_similarity": 0.9990874433026102
-          },
-          0.673662739801641
-        ],
-        [
-          {
-            "colloc_db_index": 100,
-            "sim_colloc": "отменять",
-            "w2v_sim": 0.5823954901064222,
-            "freqence_similarity": 0.999499095845296
-          },
-          0.665816211254197
-        ]
-      ]
-    ],
-    [
-      "въезд",
-      [
-        [
-          {
-            "colloc_db_index": 441,
-            "sim_colloc": "въезд",
-            "w2v_sim": 1.0000000000000007,
-            "freqence_similarity": 0.9999999999999998
-          },
-          1.0000000000000004
-        ],
-        [
-          {
-            "colloc_db_index": 426,
-            "sim_colloc": "проезд",
-            "w2v_sim": 0.6423388962947852,
-            "freqence_similarity": 0.9997853126474734
-          },
-          0.713828179565323
-        ]
-      ]
+      "запрещать въезд",
+      []
     ],
     [
       "на",
       [
         [
           {
-            "colloc_db_index": 181,
+            "marked_colloc_db_index": 131,
             "sim_colloc": "на",
             "w2v_sim": 1.0,
             "freqence_similarity": 1.0
@@ -2458,7 +2038,7 @@
         ],
         [
           {
-            "colloc_db_index": 190,
+            "marked_colloc_db_index": 133,
             "sim_colloc": "на",
             "w2v_sim": 1.0,
             "freqence_similarity": 1.0
@@ -2467,7 +2047,7 @@
         ],
         [
           {
-            "colloc_db_index": 201,
+            "marked_colloc_db_index": 308,
             "sim_colloc": "на",
             "w2v_sim": 1.0,
             "freqence_similarity": 1.0
@@ -2476,21 +2056,12 @@
         ],
         [
           {
-            "colloc_db_index": 205,
-            "sim_colloc": "на",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
+            "marked_colloc_db_index": 421,
+            "sim_colloc": "на они",
+            "w2v_sim": 0.8784022890907963,
+            "freqence_similarity": 0.9824397473746392
           },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 232,
-            "sim_colloc": "на",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
-          },
-          1.0
+          0.899209780747565
         ]
       ]
     ],
@@ -2500,101 +2071,19 @@
     ],
     [
       "рассказывать",
-      [
-        [
-          {
-            "colloc_db_index": 403,
-            "sim_colloc": "объяснять",
-            "w2v_sim": 0.7065019488031159,
-            "freqence_similarity": 0.9983949975419111
-          },
-          0.7648805585508749
-        ],
-        [
-          {
-            "colloc_db_index": 331,
-            "sim_colloc": "упоминать",
-            "w2v_sim": 0.6112057795763323,
-            "freqence_similarity": 0.9947000909171785
-          },
-          0.6879046418445016
-        ],
-        [
-          {
-            "colloc_db_index": 35,
-            "sim_colloc": "писать",
-            "w2v_sim": 0.6093769226099406,
-            "freqence_similarity": 0.9813065531718747
-          },
-          0.6837628487223274
-        ],
-        [
-          {
-            "colloc_db_index": 599,
-            "sim_colloc": "напоминать",
-            "w2v_sim": 0.6149176932968771,
-            "freqence_similarity": 0.9564105336573516
-          },
-          0.6832162613689721
-        ],
-        [
-          {
-            "colloc_db_index": 585,
-            "sim_colloc": "называть",
-            "w2v_sim": 0.5573734894621521,
-            "freqence_similarity": 0.9892893745731961
-          },
-          0.643756666484361
-        ]
-      ]
+      []
     ],
     [
       "исполнительница",
       [
         [
           {
-            "colloc_db_index": 473,
+            "marked_colloc_db_index": 372,
             "sim_colloc": "исполнитель",
             "w2v_sim": 0.734962924331592,
-            "freqence_similarity": 0.9848830444662592
+            "freqence_similarity": 0.999793822849074
           },
-          0.7849469483585255
-        ],
-        [
-          {
-            "colloc_db_index": 569,
-            "sim_colloc": "исполнитель",
-            "w2v_sim": 0.734962924331592,
-            "freqence_similarity": 0.9848830444662592
-          },
-          0.7849469483585255
-        ],
-        [
-          {
-            "colloc_db_index": 594,
-            "sim_colloc": "артистка",
-            "w2v_sim": 0.5906763140179593,
-            "freqence_similarity": 1.0
-          },
-          0.6725410512143675
-        ],
-        [
-          {
-            "colloc_db_index": 624,
-            "sim_colloc": "артистка",
-            "w2v_sim": 0.5906763140179593,
-            "freqence_similarity": 1.0
-          },
-          0.6725410512143675
-        ],
-        [
-          {
-            "colloc_db_index": 646,
-            "sim_colloc": "певица",
-            "w2v_sim": 0.5569348971955843,
-            "freqence_similarity": 1.0
-          },
-          0.6455479177564675
+          0.7879291040350884
         ]
       ]
     ],
@@ -2603,30 +2092,21 @@
       [
         [
           {
-            "colloc_db_index": 400,
-            "sim_colloc": "по слово",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 0.9999999999999999
-          },
-          1.0000000000000004
-        ],
-        [
-          {
-            "colloc_db_index": 588,
+            "marked_colloc_db_index": 385,
             "sim_colloc": "по он слово",
             "w2v_sim": 0.8716769941449954,
-            "freqence_similarity": 0.9183396926058512
+            "freqence_similarity": 0.9119668717442606
           },
-          0.8810095338371666
+          0.8797349696648485
         ],
         [
           {
-            "colloc_db_index": 450,
+            "marked_colloc_db_index": 293,
             "sim_colloc": "по он слово на",
             "w2v_sim": 0.7739947952389501,
-            "freqence_similarity": 0.9058562389209734
+            "freqence_similarity": 0.9842403920574051
           },
-          0.8003670839753548
+          0.8160439146026411
         ]
       ]
     ],
@@ -2639,73 +2119,27 @@
       [
         [
           {
-            "colloc_db_index": 150,
+            "marked_colloc_db_index": 99,
             "sim_colloc": "она",
             "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 1.0000000000000002
           },
           1.0
         ],
         [
           {
-            "colloc_db_index": 155,
+            "marked_colloc_db_index": 238,
             "sim_colloc": "она",
             "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 1.0000000000000002
           },
           1.0
-        ],
-        [
-          {
-            "colloc_db_index": 164,
-            "sim_colloc": "она",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
-          },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 364,
-            "sim_colloc": "она",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
-          },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 229,
-            "sim_colloc": "он",
-            "w2v_sim": 0.6308276257528229,
-            "freqence_similarity": 0.9989615026175371
-          },
-          0.7044544011257659
         ]
       ]
     ],
     [
       "сразу",
-      [
-        [
-          {
-            "colloc_db_index": 398,
-            "sim_colloc": "моментально",
-            "w2v_sim": 0.5467496175101987,
-            "freqence_similarity": 0.997267754456709
-          },
-          0.6368532448995008
-        ],
-        [
-          {
-            "colloc_db_index": 408,
-            "sim_colloc": "поздно",
-            "w2v_sim": 0.5100180778268395,
-            "freqence_similarity": 0.9641055657724358
-          },
-          0.6008355754159588
-        ]
-      ]
+      []
     ],
     [
       "пересадать",
@@ -2716,7 +2150,7 @@
       [
         [
           {
-            "colloc_db_index": 181,
+            "marked_colloc_db_index": 131,
             "sim_colloc": "на",
             "w2v_sim": 1.0,
             "freqence_similarity": 1.0
@@ -2725,7 +2159,7 @@
         ],
         [
           {
-            "colloc_db_index": 190,
+            "marked_colloc_db_index": 133,
             "sim_colloc": "на",
             "w2v_sim": 1.0,
             "freqence_similarity": 1.0
@@ -2734,7 +2168,7 @@
         ],
         [
           {
-            "colloc_db_index": 201,
+            "marked_colloc_db_index": 308,
             "sim_colloc": "на",
             "w2v_sim": 1.0,
             "freqence_similarity": 1.0
@@ -2743,158 +2177,79 @@
         ],
         [
           {
-            "colloc_db_index": 205,
-            "sim_colloc": "на",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
+            "marked_colloc_db_index": 421,
+            "sim_colloc": "на они",
+            "w2v_sim": 0.8784022890907963,
+            "freqence_similarity": 0.9824397473746392
           },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 232,
-            "sim_colloc": "на",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
-          },
-          1.0
+          0.899209780747565
         ]
       ]
     ],
     [
       "другой",
-      [
-        [
-          {
-            "colloc_db_index": 368,
-            "sim_colloc": "друг",
-            "w2v_sim": 0.6923195282702463,
-            "freqence_similarity": 0.9977964843392928
-          },
-          0.7534149194840557
-        ]
-      ]
+      []
     ],
     [
       "поезд",
-      [
-        [
-          {
-            "colloc_db_index": 143,
-            "sim_colloc": "поездка",
-            "w2v_sim": 0.5355628376688317,
-            "freqence_similarity": 0.9879960402750646
-          },
-          0.6260494781900784
-        ],
-        [
-          {
-            "colloc_db_index": 426,
-            "sim_colloc": "проезд",
-            "w2v_sim": 0.5268752467345164,
-            "freqence_similarity": 0.9964858211729777
-          },
-          0.6207973616222087
-        ]
-      ]
+      []
     ],
     [
       "милявский",
       []
     ],
     [
-      "пояснять что",
+      "пояснять",
       [
         [
           {
-            "colloc_db_index": 409,
-            "sim_colloc": "выясняться что",
-            "w2v_sim": 0.7123802520156777,
-            "freqence_similarity": 0.9580029431001661
+            "marked_colloc_db_index": 265,
+            "sim_colloc": "объяснять этот",
+            "w2v_sim": 0.7308144068919413,
+            "freqence_similarity": 0.6737463428139633
           },
-          0.7615047902325754
-        ],
+          0.7194007940763457
+        ]
+      ]
+    ],
+    [
+      "что",
+      [
         [
           {
-            "colloc_db_index": 403,
-            "sim_colloc": "объяснять",
-            "w2v_sim": 0.7513799831033996,
-            "freqence_similarity": 0.6768877891173841
+            "marked_colloc_db_index": 65,
+            "sim_colloc": "что",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0
           },
-          0.7364815443061965
+          1.0000000000000004
         ]
       ]
     ],
     [
       "въезд",
-      [
-        [
-          {
-            "colloc_db_index": 441,
-            "sim_colloc": "въезд",
-            "w2v_sim": 1.0000000000000007,
-            "freqence_similarity": 0.9999999999999998
-          },
-          1.0000000000000004
-        ],
-        [
-          {
-            "colloc_db_index": 426,
-            "sim_colloc": "проезд",
-            "w2v_sim": 0.6423388962947852,
-            "freqence_similarity": 0.9997853126474734
-          },
-          0.713828179565323
-        ]
-      ]
+      []
     ],
     [
       "она",
       [
         [
           {
-            "colloc_db_index": 150,
+            "marked_colloc_db_index": 99,
             "sim_colloc": "она",
             "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 1.0000000000000002
           },
           1.0
         ],
         [
           {
-            "colloc_db_index": 155,
+            "marked_colloc_db_index": 238,
             "sim_colloc": "она",
             "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 1.0000000000000002
           },
           1.0
-        ],
-        [
-          {
-            "colloc_db_index": 164,
-            "sim_colloc": "она",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
-          },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 364,
-            "sim_colloc": "она",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
-          },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 229,
-            "sim_colloc": "он",
-            "w2v_sim": 0.6308276257528229,
-            "freqence_similarity": 0.9989615026175371
-          },
-          0.7044544011257659
         ]
       ]
     ],
@@ -2903,48 +2258,12 @@
       [
         [
           {
-            "colloc_db_index": 387,
+            "marked_colloc_db_index": 252,
             "sim_colloc": "открывать",
             "w2v_sim": 0.8135794354133996,
-            "freqence_similarity": 0.997901334106245
+            "freqence_similarity": 0.9916044349437539
           },
-          0.8504438151519687
-        ],
-        [
-          {
-            "colloc_db_index": 581,
-            "sim_colloc": "покидать",
-            "w2v_sim": 0.6208959814887083,
-            "freqence_similarity": 0.9834686799412289
-          },
-          0.6934105211792124
-        ],
-        [
-          {
-            "colloc_db_index": 462,
-            "sim_colloc": "вешать",
-            "w2v_sim": 0.6281258884286856,
-            "freqence_similarity": 0.953019924185881
-          },
-          0.6931046955801247
-        ],
-        [
-          {
-            "colloc_db_index": 679,
-            "sim_colloc": "выводить",
-            "w2v_sim": 0.6070298202657873,
-            "freqence_similarity": 0.999913977256009
-          },
-          0.6856066516638317
-        ],
-        [
-          {
-            "colloc_db_index": 231,
-            "sim_colloc": "переводить",
-            "w2v_sim": 0.5990267411599177,
-            "freqence_similarity": 0.978951851664118
-          },
-          0.6750117632607578
+          0.8491844353194705
         ]
       ]
     ],
@@ -2953,7 +2272,7 @@
       [
         [
           {
-            "colloc_db_index": 28,
+            "marked_colloc_db_index": 23,
             "sim_colloc": "за",
             "w2v_sim": 1.0,
             "freqence_similarity": 1.0
@@ -2962,40 +2281,17 @@
         ],
         [
           {
-            "colloc_db_index": 349,
+            "marked_colloc_db_index": 229,
             "sim_colloc": "за",
             "w2v_sim": 1.0,
             "freqence_similarity": 1.0
           },
           1.0
-        ],
-        [
-          {
-            "colloc_db_index": 310,
-            "sim_colloc": "за этот",
-            "w2v_sim": 0.842424520298555,
-            "freqence_similarity": 0.9905988100786176
-          },
-          0.8720593782545676
         ]
       ]
     ],
     [
-      "посещение",
-      [
-        [
-          {
-            "colloc_db_index": 448,
-            "sim_colloc": "посещение",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 1.0
-          },
-          1.0000000000000004
-        ]
-      ]
-    ],
-    [
-      "керчи",
+      "посещение керчи",
       []
     ],
     [
@@ -3003,7 +2299,7 @@
       [
         [
           {
-            "colloc_db_index": 125,
+            "marked_colloc_db_index": 173,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -3012,7 +2308,7 @@
         ],
         [
           {
-            "colloc_db_index": 134,
+            "marked_colloc_db_index": 359,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -3021,7 +2317,7 @@
         ],
         [
           {
-            "colloc_db_index": 153,
+            "marked_colloc_db_index": 446,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -3030,103 +2326,75 @@
         ],
         [
           {
-            "colloc_db_index": 171,
-            "sim_colloc": "в",
+            "marked_colloc_db_index": 484,
+            "sim_colloc": "и в",
             "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 0.9882469849756766
           },
-          1.0000000000000004
+          0.9976493969951357
         ],
         [
           {
-            "colloc_db_index": 275,
-            "sim_colloc": "в",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 1.0
+            "marked_colloc_db_index": 176,
+            "sim_colloc": "в который",
+            "w2v_sim": 0.9658765429499789,
+            "freqence_similarity": 0.9999954592428122
           },
-          1.0000000000000004
+          0.9727003262085456
         ]
       ]
     ],
     [
       "2015 год",
-      [
-        [
-          {
-            "colloc_db_index": 207,
-            "sim_colloc": "год",
-            "w2v_sim": 0.7469430214130237,
-            "freqence_similarity": 0.9754384232952289
-          },
-          0.7926421017894648
-        ],
-        [
-          {
-            "colloc_db_index": 565,
-            "sim_colloc": "год быть",
-            "w2v_sim": 0.6708159979665508,
-            "freqence_similarity": 0.9999918115732352
-          },
-          0.7366511606878877
-        ],
-        [
-          {
-            "colloc_db_index": 189,
-            "sim_colloc": "апрель 2014 год",
-            "w2v_sim": 0.5866791724728511,
-            "freqence_similarity": 0.9999840280255682
-          },
-          0.6693401435833946
-        ]
-      ]
+      []
     ],
     [
       "певица",
       [
         [
           {
-            "colloc_db_index": 646,
-            "sim_colloc": "певица",
-            "w2v_sim": 1.0000000000000002,
-            "freqence_similarity": 1.0
-          },
-          1.0000000000000002
-        ],
-        [
-          {
-            "colloc_db_index": 175,
-            "sim_colloc": "певец",
-            "w2v_sim": 0.8338055998958123,
-            "freqence_similarity": 1.0
-          },
-          0.8670444799166499
-        ],
-        [
-          {
-            "colloc_db_index": 484,
-            "sim_colloc": "певец",
-            "w2v_sim": 0.8338055998958123,
-            "freqence_similarity": 1.0
-          },
-          0.8670444799166499
-        ],
-        [
-          {
-            "colloc_db_index": 594,
+            "marked_colloc_db_index": 390,
             "sim_colloc": "артистка",
             "w2v_sim": 0.7237961644906423,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 0.9996959628709597
           },
-          0.7790369315925139
+          0.7789761241667059
         ],
         [
           {
-            "colloc_db_index": 624,
-            "sim_colloc": "артистка",
-            "w2v_sim": 0.7237961644906423,
-            "freqence_similarity": 1.0
+            "marked_colloc_db_index": 315,
+            "sim_colloc": "заявление певец филипп киркоров",
+            "w2v_sim": 0.6833564316349927,
+            "freqence_similarity": 0.9989317231095276
           },
-          0.7790369315925139
+          0.7464714899298996
+        ],
+        [
+          {
+            "marked_colloc_db_index": 115,
+            "sim_colloc": "бывший жена певец",
+            "w2v_sim": 0.6691374460967688,
+            "freqence_similarity": 0.9798261901822481
+          },
+          0.7312751949138647
+        ],
+        [
+          {
+            "marked_colloc_db_index": 463,
+            "sim_colloc": "музыкант",
+            "w2v_sim": 0.6533035282481402,
+            "freqence_similarity": 0.9999967683908434
+          },
+          0.7226421762766808
+        ],
+        [
+          {
+            "marked_colloc_db_index": 75,
+            "sim_colloc": "сам музыкант",
+            "w2v_sim": 0.6573707518712562,
+            "freqence_similarity": 0.9488155009104537
+          },
+          0.7156597016790957
         ]
       ]
     ],
@@ -3135,48 +2403,48 @@
       [
         [
           {
-            "colloc_db_index": 51,
+            "marked_colloc_db_index": 325,
             "sim_colloc": "быть",
             "w2v_sim": 0.9999999999999998,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 1.0000000000000002
           },
-          0.9999999999999998
+          0.9999999999999999
         ],
         [
           {
-            "colloc_db_index": 86,
+            "marked_colloc_db_index": 426,
             "sim_colloc": "быть",
             "w2v_sim": 0.9999999999999998,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 1.0000000000000002
           },
-          0.9999999999999998
+          0.9999999999999999
         ],
         [
           {
-            "colloc_db_index": 499,
+            "marked_colloc_db_index": 434,
             "sim_colloc": "быть",
             "w2v_sim": 0.9999999999999998,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 1.0000000000000002
           },
-          0.9999999999999998
+          0.9999999999999999
         ],
         [
           {
-            "colloc_db_index": 641,
-            "sim_colloc": "быть",
-            "w2v_sim": 0.9999999999999998,
-            "freqence_similarity": 1.0
+            "marked_colloc_db_index": 15,
+            "sim_colloc": "можно быть бы",
+            "w2v_sim": 0.6809117154718888,
+            "freqence_similarity": 0.9989219626430728
           },
-          0.9999999999999998
+          0.7445137649061256
         ],
         [
           {
-            "colloc_db_index": 650,
-            "sim_colloc": "быть",
-            "w2v_sim": 0.9999999999999998,
-            "freqence_similarity": 1.0
+            "marked_colloc_db_index": 53,
+            "sim_colloc": "где быть",
+            "w2v_sim": 0.6615092511567764,
+            "freqence_similarity": 0.9999445945891066
           },
-          0.9999999999999998
+          0.7291963198432425
         ]
       ]
     ],
@@ -3189,12 +2457,12 @@
       [
         [
           {
-            "colloc_db_index": 290,
-            "sim_colloc": "один",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 1.0
+            "marked_colloc_db_index": 183,
+            "sim_colloc": "всего один",
+            "w2v_sim": 0.7494642505522571,
+            "freqence_similarity": 0.9999221416662355
           },
-          1.0000000000000004
+          0.7995558287750528
         ]
       ]
     ],
@@ -3207,71 +2475,25 @@
       [
         [
           {
-            "colloc_db_index": 210,
+            "marked_colloc_db_index": 171,
             "sim_colloc": "от",
             "w2v_sim": 1.0000000000000009,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 0.9999999999999998
           },
           1.0000000000000007
-        ],
-        [
-          {
-            "colloc_db_index": 273,
-            "sim_colloc": "от",
-            "w2v_sim": 1.0000000000000009,
-            "freqence_similarity": 1.0
-          },
-          1.0000000000000007
-        ],
-        [
-          {
-            "colloc_db_index": 528,
-            "sim_colloc": "отказываться от",
-            "w2v_sim": 0.6111538908696286,
-            "freqence_similarity": 0.9956865926845773
-          },
-          0.6880604312326184
-        ],
-        [
-          {
-            "colloc_db_index": 533,
-            "sim_colloc": "тот",
-            "w2v_sim": 0.5965040063673714,
-            "freqence_similarity": 0.9994665007795576
-          },
-          0.6770965052498087
-        ],
-        [
-          {
-            "colloc_db_index": 310,
-            "sim_colloc": "за этот",
-            "w2v_sim": 0.5106341321448333,
-            "freqence_similarity": 0.9942019700129116
-          },
-          0.607347699718449
         ]
       ]
     ],
     [
       "брак",
-      [
-        [
-          {
-            "colloc_db_index": 160,
-            "sim_colloc": "супруга",
-            "w2v_sim": 0.5872308172790359,
-            "freqence_similarity": 0.9999551182265477
-          },
-          0.6697756774685383
-        ]
-      ]
+      []
     ],
     [
       "с",
       [
         [
           {
-            "colloc_db_index": 20,
+            "marked_colloc_db_index": 17,
             "sim_colloc": "с",
             "w2v_sim": 1.0000000000000007,
             "freqence_similarity": 1.0
@@ -3280,135 +2502,61 @@
         ],
         [
           {
-            "colloc_db_index": 446,
+            "marked_colloc_db_index": 352,
             "sim_colloc": "с",
             "w2v_sim": 1.0000000000000007,
             "freqence_similarity": 1.0
           },
           1.0000000000000007
-        ],
-        [
-          {
-            "colloc_db_index": 539,
-            "sim_colloc": "с",
-            "w2v_sim": 1.0000000000000007,
-            "freqence_similarity": 1.0
-          },
-          1.0000000000000007
-        ],
-        [
-          {
-            "colloc_db_index": 61,
-            "sim_colloc": "связывать с",
-            "w2v_sim": 0.7287208056685364,
-            "freqence_similarity": 0.9673086917805295
-          },
-          0.776438382890935
-        ],
-        [
-          {
-            "colloc_db_index": 147,
-            "sim_colloc": "с он",
-            "w2v_sim": 0.7818033745958217,
-            "freqence_similarity": 0.006515679249118708
-          },
-          0.6267458355264812
         ]
       ]
     ],
     [
       "третий",
-      [
-        [
-          {
-            "colloc_db_index": 579,
-            "sim_colloc": "третий место",
-            "w2v_sim": 0.7084148943001007,
-            "freqence_similarity": 0.9876756445920704
-          },
-          0.7642670443584947
-        ]
-      ]
+      []
     ],
     [
       "муж",
-      [
-        [
-          {
-            "colloc_db_index": 170,
-            "sim_colloc": "муж",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 1.0
-          },
-          1.0000000000000004
-        ],
-        [
-          {
-            "colloc_db_index": 160,
-            "sim_colloc": "супруга",
-            "w2v_sim": 0.8433712618455331,
-            "freqence_similarity": 0.9794433376182929
-          },
-          0.8705856770000852
-        ],
-        [
-          {
-            "colloc_db_index": 174,
-            "sim_colloc": "бывший жена",
-            "w2v_sim": 0.6820847894199521,
-            "freqence_similarity": 0.9994054426066712
-          },
-          0.7455489200572959
-        ]
-      ]
+      []
     ],
     [
       "александр",
       [
         [
           {
-            "colloc_db_index": 583,
-            "sim_colloc": "александр",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 1.0
+            "marked_colloc_db_index": 381,
+            "sim_colloc": "александр градский",
+            "w2v_sim": 0.8352638294532762,
+            "freqence_similarity": 0.9998844697587255
           },
-          1.0000000000000004
+          0.8681879575143661
         ],
         [
           {
-            "colloc_db_index": 658,
-            "sim_colloc": "сергей",
-            "w2v_sim": 0.8775627896117404,
-            "freqence_similarity": 0.9970779960591643
-          },
-          0.9014658309012252
-        ],
-        [
-          {
-            "colloc_db_index": 26,
+            "marked_colloc_db_index": 21,
             "sim_colloc": "борис",
             "w2v_sim": 0.7723610935934824,
-            "freqence_similarity": 0.9979915703059534
+            "freqence_similarity": 0.9472000632801596
           },
-          0.8174871889359766
+          0.8073288875308179
         ],
         [
           {
-            "colloc_db_index": 41,
+            "marked_colloc_db_index": 29,
             "sim_colloc": "георгий",
             "w2v_sim": 0.7546524849030244,
-            "freqence_similarity": 0.9924450321228051
+            "freqence_similarity": 0.9426832487021635
           },
-          0.8022109943469806
+          0.7922586376628523
         ],
         [
           {
-            "colloc_db_index": 485,
-            "sim_colloc": "филипп",
-            "w2v_sim": 0.6221638810893559,
-            "freqence_similarity": 0.9777662966816812
+            "marked_colloc_db_index": 439,
+            "sim_colloc": "глава крым сергей аксенов",
+            "w2v_sim": 0.6758781435652472,
+            "freqence_similarity": 0.9903966650176792
           },
-          0.693284364207821
+          0.7387818478557336
         ]
       ]
     ],
@@ -3418,93 +2566,15 @@
     ],
     [
       "дочь",
-      [
-        [
-          {
-            "colloc_db_index": 170,
-            "sim_colloc": "муж",
-            "w2v_sim": 0.7326187406052956,
-            "freqence_similarity": 0.9967362310085724
-          },
-          0.7854422386859511
-        ],
-        [
-          {
-            "colloc_db_index": 160,
-            "sim_colloc": "супруга",
-            "w2v_sim": 0.7191175100700475,
-            "freqence_similarity": 0.9925309158023778
-          },
-          0.7738001912165136
-        ],
-        [
-          {
-            "colloc_db_index": 174,
-            "sim_colloc": "бывший жена",
-            "w2v_sim": 0.6020964057172558,
-            "freqence_similarity": 0.9933602669282229
-          },
-          0.6803491779594493
-        ]
-      ]
+      []
     ],
     [
       "ева",
       []
     ],
     [
-      "1999",
+      "1999 год",
       []
-    ],
-    [
-      "год",
-      [
-        [
-          {
-            "colloc_db_index": 207,
-            "sim_colloc": "год",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 1.0
-          },
-          1.0000000000000004
-        ],
-        [
-          {
-            "colloc_db_index": 565,
-            "sim_colloc": "год быть",
-            "w2v_sim": 0.9149705586448372,
-            "freqence_similarity": 0.9745390327395382
-          },
-          0.9268842534637775
-        ],
-        [
-          {
-            "colloc_db_index": 189,
-            "sim_colloc": "апрель 2014 год",
-            "w2v_sim": 0.7666672552900965,
-            "freqence_similarity": 0.9741778921072365
-          },
-          0.8081693826535246
-        ],
-        [
-          {
-            "colloc_db_index": 187,
-            "sim_colloc": "несколько год",
-            "w2v_sim": 0.6940863581147216,
-            "freqence_similarity": 0.975289969254956
-          },
-          0.7503270803427685
-        ],
-        [
-          {
-            "colloc_db_index": 611,
-            "sim_colloc": "в год",
-            "w2v_sim": 0.6525173653260906,
-            "freqence_similarity": 0.974321696251707
-          },
-          0.7168782315112139
-        ]
-      ]
     ],
     [
       "рождение",
@@ -3515,107 +2585,34 @@
       [
         [
           {
-            "colloc_db_index": 150,
+            "marked_colloc_db_index": 99,
             "sim_colloc": "она",
             "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 1.0000000000000002
           },
           1.0
         ],
         [
           {
-            "colloc_db_index": 155,
+            "marked_colloc_db_index": 238,
             "sim_colloc": "она",
             "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 1.0000000000000002
           },
           1.0
-        ],
-        [
-          {
-            "colloc_db_index": 164,
-            "sim_colloc": "она",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
-          },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 364,
-            "sim_colloc": "она",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
-          },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 229,
-            "sim_colloc": "он",
-            "w2v_sim": 0.6308276257528229,
-            "freqence_similarity": 0.9989615026175371
-          },
-          0.7044544011257659
         ]
       ]
     ],
     [
       "жить",
-      [
-        [
-          {
-            "colloc_db_index": 249,
-            "sim_colloc": "проживать",
-            "w2v_sim": 0.7927616633653075,
-            "freqence_similarity": 0.9188217197240205
-          },
-          0.8179736746370502
-        ],
-        [
-          {
-            "colloc_db_index": 152,
-            "sim_colloc": "ходить",
-            "w2v_sim": 0.5876206359265879,
-            "freqence_similarity": 0.9998997149479809
-          },
-          0.6700764517308665
-        ],
-        [
-          {
-            "colloc_db_index": 642,
-            "sim_colloc": "ходить",
-            "w2v_sim": 0.5876206359265879,
-            "freqence_similarity": 0.9998997149479809
-          },
-          0.6700764517308665
-        ],
-        [
-          {
-            "colloc_db_index": 328,
-            "sim_colloc": "гордиться",
-            "w2v_sim": 0.5795178198464854,
-            "freqence_similarity": 0.9984158979336438
-          },
-          0.6632974354639172
-        ],
-        [
-          {
-            "colloc_db_index": 394,
-            "sim_colloc": "болтать",
-            "w2v_sim": 0.5568733971694382,
-            "freqence_similarity": 0.9997904239102376
-          },
-          0.6454568025175981
-        ]
-      ]
+      []
     ],
     [
       "с",
       [
         [
           {
-            "colloc_db_index": 20,
+            "marked_colloc_db_index": 17,
             "sim_colloc": "с",
             "w2v_sim": 1.0000000000000007,
             "freqence_similarity": 1.0
@@ -3624,62 +2621,25 @@
         ],
         [
           {
-            "colloc_db_index": 446,
+            "marked_colloc_db_index": 352,
             "sim_colloc": "с",
             "w2v_sim": 1.0000000000000007,
             "freqence_similarity": 1.0
           },
           1.0000000000000007
-        ],
-        [
-          {
-            "colloc_db_index": 539,
-            "sim_colloc": "с",
-            "w2v_sim": 1.0000000000000007,
-            "freqence_similarity": 1.0
-          },
-          1.0000000000000007
-        ],
-        [
-          {
-            "colloc_db_index": 61,
-            "sim_colloc": "связывать с",
-            "w2v_sim": 0.7287208056685364,
-            "freqence_similarity": 0.9673086917805295
-          },
-          0.776438382890935
-        ],
-        [
-          {
-            "colloc_db_index": 147,
-            "sim_colloc": "с он",
-            "w2v_sim": 0.7818033745958217,
-            "freqence_similarity": 0.006515679249118708
-          },
-          0.6267458355264812
         ]
       ]
     ],
     [
       "бабушка",
-      [
-        [
-          {
-            "colloc_db_index": 170,
-            "sim_colloc": "муж",
-            "w2v_sim": 0.57546961820489,
-            "freqence_similarity": 0.9998314476773082
-          },
-          0.6603419840993736
-        ]
-      ]
+      []
     ],
     [
       "в",
       [
         [
           {
-            "colloc_db_index": 125,
+            "marked_colloc_db_index": 173,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -3688,7 +2648,7 @@
         ],
         [
           {
-            "colloc_db_index": 134,
+            "marked_colloc_db_index": 359,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -3697,7 +2657,7 @@
         ],
         [
           {
-            "colloc_db_index": 153,
+            "marked_colloc_db_index": 446,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -3706,21 +2666,21 @@
         ],
         [
           {
-            "colloc_db_index": 171,
-            "sim_colloc": "в",
+            "marked_colloc_db_index": 484,
+            "sim_colloc": "и в",
             "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 0.9882469849756766
           },
-          1.0000000000000004
+          0.9976493969951357
         ],
         [
           {
-            "colloc_db_index": 275,
-            "sim_colloc": "в",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 1.0
+            "marked_colloc_db_index": 176,
+            "sim_colloc": "в который",
+            "w2v_sim": 0.9658765429499789,
+            "freqence_similarity": 0.9999954592428122
           },
-          1.0000000000000004
+          0.9727003262085456
         ]
       ]
     ],
@@ -3729,48 +2689,12 @@
       [
         [
           {
-            "colloc_db_index": 415,
-            "sim_colloc": "киев",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 0.9999999999999998
+            "marked_colloc_db_index": 273,
+            "sim_colloc": "киев не",
+            "w2v_sim": 0.769336248328274,
+            "freqence_similarity": 0.6113598139928966
           },
-          1.0000000000000004
-        ],
-        [
-          {
-            "colloc_db_index": 466,
-            "sim_colloc": "радиостанция говорит москва",
-            "w2v_sim": 0.5275065156964795,
-            "freqence_similarity": 0.9846124324631489
-          },
-          0.6189276990498134
-        ],
-        [
-          {
-            "colloc_db_index": 449,
-            "sim_colloc": "крым",
-            "w2v_sim": 0.5307478535825207,
-            "freqence_similarity": 0.9491006435364604
-          },
-          0.6144184115733087
-        ],
-        [
-          {
-            "colloc_db_index": 657,
-            "sim_colloc": "крым",
-            "w2v_sim": 0.5307478535825207,
-            "freqence_similarity": 0.9491006435364604
-          },
-          0.6144184115733087
-        ],
-        [
-          {
-            "colloc_db_index": 724,
-            "sim_colloc": "крым",
-            "w2v_sim": 0.5307478535825207,
-            "freqence_similarity": 0.9491006435364604
-          },
-          0.6144184115733087
+          0.7377409614611985
         ]
       ]
     ],
@@ -3779,48 +2703,12 @@
       [
         [
           {
-            "colloc_db_index": 35,
-            "sim_colloc": "писать",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 1.0
-          },
-          1.0000000000000004
-        ],
-        [
-          {
-            "colloc_db_index": 331,
+            "marked_colloc_db_index": 214,
             "sim_colloc": "упоминать",
             "w2v_sim": 0.6873764026401181,
-            "freqence_similarity": 0.9958933369010246
+            "freqence_similarity": 0.9993682140256769
           },
-          0.7490797894922995
-        ],
-        [
-          {
-            "colloc_db_index": 534,
-            "sim_colloc": "извиняться",
-            "w2v_sim": 0.6092550078775714,
-            "freqence_similarity": 0.9500217840009506
-          },
-          0.6774083631022472
-        ],
-        [
-          {
-            "colloc_db_index": 511,
-            "sim_colloc": "отзываться",
-            "w2v_sim": 0.6080430350408785,
-            "freqence_similarity": 0.9500217840009506
-          },
-          0.676438784832893
-        ],
-        [
-          {
-            "colloc_db_index": 231,
-            "sim_colloc": "переводить",
-            "w2v_sim": 0.5939447716409345,
-            "freqence_similarity": 0.9912818496838625
-          },
-          0.6734121872495201
+          0.7497747649172299
         ]
       ]
     ],
@@ -3829,211 +2717,85 @@
       []
     ],
     [
-      "апрель",
+      "21 апрель",
       [
         [
           {
-            "colloc_db_index": 54,
-            "sim_colloc": "сентябрь",
-            "w2v_sim": 0.9656434662691842,
-            "freqence_similarity": 0.9985510732000507
+            "marked_colloc_db_index": 34,
+            "sim_colloc": "13 сентябрь",
+            "w2v_sim": 0.7150554537265736,
+            "freqence_similarity": 0.9999992818259235
           },
-          0.9722249876553576
-        ],
-        [
-          {
-            "colloc_db_index": 189,
-            "sim_colloc": "апрель 2014 год",
-            "w2v_sim": 0.7378223706727196,
-            "freqence_similarity": 0.8167390988748034
-          },
-          0.7536057163131364
+          0.7720442193464436
         ]
       ]
     ],
     [
-      "министр культура",
+      "министр культура украина",
       [
         [
           {
-            "colloc_db_index": 25,
-            "sim_colloc": "культура",
-            "w2v_sim": 0.7528563948393998,
-            "freqence_similarity": 0.9666387283540304
+            "marked_colloc_db_index": 48,
+            "sim_colloc": "комитет по культура",
+            "w2v_sim": 0.6628442731525566,
+            "freqence_similarity": 0.9853501135440512
           },
-          0.795612861542326
-        ],
-        [
-          {
-            "colloc_db_index": 76,
-            "sim_colloc": "культура",
-            "w2v_sim": 0.7528563948393998,
-            "freqence_similarity": 0.9666387283540304
-          },
-          0.795612861542326
-        ],
-        [
-          {
-            "colloc_db_index": 68,
-            "sim_colloc": "деятель культура",
-            "w2v_sim": 0.7321704700065081,
-            "freqence_similarity": 0.9993059846198211
-          },
-          0.7855975729291708
-        ],
-        [
-          {
-            "colloc_db_index": 554,
-            "sim_colloc": "культурный",
-            "w2v_sim": 0.5909574805718436,
-            "freqence_similarity": 0.957949360409435
-          },
-          0.6643558565393619
-        ],
-        [
-          {
-            "colloc_db_index": 22,
-            "sim_colloc": "первый заместитель председатель",
-            "w2v_sim": 0.5561569348070536,
-            "freqence_similarity": 0.9987449746388891
-          },
-          0.6446745427734207
+          0.7273454412308555
         ]
       ]
     ],
     [
-      "украина",
+      "евгений нищук",
       [
         [
           {
-            "colloc_db_index": 73,
-            "sim_colloc": "россия",
-            "w2v_sim": 0.7208879974078408,
-            "freqence_similarity": 0.8011144471839422
+            "marked_colloc_db_index": 381,
+            "sim_colloc": "александр градский",
+            "w2v_sim": 0.697926879743452,
+            "freqence_similarity": 0.99435856703526
           },
-          0.7369332873630611
+          0.7572132172018137
         ],
         [
           {
-            "colloc_db_index": 680,
-            "sim_colloc": "россия",
-            "w2v_sim": 0.7208879974078408,
-            "freqence_similarity": 0.8011144471839422
-          },
-          0.7369332873630611
-        ],
-        [
-          {
-            "colloc_db_index": 449,
-            "sim_colloc": "крым",
-            "w2v_sim": 0.6489265787049393,
-            "freqence_similarity": 0.76182153963733
-          },
-          0.6715055708914175
-        ],
-        [
-          {
-            "colloc_db_index": 657,
-            "sim_colloc": "крым",
-            "w2v_sim": 0.6489265787049393,
-            "freqence_similarity": 0.76182153963733
-          },
-          0.6715055708914175
-        ],
-        [
-          {
-            "colloc_db_index": 724,
-            "sim_colloc": "крым",
-            "w2v_sim": 0.6489265787049393,
-            "freqence_similarity": 0.76182153963733
-          },
-          0.6715055708914175
-        ]
-      ]
-    ],
-    [
-      "евгений",
-      [
-        [
-          {
-            "colloc_db_index": 658,
-            "sim_colloc": "сергей",
-            "w2v_sim": 0.8932067591866839,
-            "freqence_similarity": 0.9983173013737869
-          },
-          0.9142288676241046
-        ],
-        [
-          {
-            "colloc_db_index": 583,
-            "sim_colloc": "александр",
-            "w2v_sim": 0.876441605387496,
-            "freqence_similarity": 0.99982990399886
-          },
-          0.9011192651097689
-        ],
-        [
-          {
-            "colloc_db_index": 26,
+            "marked_colloc_db_index": 21,
             "sim_colloc": "борис",
-            "w2v_sim": 0.7604470643013433,
-            "freqence_similarity": 0.9966534773353185
+            "w2v_sim": 0.6980964888537444,
+            "freqence_similarity": 0.9013671689342776
           },
-          0.8076883469081384
+          0.7387506248698511
         ],
         [
           {
-            "colloc_db_index": 41,
+            "marked_colloc_db_index": 439,
+            "sim_colloc": "глава крым сергей аксенов",
+            "w2v_sim": 0.6718269821535101,
+            "freqence_similarity": 0.9998516081507409
+          },
+          0.7374319073529563
+        ],
+        [
+          {
+            "marked_colloc_db_index": 29,
             "sim_colloc": "георгий",
-            "w2v_sim": 0.731150744712298,
-            "freqence_similarity": 0.9900133852590709
+            "w2v_sim": 0.6709177741964301,
+            "freqence_similarity": 0.8953028424535198
           },
-          0.7829232728216526
-        ],
-        [
-          {
-            "colloc_db_index": 98,
-            "sim_colloc": "виктория",
-            "w2v_sim": 0.5819785619906628,
-            "freqence_similarity": 0.9877247503148777
-          },
-          0.6631277996555058
+          0.715794787847848
         ]
       ]
-    ],
-    [
-      "нищук",
-      []
     ],
     [
       "пообещать",
       [
         [
           {
-            "colloc_db_index": 684,
+            "marked_colloc_db_index": 457,
             "sim_colloc": "обещать",
             "w2v_sim": 0.8861870072125425,
-            "freqence_similarity": 0.866450420017284
+            "freqence_similarity": 0.7901557729287993
           },
-          0.8822396897734909
-        ],
-        [
-          {
-            "colloc_db_index": 77,
-            "sim_colloc": "решать",
-            "w2v_sim": 0.522681500966704,
-            "freqence_similarity": 0.9730502050754539
-          },
-          0.612755241788454
-        ],
-        [
-          {
-            "colloc_db_index": 526,
-            "sim_colloc": "заявлять о",
-            "w2v_sim": 0.5150933925237623,
-            "freqence_similarity": 0.9656943373655923
-          },
-          0.6052135814921283
+          0.866980760355794
         ]
       ]
     ],
@@ -4042,268 +2804,26 @@
       [
         [
           {
-            "colloc_db_index": 100,
-            "sim_colloc": "отменять",
-            "w2v_sim": 0.6950970085096676,
-            "freqence_similarity": 0.9389567154223043
+            "marked_colloc_db_index": 190,
+            "sim_colloc": "учитывать",
+            "w2v_sim": 0.6850187929941131,
+            "freqence_similarity": 0.8214706552669382
           },
-          0.743868949892195
-        ],
-        [
-          {
-            "colloc_db_index": 445,
-            "sim_colloc": "согласовывать",
-            "w2v_sim": 0.676963330389085,
-            "freqence_similarity": 0.9986668746995163
-          },
-          0.7413040392511713
-        ],
-        [
-          {
-            "colloc_db_index": 179,
-            "sim_colloc": "раскритиковывать",
-            "w2v_sim": 0.6398794936473341,
-            "freqence_similarity": 0.9621267263153838
-          },
-          0.704328940180944
-        ],
-        [
-          {
-            "colloc_db_index": 491,
-            "sim_colloc": "отказываться",
-            "w2v_sim": 0.6235433210436722,
-            "freqence_similarity": 0.935090110944891
-          },
-          0.685852679023916
-        ],
-        [
-          {
-            "colloc_db_index": 593,
-            "sim_colloc": "дискредитировать",
-            "w2v_sim": 0.6086658258551243,
-            "freqence_similarity": 0.8791867633148016
-          },
-          0.6627700133470598
+          0.7123091654486781
         ]
       ]
     ],
     [
-      "список",
-      [
-        [
-          {
-            "colloc_db_index": 560,
-            "sim_colloc": "список",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 1.0
-          },
-          1.0000000000000004
-        ]
-      ]
-    ],
-    [
-      "российский",
-      [
-        [
-          {
-            "colloc_db_index": 317,
-            "sim_colloc": "российский",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 0.9999999999999999
-          },
-          1.0000000000000004
-        ],
-        [
-          {
-            "colloc_db_index": 73,
-            "sim_colloc": "россия",
-            "w2v_sim": 0.7607047783798407,
-            "freqence_similarity": 0.9997252932392311
-          },
-          0.8085088813517189
-        ],
-        [
-          {
-            "colloc_db_index": 680,
-            "sim_colloc": "россия",
-            "w2v_sim": 0.7607047783798407,
-            "freqence_similarity": 0.9997252932392311
-          },
-          0.8085088813517189
-        ],
-        [
-          {
-            "colloc_db_index": 668,
-            "sim_colloc": "российский паспорт",
-            "w2v_sim": 0.722654871876511,
-            "freqence_similarity": 0.8356656987016031
-          },
-          0.7452570372415295
-        ],
-        [
-          {
-            "colloc_db_index": 601,
-            "sim_colloc": "британский",
-            "w2v_sim": 0.6776014679741227,
-            "freqence_similarity": 0.966290176493199
-          },
-          0.735339209677938
-        ]
-      ]
-    ],
-    [
-      "артист",
-      [
-        [
-          {
-            "colloc_db_index": 594,
-            "sim_colloc": "артистка",
-            "w2v_sim": 0.7979421307199326,
-            "freqence_similarity": 0.9995317742895511
-          },
-          0.8382600594338563
-        ],
-        [
-          {
-            "colloc_db_index": 624,
-            "sim_colloc": "артистка",
-            "w2v_sim": 0.7979421307199326,
-            "freqence_similarity": 0.9995317742895511
-          },
-          0.8382600594338563
-        ],
-        [
-          {
-            "colloc_db_index": 118,
-            "sim_colloc": "музыкант",
-            "w2v_sim": 0.7666017736925731,
-            "freqence_similarity": 0.9899038406727025
-          },
-          0.811262187088599
-        ],
-        [
-          {
-            "colloc_db_index": 248,
-            "sim_colloc": "музыкант",
-            "w2v_sim": 0.7666017736925731,
-            "freqence_similarity": 0.9899038406727025
-          },
-          0.811262187088599
-        ],
-        [
-          {
-            "colloc_db_index": 456,
-            "sim_colloc": "музыкант",
-            "w2v_sim": 0.7666017736925731,
-            "freqence_similarity": 0.9899038406727025
-          },
-          0.811262187088599
-        ]
-      ]
+      "список российский артист",
+      []
     ],
     [
       "который",
       [
         [
           {
-            "colloc_db_index": 10,
+            "marked_colloc_db_index": 9,
             "sim_colloc": "который",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0000000000000002
-          },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 162,
-            "sim_colloc": "который",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0000000000000002
-          },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 178,
-            "sim_colloc": "который",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0000000000000002
-          },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 625,
-            "sim_colloc": "который",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0000000000000002
-          },
-          1.0
-        ]
-      ]
-    ],
-    [
-      "запрещать",
-      [
-        [
-          {
-            "colloc_db_index": 439,
-            "sim_colloc": "запрет",
-            "w2v_sim": 0.6505282355477395,
-            "freqence_similarity": 0.7718253451777468
-          },
-          0.674787657473741
-        ],
-        [
-          {
-            "colloc_db_index": 491,
-            "sim_colloc": "отказываться",
-            "w2v_sim": 0.5923065639263987,
-            "freqence_similarity": 0.9990874433026102
-          },
-          0.673662739801641
-        ],
-        [
-          {
-            "colloc_db_index": 100,
-            "sim_colloc": "отменять",
-            "w2v_sim": 0.5823954901064222,
-            "freqence_similarity": 0.999499095845296
-          },
-          0.665816211254197
-        ]
-      ]
-    ],
-    [
-      "въезд",
-      [
-        [
-          {
-            "colloc_db_index": 441,
-            "sim_colloc": "въезд",
-            "w2v_sim": 1.0000000000000007,
-            "freqence_similarity": 0.9999999999999998
-          },
-          1.0000000000000004
-        ],
-        [
-          {
-            "colloc_db_index": 426,
-            "sim_colloc": "проезд",
-            "w2v_sim": 0.6423388962947852,
-            "freqence_similarity": 0.9997853126474734
-          },
-          0.713828179565323
-        ]
-      ]
-    ],
-    [
-      "в страна",
-      [
-        [
-          {
-            "colloc_db_index": 3,
-            "sim_colloc": "в страна",
             "w2v_sim": 1.0,
             "freqence_similarity": 1.0
           },
@@ -4311,39 +2831,107 @@
         ],
         [
           {
-            "colloc_db_index": 686,
-            "sim_colloc": "в россия",
-            "w2v_sim": 0.8565806148751225,
-            "freqence_similarity": 0.9999963788667839
+            "marked_colloc_db_index": 107,
+            "sim_colloc": "который",
+            "w2v_sim": 1.0,
+            "freqence_similarity": 1.0
           },
-          0.8852637676734549
+          1.0
         ],
         [
           {
-            "colloc_db_index": 693,
-            "sim_colloc": "в россия",
-            "w2v_sim": 0.8565806148751225,
-            "freqence_similarity": 0.9999963788667839
+            "marked_colloc_db_index": 413,
+            "sim_colloc": "который",
+            "w2v_sim": 1.0,
+            "freqence_similarity": 1.0
           },
-          0.8852637676734549
+          1.0
+        ]
+      ]
+    ],
+    [
+      "запрещать въезд",
+      []
+    ],
+    [
+      "в",
+      [
+        [
+          {
+            "marked_colloc_db_index": 173,
+            "sim_colloc": "в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0
+          },
+          1.0000000000000004
         ],
         [
           {
-            "colloc_db_index": 250,
-            "sim_colloc": "в сша",
-            "w2v_sim": 0.7774458542446805,
-            "freqence_similarity": 0.999997278837639
+            "marked_colloc_db_index": 359,
+            "sim_colloc": "в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0
           },
-          0.8219561391632721
+          1.0000000000000004
         ],
         [
           {
-            "colloc_db_index": 442,
-            "sim_colloc": "в республика",
-            "w2v_sim": 0.7471809754085744,
-            "freqence_similarity": 0.9999937525393707
+            "marked_colloc_db_index": 446,
+            "sim_colloc": "в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0
           },
-          0.7977435308347337
+          1.0000000000000004
+        ],
+        [
+          {
+            "marked_colloc_db_index": 484,
+            "sim_colloc": "и в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 0.9882469849756766
+          },
+          0.9976493969951357
+        ],
+        [
+          {
+            "marked_colloc_db_index": 176,
+            "sim_colloc": "в который",
+            "w2v_sim": 0.9658765429499789,
+            "freqence_similarity": 0.9999954592428122
+          },
+          0.9727003262085456
+        ]
+      ]
+    ],
+    [
+      "страна",
+      [
+        [
+          {
+            "marked_colloc_db_index": 3,
+            "sim_colloc": "в страна",
+            "w2v_sim": 0.7148966300295312,
+            "freqence_similarity": 0.9999942406831022
+          },
+          0.7719161521602453
+        ],
+        [
+          {
+            "marked_colloc_db_index": 453,
+            "sim_colloc": "россия",
+            "w2v_sim": 0.7064546393138502,
+            "freqence_similarity": 0.9915308664873896
+          },
+          0.7634698847485581
+        ],
+        [
+          {
+            "marked_colloc_db_index": 466,
+            "sim_colloc": "россия",
+            "w2v_sim": 0.7064546393138502,
+            "freqence_similarity": 0.9915308664873896
+          },
+          0.7634698847485581
         ]
       ]
     ],
@@ -4352,30 +2940,21 @@
       [
         [
           {
-            "colloc_db_index": 400,
-            "sim_colloc": "по слово",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 0.9999999999999999
-          },
-          1.0000000000000004
-        ],
-        [
-          {
-            "colloc_db_index": 588,
+            "marked_colloc_db_index": 385,
             "sim_colloc": "по он слово",
             "w2v_sim": 0.8716769941449954,
-            "freqence_similarity": 0.9183396926058512
+            "freqence_similarity": 0.9119668717442606
           },
-          0.8810095338371666
+          0.8797349696648485
         ],
         [
           {
-            "colloc_db_index": 450,
+            "marked_colloc_db_index": 293,
             "sim_colloc": "по он слово на",
             "w2v_sim": 0.7739947952389501,
-            "freqence_similarity": 0.9058562389209734
+            "freqence_similarity": 0.9842403920574051
           },
-          0.8003670839753548
+          0.8160439146026411
         ]
       ]
     ],
@@ -4385,92 +2964,27 @@
     ],
     [
       "черный список",
-      [
-        [
-          {
-            "colloc_db_index": 560,
-            "sim_colloc": "список",
-            "w2v_sim": 0.7004192185166229,
-            "freqence_similarity": 0.8744084620332002
-          },
-          0.7352170672199384
-        ]
-      ]
+      []
     ],
     [
       "составлять",
-      [
-        [
-          {
-            "colloc_db_index": 701,
-            "sim_colloc": "предоставлять",
-            "w2v_sim": 0.607350463658696,
-            "freqence_similarity": 0.9392944575788671
-          },
-          0.6737392624427303
-        ],
-        [
-          {
-            "colloc_db_index": 417,
-            "sim_colloc": "выдавать",
-            "w2v_sim": 0.564025757683017,
-            "freqence_similarity": 0.9999652195617063
-          },
-          0.6512136500587549
-        ],
-        [
-          {
-            "colloc_db_index": 167,
-            "sim_colloc": "оценивать",
-            "w2v_sim": 0.553609374410329,
-            "freqence_similarity": 0.9995586542250634
-          },
-          0.6427992303732759
-        ],
-        [
-          {
-            "colloc_db_index": 360,
-            "sim_colloc": "создавать",
-            "w2v_sim": 0.5655787024093444,
-            "freqence_similarity": 0.9283298175954956
-          },
-          0.6381289254465747
-        ],
-        [
-          {
-            "colloc_db_index": 679,
-            "sim_colloc": "выводить",
-            "w2v_sim": 0.547087589608791,
-            "freqence_similarity": 0.9809332045774466
-          },
-          0.6338567126025221
-        ]
-      ]
+      []
     ],
     [
       "наспех",
       []
     ],
     [
-      "март",
+      "22 март",
       [
         [
           {
-            "colloc_db_index": 54,
-            "sim_colloc": "сентябрь",
-            "w2v_sim": 0.9429974174060491,
-            "freqence_similarity": 0.9999911506841064
+            "marked_colloc_db_index": 34,
+            "sim_colloc": "13 сентябрь",
+            "w2v_sim": 0.6607812912825431,
+            "freqence_similarity": 0.999994534361997
           },
-          0.9543961640616606
-        ],
-        [
-          {
-            "colloc_db_index": 189,
-            "sim_colloc": "апрель 2014 год",
-            "w2v_sim": 0.7162625935837899,
-            "freqence_similarity": 0.844359209636988
-          },
-          0.7418819167944295
+          0.728623939898434
         ]
       ]
     ],
@@ -4483,48 +2997,12 @@
       [
         [
           {
-            "colloc_db_index": 491,
+            "marked_colloc_db_index": 320,
             "sim_colloc": "отказываться",
             "w2v_sim": 1.0000000000000002,
             "freqence_similarity": 1.0
           },
           1.0000000000000002
-        ],
-        [
-          {
-            "colloc_db_index": 528,
-            "sim_colloc": "отказываться от",
-            "w2v_sim": 0.8156354244750791,
-            "freqence_similarity": 0.6079037071480947
-          },
-          0.7740890810096822
-        ],
-        [
-          {
-            "colloc_db_index": 100,
-            "sim_colloc": "отменять",
-            "w2v_sim": 0.7043349954299617,
-            "freqence_similarity": 0.9999387069370367
-          },
-          0.7634557377313768
-        ],
-        [
-          {
-            "colloc_db_index": 593,
-            "sim_colloc": "дискредитировать",
-            "w2v_sim": 0.5660400298193048,
-            "freqence_similarity": 0.9909871989711263
-          },
-          0.6510294636496692
-        ],
-        [
-          {
-            "colloc_db_index": 623,
-            "sim_colloc": "дискредитировать",
-            "w2v_sim": 0.5660400298193048,
-            "freqence_similarity": 0.9909871989711263
-          },
-          0.6510294636496692
         ]
       ]
     ],
@@ -4533,327 +3011,89 @@
       [
         [
           {
-            "colloc_db_index": 500,
+            "marked_colloc_db_index": 326,
             "sim_colloc": "отпускать",
             "w2v_sim": 0.8015777622786927,
-            "freqence_similarity": 0.9984167811167354
+            "freqence_similarity": 0.9967215223370471
           },
-          0.8409455660463013
+          0.8406065142903637
         ],
         [
           {
-            "colloc_db_index": 152,
-            "sim_colloc": "ходить",
-            "w2v_sim": 0.728486007306417,
-            "freqence_similarity": 0.9999834778574215
-          },
-          0.7827855014166178
-        ],
-        [
-          {
-            "colloc_db_index": 642,
-            "sim_colloc": "ходить",
-            "w2v_sim": 0.728486007306417,
-            "freqence_similarity": 0.9999834778574215
-          },
-          0.7827855014166178
-        ],
-        [
-          {
-            "colloc_db_index": 462,
+            "marked_colloc_db_index": 301,
             "sim_colloc": "вешать",
             "w2v_sim": 0.694238326932052,
-            "freqence_similarity": 0.9996392194884096
+            "freqence_similarity": 0.9612997056394469
           },
-          0.7553185054433236
+          0.747650602673531
         ],
         [
           {
-            "colloc_db_index": 394,
+            "marked_colloc_db_index": 452,
+            "sim_colloc": "выводить",
+            "w2v_sim": 0.677051113475156,
+            "freqence_similarity": 0.9974651913535965
+          },
+          0.7411339290508441
+        ],
+        [
+          {
+            "marked_colloc_db_index": 427,
+            "sim_colloc": "ходить",
+            "w2v_sim": 0.728486007306417,
+            "freqence_similarity": 0.7214380929166355
+          },
+          0.7270764244284607
+        ],
+        [
+          {
+            "marked_colloc_db_index": 257,
             "sim_colloc": "болтать",
             "w2v_sim": 0.67845906719351,
-            "freqence_similarity": 0.9999272840029723
+            "freqence_similarity": 0.5756165471690798
           },
-          0.7427527105554025
+          0.657890563188624
         ]
       ]
     ],
     [
-      "представительница",
+      "представительница россия",
       [
         [
           {
-            "colloc_db_index": 496,
-            "sim_colloc": "представитель",
-            "w2v_sim": 0.7510412680329813,
-            "freqence_similarity": 0.9979325889882548
-          },
-          0.8004195322240362
-        ]
-      ]
-    ],
-    [
-      "россия на",
-      [
-        [
-          {
-            "colloc_db_index": 73,
+            "marked_colloc_db_index": 453,
             "sim_colloc": "россия",
-            "w2v_sim": 0.7768458315384188,
-            "freqence_similarity": 0.8605311062575173
+            "w2v_sim": 0.8056591166233901,
+            "freqence_similarity": 0.9999768158470635
           },
-          0.7935828864822385
+          0.8445226564681247
         ],
         [
           {
-            "colloc_db_index": 680,
+            "marked_colloc_db_index": 466,
             "sim_colloc": "россия",
-            "w2v_sim": 0.7768458315384188,
-            "freqence_similarity": 0.8605311062575173
+            "w2v_sim": 0.8056591166233901,
+            "freqence_similarity": 0.9999768158470635
           },
-          0.7935828864822385
+          0.8445226564681247
         ],
         [
           {
-            "colloc_db_index": 636,
-            "sim_colloc": "на они",
-            "w2v_sim": 0.5338044698046198,
-            "freqence_similarity": 0.9997517135010893
+            "marked_colloc_db_index": 201,
+            "sim_colloc": "и российский",
+            "w2v_sim": 0.6904800567542424,
+            "freqence_similarity": 0.8912474645200361
           },
-          0.6269939185439137
+          0.7306335383074012
         ],
         [
           {
-            "colloc_db_index": 498,
-            "sim_colloc": "франция",
-            "w2v_sim": 0.5271622577685072,
-            "freqence_similarity": 0.9970280227945149
+            "marked_colloc_db_index": 46,
+            "sim_colloc": "по россия",
+            "w2v_sim": 0.6592918266850687,
+            "freqence_similarity": 0.9625374052105696
           },
-          0.6211354107737088
-        ]
-      ]
-    ],
-    [
-      "конкурс",
-      [
-        [
-          {
-            "colloc_db_index": 467,
-            "sim_colloc": "фестиваль",
-            "w2v_sim": 0.6813373808597079,
-            "freqence_similarity": 0.975382193906162
-          },
-          0.7401463434689987
-        ],
-        [
-          {
-            "colloc_db_index": 15,
-            "sim_colloc": "конкурса",
-            "w2v_sim": 0.8208369787769009,
-            "freqence_similarity": 0.0
-          },
-          0.6566695830215208
-        ]
-      ]
-    ],
-    [
-      "евровидение",
-      [
-        [
-          {
-            "colloc_db_index": 614,
-            "sim_colloc": "евровидение",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 0.0
-          },
-          0.8000000000000004
-        ]
-      ]
-    ],
-    [
-      "юлия",
-      [
-        [
-          {
-            "colloc_db_index": 98,
-            "sim_colloc": "виктория",
-            "w2v_sim": 0.7928380670875697,
-            "freqence_similarity": 0.9246106588301835
-          },
-          0.8191925854360924
-        ],
-        [
-          {
-            "colloc_db_index": 583,
-            "sim_colloc": "александр",
-            "w2v_sim": 0.5845791039261601,
-            "freqence_similarity": 0.9683203645334115
-          },
-          0.6613273560476104
-        ],
-        [
-          {
-            "colloc_db_index": 658,
-            "sim_colloc": "сергей",
-            "w2v_sim": 0.5456445146241817,
-            "freqence_similarity": 0.9845664269562975
-          },
-          0.6334288970906049
-        ]
-      ]
-    ],
-    [
-      "самойлов",
-      [
-        [
-          {
-            "colloc_db_index": 659,
-            "sim_colloc": "аксенов",
-            "w2v_sim": 0.7779646664770334,
-            "freqence_similarity": 0.9869555879977878
-          },
-          0.8197628507811843
-        ],
-        [
-          {
-            "colloc_db_index": 27,
-            "sim_colloc": "илларионов",
-            "w2v_sim": 0.7551975049159124,
-            "freqence_similarity": 0.9922778767136677
-          },
-          0.8026135792754636
-        ],
-        [
-          {
-            "colloc_db_index": 486,
-            "sim_colloc": "киркоров",
-            "w2v_sim": 0.5502521957769697,
-            "freqence_similarity": 0.9922778767136677
-          },
-          0.6386573319643094
-        ],
-        [
-          {
-            "colloc_db_index": 339,
-            "sim_colloc": "фламенко",
-            "w2v_sim": 0.5093287334939999,
-            "freqence_similarity": 0.9922778767136677
-          },
-          0.6059185621379335
-        ],
-        [
-          {
-            "colloc_db_index": 369,
-            "sim_colloc": "фламенко",
-            "w2v_sim": 0.5093287334939999,
-            "freqence_similarity": 0.9922778767136677
-          },
-          0.6059185621379335
-        ]
-      ]
-    ],
-    [
-      "запрещать",
-      [
-        [
-          {
-            "colloc_db_index": 439,
-            "sim_colloc": "запрет",
-            "w2v_sim": 0.6505282355477395,
-            "freqence_similarity": 0.7718253451777468
-          },
-          0.674787657473741
-        ],
-        [
-          {
-            "colloc_db_index": 491,
-            "sim_colloc": "отказываться",
-            "w2v_sim": 0.5923065639263987,
-            "freqence_similarity": 0.9990874433026102
-          },
-          0.673662739801641
-        ],
-        [
-          {
-            "colloc_db_index": 100,
-            "sim_colloc": "отменять",
-            "w2v_sim": 0.5823954901064222,
-            "freqence_similarity": 0.999499095845296
-          },
-          0.665816211254197
-        ]
-      ]
-    ],
-    [
-      "она",
-      [
-        [
-          {
-            "colloc_db_index": 150,
-            "sim_colloc": "она",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
-          },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 155,
-            "sim_colloc": "она",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
-          },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 164,
-            "sim_colloc": "она",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
-          },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 364,
-            "sim_colloc": "она",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
-          },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 229,
-            "sim_colloc": "он",
-            "w2v_sim": 0.6308276257528229,
-            "freqence_similarity": 0.9989615026175371
-          },
-          0.7044544011257659
-        ]
-      ]
-    ],
-    [
-      "въезд",
-      [
-        [
-          {
-            "colloc_db_index": 441,
-            "sim_colloc": "въезд",
-            "w2v_sim": 1.0000000000000007,
-            "freqence_similarity": 0.9999999999999998
-          },
-          1.0000000000000004
-        ],
-        [
-          {
-            "colloc_db_index": 426,
-            "sim_colloc": "проезд",
-            "w2v_sim": 0.6423388962947852,
-            "freqence_similarity": 0.9997853126474734
-          },
-          0.713828179565323
+          0.7199409423901689
         ]
       ]
     ],
@@ -4862,7 +3102,7 @@
       [
         [
           {
-            "colloc_db_index": 181,
+            "marked_colloc_db_index": 131,
             "sim_colloc": "на",
             "w2v_sim": 1.0,
             "freqence_similarity": 1.0
@@ -4871,7 +3111,7 @@
         ],
         [
           {
-            "colloc_db_index": 190,
+            "marked_colloc_db_index": 133,
             "sim_colloc": "на",
             "w2v_sim": 1.0,
             "freqence_similarity": 1.0
@@ -4880,7 +3120,7 @@
         ],
         [
           {
-            "colloc_db_index": 201,
+            "marked_colloc_db_index": 308,
             "sim_colloc": "на",
             "w2v_sim": 1.0,
             "freqence_similarity": 1.0
@@ -4889,71 +3129,139 @@
         ],
         [
           {
-            "colloc_db_index": 205,
-            "sim_colloc": "на",
+            "marked_colloc_db_index": 421,
+            "sim_colloc": "на они",
+            "w2v_sim": 0.8784022890907963,
+            "freqence_similarity": 0.9824397473746392
+          },
+          0.899209780747565
+        ]
+      ]
+    ],
+    [
+      "конкурс евровидение",
+      [
+        [
+          {
+            "marked_colloc_db_index": 405,
+            "sim_colloc": "евровидение",
+            "w2v_sim": 0.8427362504332031,
+            "freqence_similarity": 0.9994900724166714
+          },
+          0.8740870148298968
+        ]
+      ]
+    ],
+    [
+      "юлия самойлов",
+      [
+        [
+          {
+            "marked_colloc_db_index": 22,
+            "sim_colloc": "илларионов",
+            "w2v_sim": 0.7004801223471493,
+            "freqence_similarity": 0.29881294607830816
+          },
+          0.6201466870933812
+        ]
+      ]
+    ],
+    [
+      "запрещать",
+      []
+    ],
+    [
+      "она",
+      [
+        [
+          {
+            "marked_colloc_db_index": 99,
+            "sim_colloc": "она",
             "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 1.0000000000000002
           },
           1.0
         ],
         [
           {
-            "colloc_db_index": 232,
-            "sim_colloc": "на",
+            "marked_colloc_db_index": 238,
+            "sim_colloc": "она",
             "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 1.0000000000000002
           },
           1.0
         ]
       ]
     ],
     [
-      "три год",
+      "въезд",
+      []
+    ],
+    [
+      "на",
       [
         [
           {
-            "colloc_db_index": 207,
-            "sim_colloc": "год",
-            "w2v_sim": 0.9339730360739078,
-            "freqence_similarity": 0.9767529251144215
+            "marked_colloc_db_index": 131,
+            "sim_colloc": "на",
+            "w2v_sim": 1.0,
+            "freqence_similarity": 1.0
           },
-          0.9425290138820106
+          1.0
         ],
         [
           {
-            "colloc_db_index": 565,
-            "sim_colloc": "год быть",
-            "w2v_sim": 0.8560358067364137,
-            "freqence_similarity": 0.9999490408483326
+            "marked_colloc_db_index": 133,
+            "sim_colloc": "на",
+            "w2v_sim": 1.0,
+            "freqence_similarity": 1.0
           },
-          0.8848184535587975
+          1.0
         ],
         [
           {
-            "colloc_db_index": 189,
-            "sim_colloc": "апрель 2014 год",
-            "w2v_sim": 0.7346604995785626,
-            "freqence_similarity": 0.9999315490830603
+            "marked_colloc_db_index": 308,
+            "sim_colloc": "на",
+            "w2v_sim": 1.0,
+            "freqence_similarity": 1.0
           },
-          0.7877147094794621
+          1.0
         ],
         [
           {
-            "colloc_db_index": 187,
-            "sim_colloc": "несколько год",
-            "w2v_sim": 0.6787193899775479,
-            "freqence_similarity": 0.9999774099879856
+            "marked_colloc_db_index": 421,
+            "sim_colloc": "на они",
+            "w2v_sim": 0.8784022890907963,
+            "freqence_similarity": 0.9824397473746392
           },
-          0.7429709939796354
+          0.899209780747565
+        ]
+      ]
+    ],
+    [
+      "три",
+      []
+    ],
+    [
+      "год",
+      [
+        [
+          {
+            "marked_colloc_db_index": 402,
+            "sim_colloc": "год как",
+            "w2v_sim": 0.868294156133479,
+            "freqence_similarity": 0.9971812505316685
+          },
+          0.894071575013117
         ],
         [
           {
-            "colloc_db_index": 611,
-            "sim_colloc": "в год",
-            "w2v_sim": 0.6011690938540163,
-            "freqence_similarity": 0.9999388080903614
+            "marked_colloc_db_index": 134,
+            "sim_colloc": "67й год жизнь",
+            "w2v_sim": 0.7246060091324682,
+            "freqence_similarity": 0.9976974216584822
           },
-          0.6809230367012853
+          0.779224291637671
         ]
       ]
     ],
@@ -4962,28 +3270,19 @@
       [
         [
           {
-            "colloc_db_index": 72,
+            "marked_colloc_db_index": 263,
             "sim_colloc": "по",
             "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 0.9999999999999999
+            "freqence_similarity": 1.0000000000000002
           },
           1.0000000000000004
         ],
         [
           {
-            "colloc_db_index": 506,
+            "marked_colloc_db_index": 399,
             "sim_colloc": "по",
             "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 0.9999999999999999
-          },
-          1.0000000000000004
-        ],
-        [
-          {
-            "colloc_db_index": 608,
-            "sim_colloc": "по",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 0.9999999999999999
+            "freqence_similarity": 1.0000000000000002
           },
           1.0000000000000004
         ]
@@ -4998,7 +3297,7 @@
       [
         [
           {
-            "colloc_db_index": 181,
+            "marked_colloc_db_index": 131,
             "sim_colloc": "на",
             "w2v_sim": 1.0,
             "freqence_similarity": 1.0
@@ -5007,7 +3306,7 @@
         ],
         [
           {
-            "colloc_db_index": 190,
+            "marked_colloc_db_index": 133,
             "sim_colloc": "на",
             "w2v_sim": 1.0,
             "freqence_similarity": 1.0
@@ -5016,7 +3315,7 @@
         ],
         [
           {
-            "colloc_db_index": 201,
+            "marked_colloc_db_index": 308,
             "sim_colloc": "на",
             "w2v_sim": 1.0,
             "freqence_similarity": 1.0
@@ -5025,94 +3324,26 @@
         ],
         [
           {
-            "colloc_db_index": 205,
-            "sim_colloc": "на",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
+            "marked_colloc_db_index": 421,
+            "sim_colloc": "на они",
+            "w2v_sim": 0.8784022890907963,
+            "freqence_similarity": 0.9824397473746392
           },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 232,
-            "sim_colloc": "на",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
-          },
-          1.0
+          0.899209780747565
         ]
       ]
     ],
     [
-      "начало",
+      "начало 2017 год",
       [
         [
           {
-            "colloc_db_index": 323,
-            "sim_colloc": "до конец",
-            "w2v_sim": 0.564351818552867,
-            "freqence_similarity": 0.9731624902267335
+            "marked_colloc_db_index": 402,
+            "sim_colloc": "год как",
+            "w2v_sim": 0.7134438685313285,
+            "freqence_similarity": 0.9972554865289
           },
-          0.6461139528876403
-        ],
-        [
-          {
-            "colloc_db_index": 186,
-            "sim_colloc": "начинаться",
-            "w2v_sim": 0.502537971272314,
-            "freqence_similarity": 0.9912307453489697
-          },
-          0.6002765260876453
-        ]
-      ]
-    ],
-    [
-      "год",
-      [
-        [
-          {
-            "colloc_db_index": 207,
-            "sim_colloc": "год",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 1.0
-          },
-          1.0000000000000004
-        ],
-        [
-          {
-            "colloc_db_index": 565,
-            "sim_colloc": "год быть",
-            "w2v_sim": 0.9149705586448372,
-            "freqence_similarity": 0.9745390327395382
-          },
-          0.9268842534637775
-        ],
-        [
-          {
-            "colloc_db_index": 189,
-            "sim_colloc": "апрель 2014 год",
-            "w2v_sim": 0.7666672552900965,
-            "freqence_similarity": 0.9741778921072365
-          },
-          0.8081693826535246
-        ],
-        [
-          {
-            "colloc_db_index": 187,
-            "sim_colloc": "несколько год",
-            "w2v_sim": 0.6940863581147216,
-            "freqence_similarity": 0.975289969254956
-          },
-          0.7503270803427685
-        ],
-        [
-          {
-            "colloc_db_index": 611,
-            "sim_colloc": "в год",
-            "w2v_sim": 0.6525173653260906,
-            "freqence_similarity": 0.974321696251707
-          },
-          0.7168782315112139
+          0.7702061921308428
         ]
       ]
     ],
@@ -5121,113 +3352,131 @@
       [
         [
           {
-            "colloc_db_index": 73,
+            "marked_colloc_db_index": 453,
             "sim_colloc": "россия",
             "w2v_sim": 0.7208879974078408,
-            "freqence_similarity": 0.8011144471839422
+            "freqence_similarity": 0.9441052831631386
           },
-          0.7369332873630611
+          0.7655314545589004
         ],
         [
           {
-            "colloc_db_index": 680,
+            "marked_colloc_db_index": 466,
             "sim_colloc": "россия",
             "w2v_sim": 0.7208879974078408,
-            "freqence_similarity": 0.8011144471839422
+            "freqence_similarity": 0.9441052831631386
           },
-          0.7369332873630611
-        ],
-        [
-          {
-            "colloc_db_index": 449,
-            "sim_colloc": "крым",
-            "w2v_sim": 0.6489265787049393,
-            "freqence_similarity": 0.76182153963733
-          },
-          0.6715055708914175
-        ],
-        [
-          {
-            "colloc_db_index": 657,
-            "sim_colloc": "крым",
-            "w2v_sim": 0.6489265787049393,
-            "freqence_similarity": 0.76182153963733
-          },
-          0.6715055708914175
-        ],
-        [
-          {
-            "colloc_db_index": 724,
-            "sim_colloc": "крым",
-            "w2v_sim": 0.6489265787049393,
-            "freqence_similarity": 0.76182153963733
-          },
-          0.6715055708914175
+          0.7655314545589004
         ]
       ]
     ],
     [
-      "запрещать",
-      [
-        [
-          {
-            "colloc_db_index": 439,
-            "sim_colloc": "запрет",
-            "w2v_sim": 0.6505282355477395,
-            "freqence_similarity": 0.7718253451777468
-          },
-          0.674787657473741
-        ],
-        [
-          {
-            "colloc_db_index": 491,
-            "sim_colloc": "отказываться",
-            "w2v_sim": 0.5923065639263987,
-            "freqence_similarity": 0.9990874433026102
-          },
-          0.673662739801641
-        ],
-        [
-          {
-            "colloc_db_index": 100,
-            "sim_colloc": "отменять",
-            "w2v_sim": 0.5823954901064222,
-            "freqence_similarity": 0.999499095845296
-          },
-          0.665816211254197
-        ]
-      ]
+      "запрещать въезд",
+      []
     ],
     [
-      "въезд",
+      "в",
       [
         [
           {
-            "colloc_db_index": 441,
-            "sim_colloc": "въезд",
-            "w2v_sim": 1.0000000000000007,
-            "freqence_similarity": 0.9999999999999998
+            "marked_colloc_db_index": 173,
+            "sim_colloc": "в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0
           },
           1.0000000000000004
         ],
         [
           {
-            "colloc_db_index": 426,
-            "sim_colloc": "проезд",
-            "w2v_sim": 0.6423388962947852,
-            "freqence_similarity": 0.9997853126474734
+            "marked_colloc_db_index": 359,
+            "sim_colloc": "в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0
           },
-          0.713828179565323
+          1.0000000000000004
+        ],
+        [
+          {
+            "marked_colloc_db_index": 446,
+            "sim_colloc": "в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0
+          },
+          1.0000000000000004
+        ],
+        [
+          {
+            "marked_colloc_db_index": 484,
+            "sim_colloc": "и в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 0.9882469849756766
+          },
+          0.9976493969951357
+        ],
+        [
+          {
+            "marked_colloc_db_index": 176,
+            "sim_colloc": "в который",
+            "w2v_sim": 0.9658765429499789,
+            "freqence_similarity": 0.9999954592428122
+          },
+          0.9727003262085456
         ]
       ]
     ],
     [
-      "в страна",
+      "страна 140 российский",
       [
         [
           {
-            "colloc_db_index": 3,
-            "sim_colloc": "в страна",
+            "marked_colloc_db_index": 453,
+            "sim_colloc": "россия",
+            "w2v_sim": 0.7414733391699586,
+            "freqence_similarity": 0.9997534769432208
+          },
+          0.7931293667246111
+        ],
+        [
+          {
+            "marked_colloc_db_index": 466,
+            "sim_colloc": "россия",
+            "w2v_sim": 0.7414733391699586,
+            "freqence_similarity": 0.9997534769432208
+          },
+          0.7931293667246111
+        ],
+        [
+          {
+            "marked_colloc_db_index": 201,
+            "sim_colloc": "и российский",
+            "w2v_sim": 0.7460966856058667,
+            "freqence_similarity": 0.8841599208358955
+          },
+          0.7737093326518725
+        ]
+      ]
+    ],
+    [
+      "деятель культура",
+      [
+        [
+          {
+            "marked_colloc_db_index": 43,
+            "sim_colloc": "деятель культура",
+            "w2v_sim": 1.0,
+            "freqence_similarity": 1.0
+          },
+          1.0
+        ]
+      ]
+    ],
+    [
+      "который",
+      [
+        [
+          {
+            "marked_colloc_db_index": 9,
+            "sim_colloc": "который",
             "w2v_sim": 1.0,
             "freqence_similarity": 1.0
           },
@@ -5235,270 +3484,42 @@
         ],
         [
           {
-            "colloc_db_index": 686,
-            "sim_colloc": "в россия",
-            "w2v_sim": 0.8565806148751225,
-            "freqence_similarity": 0.9999963788667839
+            "marked_colloc_db_index": 107,
+            "sim_colloc": "который",
+            "w2v_sim": 1.0,
+            "freqence_similarity": 1.0
           },
-          0.8852637676734549
+          1.0
         ],
         [
           {
-            "colloc_db_index": 693,
-            "sim_colloc": "в россия",
-            "w2v_sim": 0.8565806148751225,
-            "freqence_similarity": 0.9999963788667839
+            "marked_colloc_db_index": 413,
+            "sim_colloc": "который",
+            "w2v_sim": 1.0,
+            "freqence_similarity": 1.0
           },
-          0.8852637676734549
-        ],
-        [
-          {
-            "colloc_db_index": 250,
-            "sim_colloc": "в сша",
-            "w2v_sim": 0.7774458542446805,
-            "freqence_similarity": 0.999997278837639
-          },
-          0.8219561391632721
-        ],
-        [
-          {
-            "colloc_db_index": 442,
-            "sim_colloc": "в республика",
-            "w2v_sim": 0.7471809754085744,
-            "freqence_similarity": 0.9999937525393707
-          },
-          0.7977435308347337
+          1.0
         ]
       ]
     ],
     [
-      "140",
+      "по мнение",
       []
-    ],
-    [
-      "российский деятель культура",
-      [
-        [
-          {
-            "colloc_db_index": 68,
-            "sim_colloc": "деятель культура",
-            "w2v_sim": 0.9212731510918815,
-            "freqence_similarity": 0.9999343093720013
-          },
-          0.9370053827479055
-        ],
-        [
-          {
-            "colloc_db_index": 317,
-            "sim_colloc": "российский",
-            "w2v_sim": 0.7671087497250143,
-            "freqence_similarity": 0.8342972331195334
-          },
-          0.7805464464039182
-        ],
-        [
-          {
-            "colloc_db_index": 25,
-            "sim_colloc": "культура",
-            "w2v_sim": 0.7373339680807685,
-            "freqence_similarity": 0.9530171449731728
-          },
-          0.7804706034592493
-        ],
-        [
-          {
-            "colloc_db_index": 76,
-            "sim_colloc": "культура",
-            "w2v_sim": 0.7373339680807685,
-            "freqence_similarity": 0.9530171449731728
-          },
-          0.7804706034592493
-        ],
-        [
-          {
-            "colloc_db_index": 554,
-            "sim_colloc": "культурный",
-            "w2v_sim": 0.6801206073393967,
-            "freqence_similarity": 0.9428383934238904
-          },
-          0.7326641645562955
-        ]
-      ]
-    ],
-    [
-      "который по",
-      [
-        [
-          {
-            "colloc_db_index": 72,
-            "sim_colloc": "по",
-            "w2v_sim": 0.9159933934896222,
-            "freqence_similarity": 0.00898456237097523
-          },
-          0.7345916272658928
-        ],
-        [
-          {
-            "colloc_db_index": 506,
-            "sim_colloc": "по",
-            "w2v_sim": 0.9159933934896222,
-            "freqence_similarity": 0.00898456237097523
-          },
-          0.7345916272658928
-        ],
-        [
-          {
-            "colloc_db_index": 608,
-            "sim_colloc": "по",
-            "w2v_sim": 0.9159933934896222,
-            "freqence_similarity": 0.00898456237097523
-          },
-          0.7345916272658928
-        ],
-        [
-          {
-            "colloc_db_index": 24,
-            "sim_colloc": "комитет по",
-            "w2v_sim": 0.5465938383227615,
-            "freqence_similarity": 0.9995798283068394
-          },
-          0.6371910363195772
-        ],
-        [
-          {
-            "colloc_db_index": 75,
-            "sim_colloc": "комитет по",
-            "w2v_sim": 0.5465938383227615,
-            "freqence_similarity": 0.9995798283068394
-          },
-          0.6371910363195772
-        ]
-      ]
-    ],
-    [
-      "мнение",
-      [
-        [
-          {
-            "colloc_db_index": 102,
-            "sim_colloc": "опасение",
-            "w2v_sim": 0.5792850904918371,
-            "freqence_similarity": 0.9066072649450063
-          },
-          0.6447495253824709
-        ]
-      ]
     ],
     [
       "сб",
       []
     ],
     [
-      "угрожать",
-      [
-        [
-          {
-            "colloc_db_index": 280,
-            "sim_colloc": "рисковать",
-            "w2v_sim": 0.6281577396901568,
-            "freqence_similarity": 0.9532755455221297
-          },
-          0.6931813008565514
-        ],
-        [
-          {
-            "colloc_db_index": 276,
-            "sim_colloc": "провоцировать",
-            "w2v_sim": 0.5656414175894575,
-            "freqence_similarity": 0.9950415854444993
-          },
-          0.6515214511604659
-        ],
-        [
-          {
-            "colloc_db_index": 581,
-            "sim_colloc": "покидать",
-            "w2v_sim": 0.561935058812618,
-            "freqence_similarity": 0.9730362300321497
-          },
-          0.6441552930565243
-        ],
-        [
-          {
-            "colloc_db_index": 353,
-            "sim_colloc": "презирать",
-            "w2v_sim": 0.5510743104469912,
-            "freqence_similarity": 0.9781577445514272
-          },
-          0.6364909972678784
-        ],
-        [
-          {
-            "colloc_db_index": 500,
-            "sim_colloc": "отпускать",
-            "w2v_sim": 0.5465851419233516,
-            "freqence_similarity": 0.9426819056860882
-          },
-          0.6258044946758989
-        ]
-      ]
-    ],
-    [
-      "национальный безопасность",
-      [
-        [
-          {
-            "colloc_db_index": 47,
-            "sim_colloc": "государственный",
-            "w2v_sim": 0.6981895511549312,
-            "freqence_similarity": 0.9297246917146981
-          },
-          0.7444965792668845
-        ],
-        [
-          {
-            "colloc_db_index": 37,
-            "sim_colloc": "коллективный",
-            "w2v_sim": 0.5974564069898088,
-            "freqence_similarity": 0.9889882090969492
-          },
-          0.675762767411237
-        ],
-        [
-          {
-            "colloc_db_index": 253,
-            "sim_colloc": "коллективный",
-            "w2v_sim": 0.5974564069898088,
-            "freqence_similarity": 0.9889882090969492
-          },
-          0.675762767411237
-        ],
-        [
-          {
-            "colloc_db_index": 554,
-            "sim_colloc": "культурный",
-            "w2v_sim": 0.5749578480503763,
-            "freqence_similarity": 0.9811475269387954
-          },
-          0.6561957838280601
-        ],
-        [
-          {
-            "colloc_db_index": 265,
-            "sim_colloc": "организация",
-            "w2v_sim": 0.5821140929514423,
-            "freqence_similarity": 0.9023972509185423
-          },
-          0.6461707245448624
-        ]
-      ]
+      "угрожать национальный безопасность",
+      []
     ],
     [
       "среди",
       [
         [
           {
-            "colloc_db_index": 342,
+            "marked_colloc_db_index": 223,
             "sim_colloc": "среди",
             "w2v_sim": 1.0,
             "freqence_similarity": 1.0
@@ -5507,16 +3528,7 @@
         ],
         [
           {
-            "colloc_db_index": 708,
-            "sim_colloc": "среди",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
-          },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 715,
+            "marked_colloc_db_index": 482,
             "sim_colloc": "среди",
             "w2v_sim": 1.0,
             "freqence_similarity": 1.0
@@ -5530,232 +3542,50 @@
       [
         [
           {
-            "colloc_db_index": 196,
+            "marked_colloc_db_index": 126,
             "sim_colloc": "они",
             "w2v_sim": 1.0000000000000002,
-            "freqence_similarity": 1.0000000000000002
+            "freqence_similarity": 0.9999999999999998
           },
-          1.0000000000000004
+          1.0000000000000002
         ],
         [
           {
-            "colloc_db_index": 632,
-            "sim_colloc": "они",
-            "w2v_sim": 1.0000000000000002,
-            "freqence_similarity": 1.0000000000000002
-          },
-          1.0000000000000004
-        ],
-        [
-          {
-            "colloc_db_index": 644,
+            "marked_colloc_db_index": 429,
             "sim_colloc": "и они",
             "w2v_sim": 1.0000000000000002,
-            "freqence_similarity": 0.9882877138099404
+            "freqence_similarity": 0.9988866702172061
           },
-          0.9976575427619884
-        ],
-        [
-          {
-            "colloc_db_index": 636,
-            "sim_colloc": "на они",
-            "w2v_sim": 0.6617583187353361,
-            "freqence_similarity": 0.9891525327154419
-          },
-          0.7272371615313573
-        ],
-        [
-          {
-            "colloc_db_index": 229,
-            "sim_colloc": "он",
-            "w2v_sim": 0.580398990990841,
-            "freqence_similarity": 0.9995069812259422
-          },
-          0.6642205890378613
+          0.9997773340434415
         ]
       ]
     ],
     [
-      "актер",
+      "актер михаил боярский",
       [
         [
           {
-            "colloc_db_index": 118,
-            "sim_colloc": "музыкант",
-            "w2v_sim": 0.659496905159338,
-            "freqence_similarity": 0.9994266889542957
+            "marked_colloc_db_index": 381,
+            "sim_colloc": "александр градский",
+            "w2v_sim": 0.6920946423823857,
+            "freqence_similarity": 0.9981846591621222
           },
-          0.7274828619183296
+          0.7533126457383331
         ],
         [
           {
-            "colloc_db_index": 248,
-            "sim_colloc": "музыкант",
-            "w2v_sim": 0.659496905159338,
-            "freqence_similarity": 0.9994266889542957
-          },
-          0.7274828619183296
-        ],
-        [
-          {
-            "colloc_db_index": 456,
-            "sim_colloc": "музыкант",
-            "w2v_sim": 0.659496905159338,
-            "freqence_similarity": 0.9994266889542957
-          },
-          0.7274828619183296
-        ],
-        [
-          {
-            "colloc_db_index": 690,
-            "sim_colloc": "музыкант",
-            "w2v_sim": 0.659496905159338,
-            "freqence_similarity": 0.9994266889542957
-          },
-          0.7274828619183296
-        ],
-        [
-          {
-            "colloc_db_index": 175,
-            "sim_colloc": "певец",
-            "w2v_sim": 0.6204914541502342,
-            "freqence_similarity": 0.990360756265353
-          },
-          0.694465314573258
-        ]
-      ]
-    ],
-    [
-      "михаил",
-      [
-        [
-          {
-            "colloc_db_index": 583,
-            "sim_colloc": "александр",
-            "w2v_sim": 0.8653964060183645,
-            "freqence_similarity": 0.9952600693504879
-          },
-          0.8913691386847893
-        ],
-        [
-          {
-            "colloc_db_index": 658,
-            "sim_colloc": "сергей",
-            "w2v_sim": 0.8498019760409702,
-            "freqence_similarity": 0.9997808009479341
-          },
-          0.8797977410223631
-        ],
-        [
-          {
-            "colloc_db_index": 26,
+            "marked_colloc_db_index": 21,
             "sim_colloc": "борис",
-            "w2v_sim": 0.8234235996461605,
-            "freqence_similarity": 0.9871007313908561
+            "w2v_sim": 0.6687285222652695,
+            "freqence_similarity": 0.9203298007090328
           },
-          0.8561590259950997
-        ],
-        [
-          {
-            "colloc_db_index": 41,
-            "sim_colloc": "георгий",
-            "w2v_sim": 0.77226287904162,
-            "freqence_similarity": 0.9758094062974544
-          },
-          0.812972184492787
-        ],
-        [
-          {
-            "colloc_db_index": 485,
-            "sim_colloc": "филипп",
-            "w2v_sim": 0.5633750255092971,
-            "freqence_similarity": 0.9527388452591725
-          },
-          0.6412477894592722
-        ]
-      ]
-    ],
-    [
-      "боярский",
-      [
-        [
-          {
-            "colloc_db_index": 584,
-            "sim_colloc": "градский",
-            "w2v_sim": 0.7050399350099563,
-            "freqence_similarity": 1.0
-          },
-          0.7640319480079651
-        ],
-        [
-          {
-            "colloc_db_index": 32,
-            "sim_colloc": "петербургский",
-            "w2v_sim": 0.6246272028826589,
-            "freqence_similarity": 0.9883716976506172
-          },
-          0.6973761018362507
-        ],
-        [
-          {
-            "colloc_db_index": 67,
-            "sim_colloc": "петербургский",
-            "w2v_sim": 0.6246272028826589,
-            "freqence_similarity": 0.9883716976506172
-          },
-          0.6973761018362507
-        ],
-        [
-          {
-            "colloc_db_index": 74,
-            "sim_colloc": "петербургский",
-            "w2v_sim": 0.6246272028826589,
-            "freqence_similarity": 0.9883716976506172
-          },
-          0.6973761018362507
-        ],
-        [
-          {
-            "colloc_db_index": 185,
-            "sim_colloc": "московский",
-            "w2v_sim": 0.6105204361515957,
-            "freqence_similarity": 0.9427736702113093
-          },
-          0.6769710829635385
+          0.7190487779540221
         ]
       ]
     ],
     [
       "наталья",
-      [
-        [
-          {
-            "colloc_db_index": 98,
-            "sim_colloc": "виктория",
-            "w2v_sim": 0.778914045784511,
-            "freqence_similarity": 0.9990412855529597
-          },
-          0.8229394937382007
-        ],
-        [
-          {
-            "colloc_db_index": 583,
-            "sim_colloc": "александр",
-            "w2v_sim": 0.6024208418828216,
-            "freqence_similarity": 0.9955277921993458
-          },
-          0.6810422319461266
-        ],
-        [
-          {
-            "colloc_db_index": 658,
-            "sim_colloc": "сергей",
-            "w2v_sim": 0.5834672269932745,
-            "freqence_similarity": 0.98540233656359
-          },
-          0.6638542489073376
-        ]
-      ]
+      []
     ],
     [
       "варля",
@@ -5763,252 +3593,42 @@
     ],
     [
       "валентина",
-      [
-        [
-          {
-            "colloc_db_index": 98,
-            "sim_colloc": "виктория",
-            "w2v_sim": 0.7257368830560407,
-            "freqence_similarity": 0.9999004886516447
-          },
-          0.7805696041751615
-        ],
-        [
-          {
-            "colloc_db_index": 583,
-            "sim_colloc": "александр",
-            "w2v_sim": 0.591769479990407,
-            "freqence_similarity": 0.9883929019895517
-          },
-          0.671094164390236
-        ],
-        [
-          {
-            "colloc_db_index": 658,
-            "sim_colloc": "сергей",
-            "w2v_sim": 0.562911405301556,
-            "freqence_similarity": 0.9738996618528849
-          },
-          0.6451090566118218
-        ],
-        [
-          {
-            "colloc_db_index": 41,
-            "sim_colloc": "георгий",
-            "w2v_sim": 0.5406171783969331,
-            "freqence_similarity": 0.9995646169981203
-          },
-          0.6324066661171706
-        ]
-      ]
+      []
     ],
     [
       "талызин",
       []
     ],
     [
-      "валентин",
-      [
-        [
-          {
-            "colloc_db_index": 41,
-            "sim_colloc": "георгий",
-            "w2v_sim": 0.7236098979731582,
-            "freqence_similarity": 0.9961991278252782
-          },
-          0.7781277439435823
-        ],
-        [
-          {
-            "colloc_db_index": 583,
-            "sim_colloc": "александр",
-            "w2v_sim": 0.7159095187975357,
-            "freqence_similarity": 0.9993598074733805
-          },
-          0.7725995765327047
-        ],
-        [
-          {
-            "colloc_db_index": 658,
-            "sim_colloc": "сергей",
-            "w2v_sim": 0.6931290872970053,
-            "freqence_similarity": 0.9937066800994472
-          },
-          0.7532446058574936
-        ],
-        [
-          {
-            "colloc_db_index": 26,
-            "sim_colloc": "борис",
-            "w2v_sim": 0.6349799978596304,
-            "freqence_similarity": 0.9996190080350191
-          },
-          0.7079077998947082
-        ],
-        [
-          {
-            "colloc_db_index": 485,
-            "sim_colloc": "филипп",
-            "w2v_sim": 0.5623877420463219,
-            "freqence_similarity": 0.9846426335330976
-          },
-          0.6468387203436771
-        ]
-      ]
-    ],
-    [
-      "гафт",
+      "и валентин гафт",
       []
     ],
     [
-      "певец",
+      "певец олег газманов",
       [
         [
           {
-            "colloc_db_index": 175,
-            "sim_colloc": "певец",
-            "w2v_sim": 1.0000000000000009,
-            "freqence_similarity": 1.0
+            "marked_colloc_db_index": 315,
+            "sim_colloc": "заявление певец филипп киркоров",
+            "w2v_sim": 0.7533528019599749,
+            "freqence_similarity": 0.9999347367063128
           },
-          1.0000000000000007
+          0.8026691889092425
         ],
         [
           {
-            "colloc_db_index": 484,
-            "sim_colloc": "певец",
-            "w2v_sim": 1.0000000000000009,
-            "freqence_similarity": 1.0
+            "marked_colloc_db_index": 439,
+            "sim_colloc": "глава крым сергей аксенов",
+            "w2v_sim": 0.6548297409412166,
+            "freqence_similarity": 0.9643894136403522
           },
-          1.0000000000000007
-        ],
-        [
-          {
-            "colloc_db_index": 646,
-            "sim_colloc": "певица",
-            "w2v_sim": 0.8338055998958123,
-            "freqence_similarity": 1.0
-          },
-          0.8670444799166499
-        ],
-        [
-          {
-            "colloc_db_index": 118,
-            "sim_colloc": "музыкант",
-            "w2v_sim": 0.7982829088751606,
-            "freqence_similarity": 0.9851033771525436
-          },
-          0.8356470025306373
-        ],
-        [
-          {
-            "colloc_db_index": 248,
-            "sim_colloc": "музыкант",
-            "w2v_sim": 0.7982829088751606,
-            "freqence_similarity": 0.9851033771525436
-          },
-          0.8356470025306373
+          0.7167416754810438
         ]
       ]
     ],
     [
-      "олег",
-      [
-        [
-          {
-            "colloc_db_index": 658,
-            "sim_colloc": "сергей",
-            "w2v_sim": 0.9179624445981078,
-            "freqence_similarity": 0.9869699637004238
-          },
-          0.931763948418571
-        ],
-        [
-          {
-            "colloc_db_index": 583,
-            "sim_colloc": "александр",
-            "w2v_sim": 0.8253138468254438,
-            "freqence_similarity": 0.9963775757563604
-          },
-          0.8595265926116272
-        ],
-        [
-          {
-            "colloc_db_index": 26,
-            "sim_colloc": "борис",
-            "w2v_sim": 0.7611872426099966,
-            "freqence_similarity": 0.9997634110827588
-          },
-          0.8089024763045491
-        ],
-        [
-          {
-            "colloc_db_index": 41,
-            "sim_colloc": "георгий",
-            "w2v_sim": 0.6877059207667673,
-            "freqence_similarity": 0.9992834862889085
-          },
-          0.7500214338711955
-        ],
-        [
-          {
-            "colloc_db_index": 98,
-            "sim_colloc": "виктория",
-            "w2v_sim": 0.5145008087728273,
-            "freqence_similarity": 0.9985820338300544
-          },
-          0.6113170537842727
-        ]
-      ]
-    ],
-    [
-      "газманов",
+      "иосиф кобзон",
       []
-    ],
-    [
-      "иосиф",
-      [
-        [
-          {
-            "colloc_db_index": 26,
-            "sim_colloc": "борис",
-            "w2v_sim": 0.5479205263858111,
-            "freqence_similarity": 0.9930525303974261
-          },
-          0.6369469271881342
-        ],
-        [
-          {
-            "colloc_db_index": 485,
-            "sim_colloc": "филипп",
-            "w2v_sim": 0.5360838901378666,
-            "freqence_similarity": 0.9995520957215442
-          },
-          0.6287775312546022
-        ],
-        [
-          {
-            "colloc_db_index": 41,
-            "sim_colloc": "георгий",
-            "w2v_sim": 0.5237315615923104,
-            "freqence_similarity": 0.9982990278463408
-          },
-          0.6186450548431165
-        ]
-      ]
-    ],
-    [
-      "кобзон",
-      [
-        [
-          {
-            "colloc_db_index": 486,
-            "sim_colloc": "киркоров",
-            "w2v_sim": 0.5634476080991399,
-            "freqence_similarity": 1.0
-          },
-          0.6507580864793119
-        ]
-      ]
     ],
     [
       "лолит",
@@ -6016,60 +3636,14 @@
     ],
     [
       "рождаться",
-      [
-        [
-          {
-            "colloc_db_index": 249,
-            "sim_colloc": "проживать",
-            "w2v_sim": 0.6036094114323578,
-            "freqence_similarity": 0.9359859044030596
-          },
-          0.6700847100264982
-        ],
-        [
-          {
-            "colloc_db_index": 186,
-            "sim_colloc": "начинаться",
-            "w2v_sim": 0.5753077232584639,
-            "freqence_similarity": 0.957721746798383
-          },
-          0.6517905279664478
-        ],
-        [
-          {
-            "colloc_db_index": 558,
-            "sim_colloc": "присоединяться",
-            "w2v_sim": 0.5366663306960466,
-            "freqence_similarity": 0.9997200153936652
-          },
-          0.6292770676355703
-        ],
-        [
-          {
-            "colloc_db_index": 511,
-            "sim_colloc": "отзываться",
-            "w2v_sim": 0.5358850096392611,
-            "freqence_similarity": 0.9938837346736189
-          },
-          0.6274847546461327
-        ],
-        [
-          {
-            "colloc_db_index": 0,
-            "sim_colloc": "оказываться",
-            "w2v_sim": 0.5460573411758536,
-            "freqence_similarity": 0.9479835164403823
-          },
-          0.6264425762287593
-        ]
-      ]
+      []
     ],
     [
       "в",
       [
         [
           {
-            "colloc_db_index": 125,
+            "marked_colloc_db_index": 173,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -6078,7 +3652,7 @@
         ],
         [
           {
-            "colloc_db_index": 134,
+            "marked_colloc_db_index": 359,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -6087,7 +3661,7 @@
         ],
         [
           {
-            "colloc_db_index": 153,
+            "marked_colloc_db_index": 446,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -6096,170 +3670,34 @@
         ],
         [
           {
-            "colloc_db_index": 171,
-            "sim_colloc": "в",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 1.0
-          },
-          1.0000000000000004
-        ],
-        [
-          {
-            "colloc_db_index": 275,
-            "sim_colloc": "в",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 1.0
-          },
-          1.0000000000000004
-        ]
-      ]
-    ],
-    [
-      "1963",
-      []
-    ],
-    [
-      "год в",
-      [
-        [
-          {
-            "colloc_db_index": 611,
-            "sim_colloc": "в год",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 0.9999965653529402
-          },
-          0.9999993130705881
-        ],
-        [
-          {
-            "colloc_db_index": 571,
-            "sim_colloc": "в 2013 год",
-            "w2v_sim": 0.8695998228621823,
-            "freqence_similarity": 0.999992159605838
-          },
-          0.8956782902109135
-        ],
-        [
-          {
-            "colloc_db_index": 247,
-            "sim_colloc": "в последний год",
-            "w2v_sim": 0.8164208246914915,
-            "freqence_similarity": 0.9999953786523718
-          },
-          0.8531357354836676
-        ],
-        [
-          {
-            "colloc_db_index": 718,
+            "marked_colloc_db_index": 484,
             "sim_colloc": "и в",
-            "w2v_sim": 0.6525173403733573,
-            "freqence_similarity": 0.9999954001553948
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 0.9882469849756766
           },
-          0.7220129523297649
+          0.9976493969951357
         ],
         [
           {
-            "colloc_db_index": 125,
-            "sim_colloc": "в",
-            "w2v_sim": 0.6525173403733573,
-            "freqence_similarity": 0.979787038740766
+            "marked_colloc_db_index": 176,
+            "sim_colloc": "в который",
+            "w2v_sim": 0.9658765429499789,
+            "freqence_similarity": 0.9999954592428122
           },
-          0.7179712800468391
+          0.9727003262085456
         ]
       ]
     ],
     [
-      "город",
-      [
-        [
-          {
-            "colloc_db_index": 23,
-            "sim_colloc": "городской",
-            "w2v_sim": 0.5933171011740324,
-            "freqence_similarity": 0.992750382862299
-          },
-          0.6732037575116857
-        ],
-        [
-          {
-            "colloc_db_index": 81,
-            "sim_colloc": "городской",
-            "w2v_sim": 0.5933171011740324,
-            "freqence_similarity": 0.992750382862299
-          },
-          0.6732037575116857
-        ],
-        [
-          {
-            "colloc_db_index": 40,
-            "sim_colloc": "петербург",
-            "w2v_sim": 0.537222196790863,
-            "freqence_similarity": 0.9837392254381214
-          },
-          0.6265256025203148
-        ]
-      ]
-    ],
-    [
-      "мукачево",
+      "1963 год",
       []
-    ],
-    [
-      "закарпатский область",
-      [
-        [
-          {
-            "colloc_db_index": 584,
-            "sim_colloc": "градский",
-            "w2v_sim": 0.6357254545740735,
-            "freqence_similarity": 0.9999875127245332
-          },
-          0.7085778662041655
-        ],
-        [
-          {
-            "colloc_db_index": 47,
-            "sim_colloc": "государственный",
-            "w2v_sim": 0.6053319026070055,
-            "freqence_similarity": 0.8674839387505918
-          },
-          0.6577623098357228
-        ],
-        [
-          {
-            "colloc_db_index": 185,
-            "sim_colloc": "московский",
-            "w2v_sim": 0.5341511947691872,
-            "freqence_similarity": 0.9444282103709611
-          },
-          0.6162065978895419
-        ],
-        [
-          {
-            "colloc_db_index": 23,
-            "sim_colloc": "городской",
-            "w2v_sim": 0.5255226687006118,
-            "freqence_similarity": 0.9427229272933172
-          },
-          0.6089627204191529
-        ],
-        [
-          {
-            "colloc_db_index": 81,
-            "sim_colloc": "городской",
-            "w2v_sim": 0.5255226687006118,
-            "freqence_similarity": 0.9427229272933172
-          },
-          0.6089627204191529
-        ]
-      ]
     ],
     [
       "в",
       [
         [
           {
-            "colloc_db_index": 125,
+            "marked_colloc_db_index": 173,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -6268,7 +3706,7 @@
         ],
         [
           {
-            "colloc_db_index": 134,
+            "marked_colloc_db_index": 359,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -6277,7 +3715,7 @@
         ],
         [
           {
-            "colloc_db_index": 153,
+            "marked_colloc_db_index": 446,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -6286,7 +3724,34 @@
         ],
         [
           {
-            "colloc_db_index": 171,
+            "marked_colloc_db_index": 484,
+            "sim_colloc": "и в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 0.9882469849756766
+          },
+          0.9976493969951357
+        ],
+        [
+          {
+            "marked_colloc_db_index": 176,
+            "sim_colloc": "в который",
+            "w2v_sim": 0.9658765429499789,
+            "freqence_similarity": 0.9999954592428122
+          },
+          0.9727003262085456
+        ]
+      ]
+    ],
+    [
+      "город мукачево закарпатский область",
+      []
+    ],
+    [
+      "в",
+      [
+        [
+          {
+            "marked_colloc_db_index": 173,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
@@ -6295,12 +3760,39 @@
         ],
         [
           {
-            "colloc_db_index": 275,
+            "marked_colloc_db_index": 359,
             "sim_colloc": "в",
             "w2v_sim": 1.0000000000000004,
             "freqence_similarity": 1.0
           },
           1.0000000000000004
+        ],
+        [
+          {
+            "marked_colloc_db_index": 446,
+            "sim_colloc": "в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0
+          },
+          1.0000000000000004
+        ],
+        [
+          {
+            "marked_colloc_db_index": 484,
+            "sim_colloc": "и в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 0.9882469849756766
+          },
+          0.9976493969951357
+        ],
+        [
+          {
+            "marked_colloc_db_index": 176,
+            "sim_colloc": "в который",
+            "w2v_sim": 0.9658765429499789,
+            "freqence_similarity": 0.9999954592428122
+          },
+          0.9727003262085456
         ]
       ]
     ],
@@ -6309,48 +3801,30 @@
       [
         [
           {
-            "colloc_db_index": 317,
-            "sim_colloc": "российский",
+            "marked_colloc_db_index": 151,
+            "sim_colloc": "русский турецкий",
+            "w2v_sim": 0.7786241803521639,
+            "freqence_similarity": 0.9972198269062739
+          },
+          0.8223433096629859
+        ],
+        [
+          {
+            "marked_colloc_db_index": 201,
+            "sim_colloc": "и российский",
             "w2v_sim": 0.7617249347432234,
-            "freqence_similarity": 0.8317079217710412
+            "freqence_similarity": 0.6902687124974775
           },
-          0.7757215321487871
+          0.7474336902940744
         ],
         [
           {
-            "colloc_db_index": 239,
-            "sim_colloc": "русский",
-            "w2v_sim": 0.6746632054106498,
-            "freqence_similarity": 0.9451872888080199
+            "marked_colloc_db_index": 291,
+            "sim_colloc": "согласовывать с украинский власть",
+            "w2v_sim": 0.6748609567930808,
+            "freqence_similarity": 0.9999312330974652
           },
-          0.7287680220901238
-        ],
-        [
-          {
-            "colloc_db_index": 447,
-            "sim_colloc": "украинский власть",
-            "w2v_sim": 0.8092709489349073,
-            "freqence_similarity": 0.3926111710080629
-          },
-          0.7259389933495384
-        ],
-        [
-          {
-            "colloc_db_index": 601,
-            "sim_colloc": "британский",
-            "w2v_sim": 0.6511542362657694,
-            "freqence_similarity": 0.6607284906984023
-          },
-          0.6530690871522961
-        ],
-        [
-          {
-            "colloc_db_index": 73,
-            "sim_colloc": "россия",
-            "w2v_sim": 0.6074830861404996,
-            "freqence_similarity": 0.8184663751886161
-          },
-          0.649679743950123
+          0.7398750120539577
         ]
       ]
     ],
@@ -6363,48 +3837,21 @@
       [
         [
           {
-            "colloc_db_index": 150,
+            "marked_colloc_db_index": 99,
             "sim_colloc": "она",
             "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 1.0000000000000002
           },
           1.0
         ],
         [
           {
-            "colloc_db_index": 155,
+            "marked_colloc_db_index": 238,
             "sim_colloc": "она",
             "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
+            "freqence_similarity": 1.0000000000000002
           },
           1.0
-        ],
-        [
-          {
-            "colloc_db_index": 164,
-            "sim_colloc": "она",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
-          },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 364,
-            "sim_colloc": "она",
-            "w2v_sim": 1.0,
-            "freqence_similarity": 1.0
-          },
-          1.0
-        ],
-        [
-          {
-            "colloc_db_index": 229,
-            "sim_colloc": "он",
-            "w2v_sim": 0.6308276257528229,
-            "freqence_similarity": 0.9989615026175371
-          },
-          0.7044544011257659
         ]
       ]
     ],
@@ -6417,52 +3864,66 @@
       []
     ],
     [
-      "проходить в",
+      "проходить",
       [
         [
           {
-            "colloc_db_index": 503,
-            "sim_colloc": "участвовать в",
-            "w2v_sim": 0.8028496945849444,
-            "freqence_similarity": 0.999999950798078
+            "marked_colloc_db_index": 355,
+            "sim_colloc": "проходить",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 0.9999999999999998
           },
-          0.8422797458275713
-        ],
+          1.0000000000000004
+        ]
+      ]
+    ],
+    [
+      "в",
+      [
         [
           {
-            "colloc_db_index": 128,
-            "sim_colloc": "входить в",
-            "w2v_sim": 0.7853315238486404,
-            "freqence_similarity": 0.9999997095137446
-          },
-          0.8282651609816613
-        ],
-        [
-          {
-            "colloc_db_index": 576,
-            "sim_colloc": "оказываться в",
-            "w2v_sim": 0.754305065047821,
-            "freqence_similarity": 0.9999991144504505
-          },
-          0.803443874928347
-        ],
-        [
-          {
-            "colloc_db_index": 718,
-            "sim_colloc": "и в",
-            "w2v_sim": 0.7378349241401541,
-            "freqence_similarity": 0.9999995459992604
-          },
-          0.7902678485119754
-        ],
-        [
-          {
-            "colloc_db_index": 125,
+            "marked_colloc_db_index": 173,
             "sim_colloc": "в",
-            "w2v_sim": 0.7378349241401541,
-            "freqence_similarity": 0.9793687870847574
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0
           },
-          0.7861416967290747
+          1.0000000000000004
+        ],
+        [
+          {
+            "marked_colloc_db_index": 359,
+            "sim_colloc": "в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0
+          },
+          1.0000000000000004
+        ],
+        [
+          {
+            "marked_colloc_db_index": 446,
+            "sim_colloc": "в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 1.0
+          },
+          1.0000000000000004
+        ],
+        [
+          {
+            "marked_colloc_db_index": 484,
+            "sim_colloc": "и в",
+            "w2v_sim": 1.0000000000000004,
+            "freqence_similarity": 0.9882469849756766
+          },
+          0.9976493969951357
+        ],
+        [
+          {
+            "marked_colloc_db_index": 176,
+            "sim_colloc": "в который",
+            "w2v_sim": 0.9658765429499789,
+            "freqence_similarity": 0.9999954592428122
+          },
+          0.9727003262085456
         ]
       ]
     ],
@@ -6471,48 +3932,12 @@
       [
         [
           {
-            "colloc_db_index": 415,
-            "sim_colloc": "киев",
-            "w2v_sim": 1.0000000000000004,
-            "freqence_similarity": 0.9999999999999998
+            "marked_colloc_db_index": 273,
+            "sim_colloc": "киев не",
+            "w2v_sim": 0.769336248328274,
+            "freqence_similarity": 0.6113598139928966
           },
-          1.0000000000000004
-        ],
-        [
-          {
-            "colloc_db_index": 466,
-            "sim_colloc": "радиостанция говорит москва",
-            "w2v_sim": 0.5275065156964795,
-            "freqence_similarity": 0.9846124324631489
-          },
-          0.6189276990498134
-        ],
-        [
-          {
-            "colloc_db_index": 449,
-            "sim_colloc": "крым",
-            "w2v_sim": 0.5307478535825207,
-            "freqence_similarity": 0.9491006435364604
-          },
-          0.6144184115733087
-        ],
-        [
-          {
-            "colloc_db_index": 657,
-            "sim_colloc": "крым",
-            "w2v_sim": 0.5307478535825207,
-            "freqence_similarity": 0.9491006435364604
-          },
-          0.6144184115733087
-        ],
-        [
-          {
-            "colloc_db_index": 724,
-            "sim_colloc": "крым",
-            "w2v_sim": 0.5307478535825207,
-            "freqence_similarity": 0.9491006435364604
-          },
-          0.6144184115733087
+          0.7377409614611985
         ]
       ]
     ]

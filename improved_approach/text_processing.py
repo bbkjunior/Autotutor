@@ -228,8 +228,14 @@ def get_colloc(ngr, words_list, handled_words_indexes, collocations_dict, senten
                             local_corpora_freq_list.append(unigramm_db[lemma])
                         else:
                             local_corpora_freq_list.append(0)
-                    freq_mean = mean(freq_list)
-                    local_corpora_mean = mean(local_corpora_freq_list)
+                    if len(local_corpora_freq_list) > 0:
+                        local_corpora_mean = mean(local_corpora_freq_list)
+                    else:
+                        local_corpora_mean = None
+                    if len(freq_list) > 0:
+                        freq_mean = mean(freq_list)
+                    else:
+                        freq_mean = None
                     handled_words_indexes.extend(sub_ind)
                     sentence_collected_collocation[sub_ind[0]] = (ngramm, local_corpora_mean,freq_mean)
                     if debug:print("sentence_collected_collocation", sentence_collected_collocation)
