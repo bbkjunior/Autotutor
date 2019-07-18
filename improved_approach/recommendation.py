@@ -2,9 +2,12 @@ import os
 import pandas as pd
 import json
 from operator import itemgetter
+from tqdm import tqdm
+os.system('color')
 
-SIMILARITY_PATH = '/Users/nigula/Autotutor/improved_approach/music_similarity'
-USER_NAME = "littel_musician"
+#SIMILARITY_PATH = '/Users/nigula/Autotutor/improved_approach/music_similarity'
+SIMILARITY_PATH = 'C://Autotutor//improved_approach//music_similarity'
+USER_NAME = "big_musician"
 
 
 def colourise(colour, text):
@@ -34,17 +37,19 @@ def eval_texts_return_top(SIMILARITY_PATH,USER_NAME, debug = False):
     
     evaluated_texts = []
 
-    for sim_map in similarity_maps:
+    for sim_map_ind in tqdm(range(len(similarity_maps))):
+        sim_map = similarity_maps[sim_map_ind]
         if debug:
             print('\n==================\n')
             print(sim_map)
         if sim_map.endswith(".json"):
             map_full_path = os.path.join(SIMILARITY_PATH, sim_map)
             try:
-                f =  open(map_full_path, "r") #, encoding = "utf-8"
+                f =  open(map_full_path, "r", encoding = "utf-8") #, encoding = "utf-8"
             except:
-                f =  open(map_full_path, "r", encoding = "utf-8") #
-            similarity_map = json.load(f)
+                f =  open(map_full_path, "r") #
+            similarity_map = json.load(f, encoding = "utf-8")
+            #print(similarity_map['similar_collocations'])
 
             #TEXT LEVEL
             collected_stuff = []
@@ -101,7 +106,7 @@ def eval_texts_return_top(SIMILARITY_PATH,USER_NAME, debug = False):
                 if debug:print("WORD FROM EXAMINED TEXT", sim_colloc_list[0])
                 if len (sim_colloc_list[1]) > 0:
                     for marked_sim_word in sim_colloc_list[1]:
-                        target_variable = list(word_db.iloc[marked_sim_word[0]['colloc_db_index']])[-1]
+                        target_variable = list(word_db.iloc[marked_sim_word[0]['marked_colloc_db_index']])[-1]
                         similarity = marked_sim_word[1]
                         overall_similarity += similarity
                         #print("sim word", marked_sim_word[0]['sim_colloc'], target_variable)
@@ -124,14 +129,15 @@ def eval_texts_return_top(SIMILARITY_PATH,USER_NAME, debug = False):
                     words_prediction.append(highlighted_text)
                 else:
                     if debug:print("no similar words found")
-                    words_prediction.append(sim_colloc_list[0])
+                    highlighted_text = colourise("magenta", sim_colloc_list[0])
+                    words_prediction.append(highlighted_text)
+                    words_math_exp_list.append(0) 
             words_understanding_expectation = sum(words_math_exp_list) / len(words_math_exp_list)
             if debug:
                 print("OVERALL WORD UNDERSTANING EXPECTATION",words_understanding_expectation)
                 for word_calculated in words_prediction:
                     print(word_calculated)
 
-            
             understanding_vector = [text_understanding_expectation, sent_understanding_expectation, words_understanding_expectation]
             if debug:print(understanding_vector)
             understanding_vector_sdev = [0,0,0]
@@ -145,14 +151,14 @@ def eval_texts_return_top(SIMILARITY_PATH,USER_NAME, debug = False):
             f.close()
 
     reversed_recommended_texts = sorted(evaluated_texts,key=itemgetter(0))   
-    for rec_text in reversed_recommended_texts:
+    for rec_text in reversed_recommended_texts[0:2]:
         print('\n==================\n')
         print (rec_text[0])
         
         print (rec_text[1]['understanding_vector'])
         print (rec_text[1]['text_index_in_db'])
-        """
+        
         for word in rec_text[1]['words_prediction']:
             print(word)
-        """
+        
 eval_texts_return_top(SIMILARITY_PATH,USER_NAME)

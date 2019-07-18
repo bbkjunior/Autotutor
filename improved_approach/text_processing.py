@@ -529,12 +529,12 @@ text_short = """Однажды в поликлинику пришел больн
 """
 #json_text_map = get_text_map(text, raw_text_input = True)
 
-
+"""
 json_text_map = get_text_map(text, "C:\Autotutor\improved_approach\colloc\music_unigr_freq.json", "D:\input\music_smart_colloc_freq.json",raw_text_input = True)
 
 with open("text_map_improved_example.json", "w") as f:
     json.dump(json_text_map,f, indent = 4, ensure_ascii = False) 
-"""
+
 print( json_text_map['sent_properties'])
 
 for sent in json_text_map['sentences_map']:
