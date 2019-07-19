@@ -3,11 +3,12 @@ import pandas as pd
 import json
 from operator import itemgetter
 from tqdm import tqdm
+import math
 os.system('color')
 
-#SIMILARITY_PATH = '/Users/nigula/Autotutor/improved_approach/music_similarity'
-SIMILARITY_PATH = 'C://Autotutor//improved_approach//music_similarity'
-USER_NAME = "big_musician"
+SIMILARITY_PATH = '/Users/nigula/Autotutor/improved_approach/music_similarity'
+#SIMILARITY_PATH = 'C://Autotutor//improved_approach//music_similarity'
+USER_NAME = "enze_big_musician"
 
 
 def colourise(colour, text):
@@ -50,7 +51,7 @@ def eval_texts_return_top(SIMILARITY_PATH,USER_NAME, debug = False):
                 f =  open(map_full_path, "r") #
             similarity_map = json.load(f, encoding = "utf-8")
             #print(similarity_map['similar_collocations'])
-
+        if len (similarity_map['similar_collocations']) > 25:
             #TEXT LEVEL
             collected_stuff = []
             overall_similarity = 0
@@ -129,7 +130,7 @@ def eval_texts_return_top(SIMILARITY_PATH,USER_NAME, debug = False):
                     words_prediction.append(highlighted_text)
                 else:
                     if debug:print("no similar words found")
-                    highlighted_text = colourise("magenta", sim_colloc_list[0])
+                    highlighted_text = colourise("gray", sim_colloc_list[0])
                     words_prediction.append(highlighted_text)
                     words_math_exp_list.append(0) 
             words_understanding_expectation = sum(words_math_exp_list) / len(words_math_exp_list)
@@ -142,16 +143,17 @@ def eval_texts_return_top(SIMILARITY_PATH,USER_NAME, debug = False):
             if debug:print(understanding_vector)
             understanding_vector_sdev = [0,0,0]
             for val_ind in range(len(understanding_vector)):
-                understanding_vector_sdev[val_ind] = (understanding_vector[val_ind]  - 0.8)**2
+                understanding_vector_sdev[val_ind] = math.sqrt((understanding_vector[val_ind]  - 0.8)**2)
             if debug:print(understanding_vector_sdev)
-            s_dev = sum(understanding_vector_sdev) / len(understanding_vector_sdev)
+            #s_dev = sum(understanding_vector_sdev) / len(understanding_vector_sdev)
+            s_dev = 0.1 * understanding_vector_sdev[0] + 0.1 * understanding_vector_sdev[1] + 0.8 * understanding_vector_sdev[2]
             if debug:print(s_dev)
             text_index_in_db = sim_map.split(".")[0]
             evaluated_texts.append((s_dev,{"understanding_vector":understanding_vector, "words_prediction":words_prediction,"text_index_in_db":text_index_in_db}))
             f.close()
 
-    reversed_recommended_texts = sorted(evaluated_texts,key=itemgetter(0))   
-    for rec_text in reversed_recommended_texts[0:2]:
+    reversed_recommended_texts = sorted(evaluated_texts,key=itemgetter(0))[0:5]
+    for rec_text in reversed_recommended_texts:
         print('\n==================\n')
         print (rec_text[0])
         

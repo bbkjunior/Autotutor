@@ -25,8 +25,8 @@ import json
 
 import operator
 
-#fasttext = FastTextKeyedVectors.load("/Users/nigula/input/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
-fasttext = FastTextKeyedVectors.load("D:/fasttext_word2vec/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
+fasttext = FastTextKeyedVectors.load("/Users/nigula/input/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
+#fasttext = FastTextKeyedVectors.load("D:/fasttext_word2vec/araneum_none_fasttextcbow_300_5_2018/araneum_none_fasttextcbow_300_5_2018.model")
 #fasttext = FastTextKeyedVectors.load("/Users/lilyakhoang/input/araneum_none_fasttextskipgram_300_5_2018/araneum_none_fasttextskipgram_300_5_2018.model")
 
 #"smart_colloc_freq.json"
